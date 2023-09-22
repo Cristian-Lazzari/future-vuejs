@@ -26,7 +26,7 @@ export default{
 
 .section-a{
     background-color: $c-bg-1;
-    height: 100%;
+
     .container{
         
         max-width: 1000px;
@@ -39,7 +39,7 @@ export default{
         justify-content: center;
         gap: 1rem;
         h2{
-            font-size: 6rem;
+            font-size: $d-title2-max;
             text-transform: uppercase;
             color: $c-f-az-op;
             text-shadow: 2.5px 2.5px 8px rgba(166, 168, 168, 0.574);
@@ -52,6 +52,7 @@ export default{
             background: #494e537c;
      
             box-shadow: 15px 15px 30px #778586, -15px -15px 30px #c8e7f7d6;
+            z-index:100;
         }
     }
 

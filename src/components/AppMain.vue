@@ -2,14 +2,14 @@
 import Asection from '../components/Asection.vue'
 import Bsection from '../components/Bsection.vue'
 import Csection from '../components/Csection.vue'
-// import Bsection from './components/Bsection.vue'
-// import Csection from './components/Csection.vue'
-// import Dsection from './components/Dsection.vue'
+import Dsection from '../components/Dsection.vue'
+
 export default{
   components: {
     Asection,
     Bsection,
     Csection,
+    Dsection,
 
   }
 
@@ -24,6 +24,7 @@ export default{
       <Asection />
       <Bsection />
       <Csection />
+      <Dsection />
   
     </div>
 
