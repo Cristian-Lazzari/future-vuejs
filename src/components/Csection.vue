@@ -1,0 +1,64 @@
+<script >
+
+// import Bsection from './components/Bsection.vue'
+// import Csection from './components/Csection.vue'
+// import Dsection from './components/Dsection.vue'
+export default{
+  components: {
+  }
+
+}
+</script>
+
+<template>
+    <div class="section-a">
+
+        <div class="container">
+            <h2>ma sopratutto perchè...</h2>
+            <div class="p1">&lt;&lt; Oggi il 99% delle persone quando sente parlare di un posto o di un azienda la prima cosa che fa è cercare su internet quel nome ed è per questo che è fondamentale avere una solida e curata prensenza online, le persone non devono solo trovarti devono innamorarsi della tua azienda e dei tuoi servizi >> </div>
+        </div>
+    </div>
+</template>
+
+<style lang="scss" scoped >
+   @use '../assets/styles/general.scss' as *;
+ 
+
+.section-a{
+    background-color: $c-bg-1;
+    height: 100%;
+    .container{
+        
+        max-width: 1000px;
+        padding: 10rem 0;
+        margin: 0 auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 1rem;
+        h2{
+            font-size: 6rem;
+            text-transform: uppercase;
+            color: $c-f-az-op;
+            text-shadow: 2.5px 2.5px 8px rgba(166, 168, 168, 0.574);
+        }
+        .p1{
+            margin: 3rem;
+            font-size: 3rem;
+            border-radius: 30px;
+            padding: 2rem;
+            background: #494e537c;
+     
+            box-shadow: 15px 15px 30px #778586, -15px -15px 30px #c8e7f7d6;
+        }
+    }
+
+}
+
+
+
+
+
+</style>
