@@ -63,7 +63,9 @@ export default{
     background: linear-gradient(-23deg, #50387d , $c-bg-2 40%);
     padding: 1rem 0 3rem 0;
     font-family: 'Roboto Condensed', sans-serif;
-
+        .wave-2{
+            background-image: url('../../public/wave-3.svg');
+        }
     .container{
         padding: 2rem 0;
         max-width: 1000px;

@@ -39,6 +39,9 @@ export default{
 }
 
 
+.wave{
+    background-image: url('../../public/wave-2.svg');
+}
 .section-a .container{
     max-width: 1000px;
     margin: 2rem auto;
