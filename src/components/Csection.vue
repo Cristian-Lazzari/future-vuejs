@@ -29,7 +29,7 @@ export default{
 
     .container{
         
-        max-width: 1000px;
+        max-width: $m-w;
         padding: 10rem 0;
         margin: 0 auto;
         font-family: 'Roboto Condensed', sans-serif;
@@ -43,6 +43,7 @@ export default{
             text-transform: uppercase;
             color: $c-f-az-op;
             text-shadow: 2.5px 2.5px 8px rgba(166, 168, 168, 0.574);
+            z-index:100;
         }
         .p1{
             margin: 3rem;
@@ -50,8 +51,9 @@ export default{
             border-radius: 30px;
             padding: 2rem;
             background: #494e537c;
+            text-shadow: 2.5px 2.5px 8px rgba(56, 57, 57, 0.574);
      
-            box-shadow: 15px 15px 30px #778586, -15px -15px 30px #c8e7f7d6;
+            box-shadow: 30px 30px 60px #778586, -30px -30px 60px #c8e7f7d6;
             z-index:100;
         }
     }

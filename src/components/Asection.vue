@@ -43,7 +43,7 @@ export default{
     background-image: url('../assets/img/wave-2.svg');
 }
 .section-a .container{
-    max-width: 1000px;
+    max-width: $m-w;
     margin: 2rem auto;
     padding: 2rem;
     font-family: 'Roboto Condensed', sans-serif;

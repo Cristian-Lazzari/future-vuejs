@@ -70,7 +70,7 @@ export default{
 
     position: relative;
     .container{
-        max-width: 1000px;
+        max-width: $m-w;
         margin: 2rem auto;
         padding: 2rem;
         font-family: 'Roboto Condensed', sans-serif;

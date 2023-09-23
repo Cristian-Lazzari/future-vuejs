@@ -9,7 +9,7 @@ $c-light-grey:#999999;
 $c-light-dgrey:#464646;
 $c-bg:rgb(124, 156, 179);
 $c-bg-1:rgb(178, 222, 237);
-$c-bg-2:rgb(79, 124, 138);
+$c-bg-2:rgb(150, 170, 224);
 $c-f-az-op: rgb(240, 254, 255);
 
 
@@ -18,6 +18,7 @@ $d-title2-max: 6rem;
 
 $d-i-f-max: 60px;
 
+$m-w: 1100px;
 
 ///**MIXIN**///
 @mixin dfc {
@@ -272,5 +273,66 @@ width: 200px;
     
    }
 
+   .card-sef {
+    position: relative;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    ;
+  }
+  
+  .bg-sef {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    z-index: 2;
+    background: rgba(127, 137, 189, 0.892);
+    backdrop-filter: blur(24px);
+    border-radius: 27px;
+    overflow: hidden;
+    padding: 1.5em;
+  }
+  
+  .blob-sef {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #00eeff;
+    opacity: 1;
+    filter: blur(20px);
+    animation: blob-bounce 8s infinite ease-in-out;
+  }
 
 
+   @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(-20%,-30%, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(130%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(130%, 130%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(-20%, 130%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(-20%, -30%, 0);
+    }
+  }
+  

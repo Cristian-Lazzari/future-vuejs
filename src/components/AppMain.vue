@@ -3,6 +3,7 @@ import Asection from '../components/Asection.vue'
 import Bsection from '../components/Bsection.vue'
 import Csection from '../components/Csection.vue'
 import Dsection from '../components/Dsection.vue'
+import Pacchetti from '../components/Pacchetti.vue'
 
 export default{
   components: {
@@ -10,6 +11,7 @@ export default{
     Bsection,
     Csection,
     Dsection,
+    Pacchetti,
 
   }
 
@@ -25,6 +27,7 @@ export default{
       <Bsection />
       <Csection />
       <Dsection />
+      <Pacchetti />
   
     </div>
 
