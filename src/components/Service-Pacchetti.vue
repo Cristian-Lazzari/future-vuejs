@@ -89,9 +89,18 @@ export default{
                         <div class="content">
                             <div class="name">START</div>
                             <div class="feat">
-                                <div class="line">Presenza Online</div>
-                                <div class="line">Pannello Amministatore</div>
-                                <div class="line">QR Code</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Presenza Online</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Pannello Amministatore</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>QR Code</div>
                             </div>
 
                         </div>
@@ -122,10 +131,22 @@ export default{
                         <div class="content">
                             <div class="name">MEDIUM</div>
                             <div class="feat">
-                                <div class="line">Presenza Online</div>
-                                <div class="line">Pannello Amministatore</div>
-                                <div class="line">QR Code</div>
-                                <div class="line">Prenotazione Servizi Online</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Presenza Online</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Pannello Amministatore</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>QR Code</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Prenotazione Servizi Online</div>
                             </div>
                             
                         </div>
@@ -134,7 +155,7 @@ export default{
                             <div class="mese">€69
                             </div>
                             <h4>Annuale</h4>
-                            <div class="anno">€399
+                            <div class="anno">€499
                                 
                                 <div class="from">€828</div>
                             </div>
@@ -156,22 +177,37 @@ export default{
                         <div class="content">
                             <div class="name">PREMIUM</div>
                             <div class="feat">
-                                <div class="line">Presenza Online</div>
-                                <div class="line">Pannello Amministatore</div>
-                                <div class="line">QR Code</div>
-                                <div class="line">Prenotazione Servizi Online</div>
-                                <div class="line">Prenotazione Preodotti Online</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Presenza Online</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Pannello Amministatore</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>QR Code</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Prenotazione Servizi Online</div>
+                                <div class="line">
+                                    <span class="material-symbols-outlined">
+                                    done
+                                    </span>Prenotazione Prodotti Online</div>
                             </div>
 
                         </div>
                         <div class="bottom price">
                             <h4>Mensile</h4>
-                            <div class="mese">€49
+                            <div class="mese">€89
                             </div>
                             <h4>Annuale</h4>
-                            <div class="anno">€299
+                            <div class="anno">€599
                                 
-                                <div class="from">€588</div>
+                                <div class="from">€1068</div>
                             </div>
                             
                         </div>
@@ -300,6 +336,8 @@ export default{
         flex-direction: column;
         gap: .6rem;
         .line{
+            display: flex;
+            gap: .3rem;
             font-weight: bold;
             white-space: nowrap;
             text-transform:capitalize;
@@ -332,7 +370,7 @@ export default{
     }
 
 .med{
-    height: 450px!important;
+    height: 480px!important;
     .card{
 
         background: linear-gradient(135deg, rgb(28, 52, 237) 0%, rgb(71, 53, 136) 100%);
@@ -342,7 +380,7 @@ export default{
     }
 }
 .pro{
-    height: 480px!important;
+    height: 520px!important;
     .card{
 
         background: linear-gradient(135deg, rgb(171, 34, 216) 0%, rgb(48, 0, 220) 100%);
@@ -355,7 +393,7 @@ export default{
 
         .parent {
         width: 290px;
-        height: 420px;
+        height: 440px;
         perspective: 1000px;
         }
 
