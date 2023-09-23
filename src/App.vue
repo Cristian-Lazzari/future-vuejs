@@ -1,6 +1,7 @@
 <script >
 import Home from './components/Home.vue';
 import appMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 
 // import Bsection from './components/Bsection.vue'
 // import Csection from './components/Csection.vue'
@@ -9,6 +10,7 @@ export default{
   components: {
     Home,
     appMain,
+    AppFooter,
    
 
   }
@@ -22,6 +24,7 @@ export default{
     <div class="container">
       <Home />
       <appMain />
+      <AppFooter />
     </div>
 
 </template>

@@ -11,6 +11,7 @@ $c-bg:rgb(124, 156, 179);
 $c-bg-1:rgb(178, 222, 237);
 $c-bg-2:rgb(150, 170, 224);
 $c-f-az-op: rgb(240, 254, 255);
+$c-f-az-op-med: rgba(181, 238, 249, 0.793);
 
 
 $d-title1-max: 7rem;
@@ -19,6 +20,8 @@ $d-title2-max: 6rem;
 $d-i-f-max: 60px;
 
 $m-w: 1100px;
+
+
 
 ///**MIXIN**///
 @mixin dfc {
@@ -240,6 +243,19 @@ width: 200px;
     
     animation: waves ease-in-out 20s infinite;
 }
+.wave-3{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background-position: right;
+    aspect-ratio: 2.1;
+   
+    transform: rotateX(-30deg);
+    
+    
+    animation: wave-2 ease-in-out 23s infinite alternate;
+}
 
 
 @keyframes waves {
@@ -268,6 +284,38 @@ width: 200px;
         
 
         transform: rotateX(0deg);
+        background-position: right;
+    }
+    
+   }
+@keyframes wave-2 {
+    0%{
+        transform: rotateX(-30deg);
+        background-position: left;
+ 
+        
+        
+    }
+    25%{
+        transform: rotateX(30deg);       
+        
+        
+    }
+    50%{
+        
+        transform: rotateX(-30deg);       
+
+    }
+    75%{
+        transform: rotateX(30deg);
+        
+        
+        
+        
+    }
+    100%{
+    
+        transform: rotateX(-30deg);
         background-position: right;
     }
     
