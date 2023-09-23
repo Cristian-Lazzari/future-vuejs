@@ -40,7 +40,7 @@ export default{
 
 
 .wave{
-    background-image: url('../../public/wave-2.svg');
+    background-image: url('../assets/img/wave-2.svg');
 }
 .section-a .container{
     max-width: 1000px;

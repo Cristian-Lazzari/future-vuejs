@@ -64,7 +64,7 @@ export default{
     padding: 1rem 0 3rem 0;
     font-family: 'Roboto Condensed', sans-serif;
         .wave-2{
-            background-image: url('../../public/wave-3.svg');
+            background-image: url('../assets/wave-3.svg');
         }
     .container{
         padding: 2rem 0;
