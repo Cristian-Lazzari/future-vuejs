@@ -60,8 +60,8 @@ export default{
  
 
 .section-a{
-    background: linear-gradient(-23deg, #50387d , $c-bg-2 40%);
-    padding: 1rem 0 3rem 0;
+    background: linear-gradient(23deg, #50387d , #004AAD  , $c-bg-2 80%);
+    padding: 1rem 0 9rem 0;
     font-family: 'Roboto Condensed', sans-serif;
         .wave-2{
             background-image: url('../assets/wave-3.svg');
@@ -82,7 +82,7 @@ export default{
             flex-wrap: wrap;
             gap: 3.6em;
             .feature{
-                background-color: rgba(206, 214, 229, 0.112);
+                background-color: rgba(206, 214, 229, 0.26);
                 box-shadow: 5px 5px 10px #303435, -5px -5px 10px #c8e7f7d6;
                 width: 400px;
                 border: 3px solid $c-white;
