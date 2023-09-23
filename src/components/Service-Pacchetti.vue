@@ -88,17 +88,95 @@ export default{
                         <div class="glass"></div>
                         <div class="content">
                             <div class="name">START</div>
+                            <div class="feat">
+                                <div class="line">Presenza Online</div>
+                                <div class="line">Pannello Amministatore</div>
+                                <div class="line">QR Code</div>
+                            </div>
 
-                            <div class="line">PRESENZA ONLINE</div>
-                            <div class="line">PANNELLO AMMINISTARZIONE</div>
-                            <div class="line">QR CODE</div>
                         </div>
-                        <div class="bottom">
-                            
+                        <div class="bottom price">
+                            <h4>Mensile</h4>
+                            <div class="mese">€49
+                            </div>
+                            <h4>Annuale</h4>
+                            <div class="anno">€299
+                                
+                                <div class="from">€588</div>
+                            </div>
                             
                         </div>
                     </div>
+                </div>
+                <div class="parent med">
+                    <div class="card">
+                        <div class="logo">
+                            
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4">FUTURE +</span>
+                            
+
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <div class="name">MEDIUM</div>
+                            <div class="feat">
+                                <div class="line">Presenza Online</div>
+                                <div class="line">Pannello Amministatore</div>
+                                <div class="line">QR Code</div>
+                                <div class="line">Prenotazione Servizi Online</div>
+                            </div>
+                            
+                        </div>
+                        <div class="bottom price">
+                            <h4>Mensile</h4>
+                            <div class="mese">€69
+                            </div>
+                            <h4>Annuale</h4>
+                            <div class="anno">€399
+                                
+                                <div class="from">€828</div>
+                            </div>
+                            
+                        </div>
                     </div>
+                </div>
+                <div class="parent pro">
+                    <div class="card">
+                        <div class="logo">
+                            
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4">FUTURE +</span>
+                            
+                            
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <div class="name">PREMIUM</div>
+                            <div class="feat">
+                                <div class="line">Presenza Online</div>
+                                <div class="line">Pannello Amministatore</div>
+                                <div class="line">QR Code</div>
+                                <div class="line">Prenotazione Servizi Online</div>
+                                <div class="line">Prenotazione Preodotti Online</div>
+                            </div>
+
+                        </div>
+                        <div class="bottom price">
+                            <h4>Mensile</h4>
+                            <div class="mese">€49
+                            </div>
+                            <h4>Annuale</h4>
+                            <div class="anno">€299
+                                
+                                <div class="from">€588</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
      
             </div>
             
@@ -185,7 +263,7 @@ export default{
 
     
     .p-container{
-        padding:0;
+        padding:0 1rem;
         max-width: $m-w;
         margin: 0 auto;
         height: 100%;
@@ -197,6 +275,12 @@ export default{
             text-shadow: 2px 2px 15px rgba(45, 46, 46, 0.79);
             text-transform: uppercase;
         }
+        .p-cont{
+
+            @include dfc;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
         
        
             
@@ -205,19 +289,73 @@ export default{
 
 
     .name{
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bolder;
+        text-shadow: 2px 2px 15px rgba(58, 61, 90, 0.9);
     }
-    .line{
-        
+    .feat{
+        text-shadow: 2px 1px 10px rgba(58, 61, 90, 0.9);
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        .line{
+            font-weight: bold;
+            white-space: nowrap;
+            text-transform:capitalize;
+    
+        }
+
+    }
+    .price{
+        text-shadow: 2px 2px 15px rgba(58, 61, 90, 0.9);
+        font-size: 1.5rem;
+        .mese{
+            font-weight: bold;
+            font-size: 2.7rem;
+            text-shadow: 0 0 4px rgba(179, 175, 232, 0.849);
+        }
+        .anno{
+            font-weight: bold;
+            font-size: 2.5rem;
+            position: relative;
+            .from{
+                font-size: 1.6rem;
+                text-decoration: line-through;
+                font-weight: normal;
+                position: absolute;
+                left: 60px;
+                top:-10px;
+            }   
+        }
+
     }
 
+.med{
+    height: 450px!important;
+    .card{
 
+        background: linear-gradient(135deg, rgb(28, 52, 237) 0%, rgb(71, 53, 136) 100%);
+    }
+    .circle2, .circle3 {
+        background-color: #3469da4f!important;
+    }
+}
+.pro{
+    height: 480px!important;
+    .card{
+
+        background: linear-gradient(135deg, rgb(171, 34, 216) 0%, rgb(48, 0, 220) 100%);
+    }
+    .circle2, .circle3 {
+        background-color: #7320c553!important;
+    }
+}
 
 
         .parent {
         width: 290px;
-        height: 400px;
+        height: 420px;
         perspective: 1000px;
         }
 
@@ -246,6 +384,10 @@ export default{
         .content {
         padding: 100px 60px 0px 30px;
         transform: translate3d(0, 0, 26px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
         }
 
     
@@ -257,7 +399,9 @@ export default{
         left: 20px;
         right: 20px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:.4em;
         justify-content: space-between;
         transform: translate3d(0, 0, 26px);
         }
