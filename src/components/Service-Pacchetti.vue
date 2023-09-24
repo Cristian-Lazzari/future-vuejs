@@ -594,6 +594,9 @@ export default{
             letter-spacing: 2px;
         }
     }
+    .line{
+        white-space: wrap!important;
+    }
 
 }
 </style>
