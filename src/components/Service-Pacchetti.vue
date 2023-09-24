@@ -11,7 +11,7 @@ export default{
     <div class="section-a">
         <div class="wave-2"></div>
         <div class="container">
-            <h2>Scopri i nostri servizi</h2>
+            <h2 class="top-title">Scopri i nostri servizi</h2>
             <div class="c-cont">
                 <div class="feature card-sef">
                     <div class="bg-sef">
@@ -255,6 +255,7 @@ export default{
             justify-content: center;
             flex-wrap: wrap;
             gap: 3.6em;
+            padding: 1em;
             .feature{
                 //background-color: rgba(206, 214, 229, 0.26);
                 box-shadow: 5px 5px 10px #303435, -5px -5px 10px #c8e7f7d6;
@@ -468,12 +469,7 @@ export default{
         transition: all 0.2s ease-in-out;
         }
 
-        .logo .circle1 {
-        width: 170px;
-        transform: translate3d(0, 0, 20px);
-        top: 8px;
-        right: 8px;
-        }
+   
 
         .logo .circle2 {
         width: 140px;
@@ -524,10 +520,6 @@ export default{
         box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
         }
 
-        .parent:hover .card .bottom .social-buttons-container .social-button {
-        transform: translate3d(0, 0, 50px);
-        box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
-        }
 
         .parent:hover .card .logo .circle2 {
         transform: translate3d(0, 0, 60px);
@@ -546,5 +538,52 @@ export default{
         }
 
 
+@media (max-width: 670px) {
+    .wave-2{
+        box-shadow: -50px -150px 5px $c-bg-1, 10px -150px 5px $c-bg-1;
+    }
+    .p-container{
+        h2{
+            font-size: $d-title1-min;
+        }
+    }
 
+    .parent:hover .card {
+        transform: rotate3d(0, 0, 0, 0deg);
+        box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+        }
+
+        .parent:hover .card .logo .circle2 {
+        transform: translate3d(0, 0, 40px);
+        }
+
+        .parent:hover .card .logo .circle3 {
+        transform: translate3d(0, 0, 60px);
+        }
+
+        .parent:hover .card .logo .circle4 {
+        transform: translate3d(0, 0, 80px);
+        }
+
+        .parent:hover .card .logo .circle5 {
+        transform: translate3d(0, 0, 100px);
+        }
+}
+@media (max-width: 470px) {
+    .wave-2{
+        box-shadow: -50px -100px 5px $c-bg-1, 10px -100px 5px $c-bg-1;
+    }
+    .p-container{
+        h2{
+            font-size: $d-title1-min;
+        }
+    }
+    .container{
+        .top-title{
+            font-size: $d-title1-min!important;
+            letter-spacing: 2px;
+        }
+    }
+
+}
 </style>

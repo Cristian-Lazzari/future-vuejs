@@ -55,13 +55,13 @@ export default{
     border: 4px solid $c-white;
     box-shadow: 3px 3px 15px black;
     background-color: rgba(255, 255, 255, 0.1);
-    z-index: 12;
+    z-index: 1200;
 }
 .section-1 .container .c-title h1{
     font-family: 'Bukhari Script', sans-serif;
     font-size: 4rem;  
     display: inline;
-    z-index: 100;
+    z-index: 1000;
     color: $c-white;
     text-shadow: 4px 4px 6px black;
     animation: pulselogo 3.3s ease-in-out infinite;
@@ -236,5 +236,27 @@ export default{
 } 
 
 
+@media (max-width: 670px) {
+    .section-1 .container .c-title{
+        height: 75px;
+        width: 300px;
+    }
+    .section-1 .container .c-title h1{
+        font-size: 2.4rem;
+    }
+  
+}
+
+@media (max-width: 470px) {
+    .section-1 .container .c-title{
+        height: 75px;
+        width: 300px;
+    }
+    .section-1 .container .c-title h1{
+        font-size: 2.4rem;
+    }
+
+
+}
 
 </style>

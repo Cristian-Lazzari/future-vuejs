@@ -16,33 +16,33 @@ export default{
         <div class="container">
 
             <div class="p1">
+                <span id="txt" >per rimanere al passo con il progresso che sta affrantando la tua concorrenza</span>
                 <div class="card-section cs1">
                 
-                    <span class="material-symbols-outlined conc c1 ">person 
-                        <span class="material-symbols-outlined pub">public
+                    <span id="f1" class="material-symbols-outlined conc c1 ">person 
+                        <span id="sf1" class="material-symbols-outlined pub">public
                         </span>
                         
                     </span>
-                    <span class="material-symbols-outlined conc c2">person 
-                        <span class="material-symbols-outlined pub">public
+                    <span id="f1" class="material-symbols-outlined conc c2">person 
+                        <span id="sf1" class="material-symbols-outlined pub">public
                         </span>
                         
                     </span>
-                    <span class="material-symbols-outlined conc c3">person 
-                        <span class="material-symbols-outlined pub">public
+                    <span id="f1" class="material-symbols-outlined conc c3">person 
+                        <span id="sf1" class="material-symbols-outlined pub">public
                         </span>
                         
                     </span>
                     
-                    <span class="material-symbols-outlined conc user c4">person
-                        <span class="material-symbols-outlined pub pub_off ">public_off</span>
+                    <span id="f1" class="material-symbols-outlined conc user c4">person
+                        <span id="sf1" class="material-symbols-outlined pub pub_off ">public_off</span>
                     </span>
                 </div>
-                <span>per rimanere al passo con il progresso che sta affrantando la tua concorrenza</span>
                 
             </div>
             <div class="p2">
-                <span>per dare la possibilità a nuovi clienti o collaboratori di scoprire te ed i tuoi servizi</span>
+                <span id="txt2">per dare la possibilità a nuovi clienti o collaboratori di scoprire te ed i tuoi servizi</span>
                 <div class="card-section cs2">
                     <span class="material-symbols-outlined i2 gp i2-1">group_add
                         <span class="material-symbols-outlined i2">person_add</span>
@@ -65,7 +65,7 @@ export default{
     background-color: $c-bg-1;
     display: flex;
     flex-direction: column;
-  
+    margin-top: -2px;
     gap: 1rem;
 
     position: relative;
@@ -78,53 +78,45 @@ export default{
         flex-direction: column;
         gap: 1rem;
         .p1, .p2{
-            width: 100%;
+            //width: 100%;
+            width: 80%;
 
             display: flex;
             font-size: 2.5rem;
             border-radius: 10px;
+            gap:3rem;
             span{
+                font-weight: bold;
 
                 line-height: 4.7rem;
                 text-transform: uppercase;
-                text-shadow: 0px 0px 4px rgb(136, 136, 136);
-                letter-spacing: .2em;
+                text-shadow: 1px 2px 10px rgb(121, 148, 180);
+                letter-spacing: 2.4px;
                 color: $c-f-az-op;
             }
         } 
         .p1{
+            align-self: flex-end;
             align-items: center;
             box-shadow: 6px -4px 15px #92B6C3;
-            padding: 3rem;
-            gap:2rem;
+            padding: 1.6em 1em 1em;
+            //padding: 3rem;
             background: linear-gradient(90deg, #1a358600 , #92b6c392 30%, #92B6C3 60%);
+            flex-direction: column;
             text-align: right;
-            position:relative;
-            right: -30px;
+            
             
         }
         .p2{
-            position:relative;
-            left: -30px;
+            
             text-align: left;
             flex-direction: column;
             margin-top: 4rem;
-            padding: 1.6em 1em;
+            padding: 1.6em 1em 1em;
             box-shadow: -6px -4px 15px #92B6C3;
             background: linear-gradient(270deg, #1a358600 , #92b6c380 30%, #92B6C3 60%);
         }
-        .cs1{
-            
-            align-self: center;
-            margin-left: -9%;
-        }
-        .cs2{
-            padding: 4rem!important;
-            gap: 4rem;
-            width: 80%;
-            align-self: flex-end;
-            padding: 4rem 2em 7rem 2rem ;
-        }
+       
         .card-section{
             @include dfc;
             background: linear-gradient(45deg, rgba(255, 255, 255, 0.25) , rgba(222, 222, 222, 0.639) 30%, rgba(216, 216, 216, 0.3) 50%, rgba(219, 219, 219, 0.736) 90%);
@@ -195,8 +187,21 @@ export default{
         
         
         }
+        .cs1{
+            
+            align-self: flex-start;
+            width: 80%;
+            
+        }
+        .cs2{
+            padding: 4rem;
+            gap: 4rem;
+            width: 80%;
+            align-self: flex-end;
+            padding: 4rem 2em 7rem 2rem ;
+        }
         .i2{
-            font-size: 6rem;
+            font-size: 4rem;
             text-shadow: 0 0 8px white;
         }
         .gp{
@@ -209,16 +214,17 @@ export default{
             }
         }
         .i2-1{
-            animation: i2 4700ms ease-in  infinite;
+            animation: i2 9s ease-in  infinite;
         }
         .i2-2{
-            animation: i2 4700ms ease-in 500ms infinite;
+            animation: i2 9s ease-in 700ms infinite;
         }
         .i2-3{
-            animation: i2 4700ms ease-in 1000ms infinite;
+            animation: i2 9s ease-in 1400ms infinite;
         }
         .iuser{
-            animation: useri2 4700ms ease-in 1500ms infinite;
+            font-size: 5rem;
+            animation: useri2 9s ease-in 2100ms infinite;
             text-shadow: 0 0 8px rgb(88, 210, 167);
         }
 
@@ -329,7 +335,7 @@ export default{
         
         
     }
-    20%{
+    14%{
         opacity:1;
         color: rgb(50, 179, 191);
     }
@@ -354,6 +360,50 @@ export default{
 }
 
 
+@media (max-width: 670px) {
+
+.container{
+.p1, .p2{
+    width: 80%!important;
+    padding: 1.5em .6em .6em!important;
+
+    span{
+        
+        font-size: 1.8rem!important;
+        line-height: 2.6rem!important;
+    }
+    }
+    .card-section{
+        padding: .3em 0 1.2em!important;
+        width: 90%!important;
+        align-self: center!important;
+    } 
+    .cs2{
+
+        gap: 1rem!important;
+        padding: .3em .1rem!important;
+    }       
+}
+#f1{
+    font-size: 3.2rem!important;
+}
+#sf1{
+    font-size: 2.2rem!important;
+    bottom: -40px!important;
+    left: 7px;
+
+}
+}
+@media (max-width: 470px) {
+
+.container{
+    .p1, .p2{
+        width: 100%!important;
+        font-size: 1rem;
+    }
+}
+
+}
 
 
 

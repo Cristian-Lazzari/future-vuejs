@@ -13,8 +13,11 @@ export default{
         p. iva:123123123123
     </div>
     <div class="social">
-        INSTAGRAM WHATSAPP FACEBOOK
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-whatsapp"></i>
     </div>
+
    </div>
 </template>
 
@@ -28,7 +31,7 @@ export default{
         right: 0;
         color: white;
         background: linear-gradient(rgba(1, 1, 1, 0),rgb(14, 6, 53));
-
+        font-family: 'Roboto Condensed', sans-serif;
         display: flex;
         align-content: center;
         justify-content: space-between;

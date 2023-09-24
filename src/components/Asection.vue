@@ -40,6 +40,7 @@ export default{
 
 
 .wave{
+    margin-top: -10px;
     background-image: url('../assets/img/wave-2.svg');
 }
 .section-a .container{
@@ -61,5 +62,30 @@ export default{
 
 p{
     font-size: 4rem;
+}
+@media (max-width: 670px) {
+    
+    .wave{
+        box-shadow: -50px -200px 5px $c-bg, 10px -200px 5px $c-bg;
+    }
+}
+@media (max-width: 470px) {
+    .wave{
+        box-shadow: -50px -100px 5px $c-bg, 10px -100px 5px $c-bg;
+    }
+   
+
+}
+@media (max-width:500px) {
+    .p1{
+        font-size: $d-title1-min;
+        
+    }
+}
+@media (max-width:390px) {
+    .p1{
+        font-size: $d-title3-min;
+        
+    }
 }
 </style>

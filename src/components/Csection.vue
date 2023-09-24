@@ -30,7 +30,7 @@ export default{
     .container{
         
         max-width: $m-w;
-        padding: 10rem 0;
+        padding: 10rem 1rem;
         margin: 0 auto;
         font-family: 'Roboto Condensed', sans-serif;
         display: flex;
@@ -59,7 +59,20 @@ export default{
     }
 
 }
+@media (max-width: 470px) {
 
+    .container{
+        h2{
+            font-size: $d-title3-min!important;
+            letter-spacing: 2px;
+        }
+        .p1{
+            font-size: 2rem!important;
+            margin: 1rem!important;
+        }
+    }
+
+}
 
 
 
