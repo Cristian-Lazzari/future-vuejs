@@ -239,8 +239,8 @@ export default{
         margin: 0 auto;
         height: 100%;
         h2{
-            font-size: $d-title1-max;
-            color: $c-f-az-op-med;
+            font-size: $d-title2-max;
+            color: $c-f-az-op;
             margin: 4rem 0 4rem 0;
             text-align: center;
             text-shadow: 5px 5px 13px rgb(29, 103, 103);
@@ -260,7 +260,7 @@ export default{
                 //background-color: rgba(206, 214, 229, 0.26);
                 box-shadow: 5px 5px 10px #303435, -5px -5px 10px #c8e7f7d6;
                 width: 400px;
-                height: 350px;
+                height: 400px;
                 border-radius: 32px;
                 padding: 2em;
                 display: flex;
@@ -272,10 +272,12 @@ export default{
                     display: flex;
                     justify-content: space-between;
                     h3{
+                        width: 83%;
                         font-size: 2.6rem;
                         text-shadow: 2px 2px 10px rgba(45, 46, 46, 0.79)
                     }
                     .ic{
+                        width: 17%;
                         font-size: $d-i-f-max;
                         text-shadow: 0px 0px 10px rgba(178, 247, 247, 0.79)
                     }
@@ -340,7 +342,6 @@ export default{
             display: flex;
             gap: .3rem;
             font-weight: bold;
-            white-space: nowrap;
             text-transform:capitalize;
     
         }
@@ -372,7 +373,7 @@ export default{
     }
 
 .med{
-    height: 480px!important;
+    height: 570px!important;
     .card{
 
         background: linear-gradient(135deg, rgb(28, 52, 237) 0%, rgb(71, 53, 136) 100%);
@@ -382,7 +383,7 @@ export default{
     }
 }
 .pro{
-    height: 520px!important;
+    height: 620px!important;
     .card{
 
         background: linear-gradient(135deg, rgb(171, 34, 216) 0%, rgb(48, 0, 220) 100%);
@@ -395,7 +396,7 @@ export default{
 
         .parent {
         width: 290px;
-        height: 440px;
+        height: 520px;
         perspective: 1000px;
         }
 
@@ -570,13 +571,16 @@ export default{
         transform: translate3d(0, 0, 100px);
         }
         #sta{
-            height: 600px;
+            height: 580px!important;
         }
         #med{
             height: 650px!important;
         }
         #pro{
             height: 700px!important;
+        }
+        .line{
+            white-space: wrap!important;
         }
 }
 @media (max-width: 470px) {
@@ -593,9 +597,6 @@ export default{
             font-size: $d-title1-min!important;
             letter-spacing: 2px;
         }
-    }
-    .line{
-        white-space: wrap!important;
     }
 
 }

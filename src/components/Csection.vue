@@ -59,6 +59,20 @@ export default{
     }
 
 }
+@media (max-width: 670px) {
+
+    .container{
+        h2{
+            font-size: $d-title2-min!important;
+            letter-spacing: 2px;
+        }
+        .p1{
+            font-size: 2rem!important;
+            margin: 1rem!important;
+        }
+    }
+
+}
 @media (max-width: 470px) {
 
     .container{

@@ -73,16 +73,15 @@ p{
     .wave{
         box-shadow: -50px -100px 5px $c-bg, 10px -100px 5px $c-bg;
     }
-   
-
-}
-@media (max-width:500px) {
     .p1{
         font-size: $d-title1-min;
         
     }
+   
+
 }
-@media (max-width:390px) {
+
+@media (max-width:370px) {
     .p1{
         font-size: $d-title4-min;
         
