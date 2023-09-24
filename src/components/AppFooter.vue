@@ -45,11 +45,16 @@ export default{
             @include dfc;
             gap: 1em;
             font-size: 2rem;
-            i{
-               
-            }
+           
         }
     }
-
+@media (max-width:500px) {
+    .footer{
+        justify-content: center;
+        .p-i{
+            display: none;
+        }
+    }
+}
 
 </style>
