@@ -160,8 +160,8 @@ export default{
         height: 75px;
         width: 300px;
     }
-    .section-1 .container .c-title h1{
-        font-size: 2.4rem;
+    .section-1 .container .c-title h2{
+        font-size: $d-title4-min;
     }
   
 }
@@ -171,8 +171,8 @@ export default{
         height: 75px;
         width: 300px;
     }
-    .section-1 .container .c-title h1{
-        font-size: 2.4rem;
+    .section-1 .container .c-title h2{
+        font-size: $d-title4-min;
     }
 
 
