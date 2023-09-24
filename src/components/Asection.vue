@@ -17,7 +17,7 @@ export default{
         <div class="wave"></div>
         <div class="container">
 
-            <h1 class="p1">Perche è necessario avere un sito web?</h1>
+            <h2 class="p1">Perche è necessario avere un sito web?</h2>
 
 
         </div>
