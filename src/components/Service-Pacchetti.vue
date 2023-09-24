@@ -571,21 +571,24 @@ export default{
         transform: translate3d(0, 0, 100px);
         }
         #sta{
-            height: 580px!important;
-        }
-        #med{
             height: 650px!important;
         }
-        #pro{
+        #med{
             height: 700px!important;
+        }
+        #pro{
+            height: 750px!important;
         }
         .line{
             white-space: wrap!important;
         }
 }
-@media (max-width: 470px) {
+@media (max-width: 490px) {
     .wave-2{
         box-shadow: -50px -100px 5px $c-bg-1, 10px -100px 5px $c-bg-1;
+    }
+    .container .feature{
+        height: 480px!important;
     }
     .p-container{
         h2{
