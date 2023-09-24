@@ -84,7 +84,7 @@ p{
 }
 @media (max-width:390px) {
     .p1{
-        font-size: $d-title3-min;
+        font-size: $d-title4-min;
         
     }
 }
