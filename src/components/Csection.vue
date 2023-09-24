@@ -37,7 +37,7 @@ export default{
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 4rem;
         h2{
             font-size: $d-title2-max;
             text-transform: uppercase;
