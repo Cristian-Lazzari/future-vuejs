@@ -195,13 +195,13 @@ export default{
         }
         .cs2{
             padding: 4rem;
-            gap: 4rem;
+            gap: 3rem;
             width: 80%;
             align-self: flex-end;
-            padding: 4rem 2em 7rem 2rem ;
+
         }
         .i2{
-            font-size: 4rem;
+            font-size: 2.8rem;
             text-shadow: 0 0 8px white;
         }
         .gp{
@@ -214,17 +214,17 @@ export default{
             }
         }
         .i2-1{
-            animation: i2 9s ease-in  infinite;
+            animation: i2 5s ease-in  infinite;
         }
         .i2-2{
-            animation: i2 9s ease-in 700ms infinite;
+            animation: i2 5s ease-in 700ms infinite;
         }
         .i2-3{
-            animation: i2 9s ease-in 1400ms infinite;
+            animation: i2 5s ease-in 1400ms infinite;
         }
         .iuser{
             font-size: 5rem;
-            animation: useri2 9s ease-in 2100ms infinite;
+            animation: useri2 5s ease-in 2100ms infinite;
             text-shadow: 0 0 8px rgb(88, 210, 167);
         }
 
