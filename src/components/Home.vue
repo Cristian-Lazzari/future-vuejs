@@ -46,7 +46,7 @@ export default{
     
 }
 .section-1 .container .c-title{
-    padding: 1.1rem 5.5rem 1.2rem;
+    padding: 1.1rem 5.8rem 1.2rem;
     text-align: center;
     position: relative;
     display: flex;
@@ -156,10 +156,9 @@ export default{
 
 @media (max-width: 670px) {
     .section-1 .container .c-title{
-        height: 75px;
-        width: 300px;
+
     }
-    .section-1 .container .c-title h2{
+    .section-1 .container .c-title div{
         font-size: $d-title4-min;
     }
   
@@ -167,10 +166,9 @@ export default{
 
 @media (max-width: 470px) {
     .section-1 .container .c-title{
-        height: 75px;
-        width: 300px;
+
     }
-    .section-1 .container .c-title h2{
+    .section-1 .container .c-title div{
         font-size: $d-title4-min;
     }
 
