@@ -9,7 +9,7 @@ export default{
 
 <template>
    <div class="footer">
-    <div class="p-i">
+    <div class="p-i"><h5>FUTURE +</h5>
         p. iva:123123123123
     </div>
     <div class="social">
@@ -31,14 +31,23 @@ export default{
         left: 0;
         right: 0;
         color: white;
-        background: linear-gradient(rgba(1, 1, 1, 0)20%,rgb(21, 4, 54));
+        background-color: rgba(0, 0, 0, 0.65);
         font-family: 'Roboto Condensed', sans-serif;
         display: flex;
         align-content: center;
         justify-content: space-between;
         padding: 2rem;
         .p-i{
+            font-size: 1.4rem;
             text-transform: uppercase;
+        }
+        .social{
+            @include dfc;
+            gap: 1em;
+            font-size: 2rem;
+            i{
+               
+            }
         }
     }
 

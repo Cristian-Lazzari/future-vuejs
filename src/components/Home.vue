@@ -21,7 +21,7 @@ export default{
             <div class="container">
      
                 <div class="c-title">
-                    <h1>Future +</h1>
+                    <div>Future +</div>
                 </div>
     
             </div>
@@ -46,8 +46,7 @@ export default{
     
 }
 .section-1 .container .c-title{
-    height: 90px;
-    width: 380px;
+    padding: 1.1rem 5.5rem 1.2rem;
     text-align: center;
     position: relative;
     display: flex;
@@ -58,9 +57,9 @@ export default{
     background-color: rgba(255, 255, 255, 0.1);
     z-index: 1200;
 }
-.section-1 .container .c-title h1{
+.section-1 .container .c-title div{
     font-family: 'Bukhari Script', sans-serif;
-    font-size: 4rem;  
+    font-size: 3rem;  
     display: inline;
     z-index: 1000;
     color: $c-white;

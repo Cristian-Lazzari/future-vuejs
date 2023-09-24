@@ -73,6 +73,7 @@ export default{
         <div class="wave-3"></div>
         <div class="p-container">
             <h2>Scopri i nostri Pacchetti</h2>
+            <h5 class="promo">Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al servizio ti REGALIAMO i primi 3 mesi di qualsiasi pacchetto tu scelga.</h5>
             <div class="p-cont">
             
                 <div id="sta" class="parent">
@@ -313,6 +314,12 @@ export default{
             text-align: center;
             text-shadow: 2px 2px 15px rgba(45, 46, 46, 0.79);
             text-transform: uppercase;
+        }
+        .promo{
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.316);
+            margin-bottom: 4rem;
         }
         .p-cont{
 
