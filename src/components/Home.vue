@@ -36,6 +36,7 @@ export default{
     height: 100%;
     position: relative;
     scroll-snap-align: start;
+    z-index: 5;
 }
 .section-1 .container{
     height: 100%;
@@ -69,88 +70,6 @@ export default{
 }
 
 
-.b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-6{
-    position: absolute;
-    z-index: 10;
-    transition: all ease-in-out 1s;
-    filter: blur(90px);
-
-    /* border-radius: 70px; */
-}
-.b-1:hover{
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-.b-2:hover{
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-.b-3:hover{
-    height: 170px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-.b-4:hover{
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-.b-5:hover{
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-.b-6:hover{
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-.b-1{
-    background-color: #5D0B53;
-    top: 30%;
-    left: 30%;
-    height: 200px;
-    width: 150px;
-    animation: loopb1 linear 7s infinite;
-}
-.b-2{
-    background-color: #7756D6;
-    top: 15%;
-    left: 15%;
-    height: 200px;
-    width: 150px;
-    animation: loopb2 linear 10s infinite;
-}
-.b-3{
-    background-color: #0656b8;
-    top: 5%;
-    left: 5%;
-    height: 200px;
-    width: 200px;
-}
-.b-4{
-    background-color: #04bdaa;
-    bottom: 30%;
-    right: 30%;
-    height: 300px;
-    width: 200px;
-}
-.b-5{
-    background-color: #7756D6;
-    bottom: 15%;
-    right: 15%;
-    height: 300px;
-    width: 250px;
-}
-.b-6{
-    background-color: #0656b8;
-    bottom: 5%;
-    right: 5%;
-    height: 200px;
-    width: 200px;
-}
 
 /* 
 @keyframes pulselogo {

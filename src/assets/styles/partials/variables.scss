@@ -18,7 +18,7 @@ $d-title1-max: 7rem;
 $d-title2-max: 6rem;
 $d-title1-min: 5rem;
 $d-title2-min: 4.5rem;
-$d-title3-min: 4.2rem;
+$d-title3-min: 3.1rem;
 
 $d-i-f-max: 60px;
 
@@ -53,7 +53,7 @@ $m-w: 1100px;
 /// 
  .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-6{
 position: absolute;
-z-index: 10;
+z-index: 50;
 transition: all ease-in-out 1s;
 filter: blur(90px);
 
@@ -263,17 +263,15 @@ width: 200px;
 
 @keyframes waves {
     0%{
-        transform: rotateX(0deg);       
+               
         transition: all linear 3s;
         
     }
     25%{
         
-        margin-top: 0px;
-
+        
     }
     50%{
-        transform: rotateX(-40deg);
         background-position: center;
 
     }
@@ -286,31 +284,29 @@ width: 200px;
     100%{
         
 
-        transform: rotateX(0deg);
+        
         background-position: right;
     }
     
    }
 @keyframes wave-2 {
     0%{
-        transform: rotateX(-30deg);
         background-position: left;
  
         
         
     }
     25%{
-        transform: rotateX(30deg);       
+               
         
         
     }
     50%{
-        
-        transform: rotateX(-30deg);       
+               
 
     }
     75%{
-        transform: rotateX(30deg);
+        
         
         
         
@@ -318,7 +314,6 @@ width: 200px;
     }
     100%{
     
-        transform: rotateX(-30deg);
         background-position: right;
     }
     

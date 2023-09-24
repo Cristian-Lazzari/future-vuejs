@@ -75,7 +75,7 @@ export default{
             <h2>Scopri i nostri Pacchetti</h2>
             <div class="p-cont">
             
-                <div class="parent">
+                <div id="sta" class="parent">
                     <div class="card">
                         <div class="logo">
                             
@@ -117,7 +117,7 @@ export default{
                         </div>
                     </div>
                 </div>
-                <div class="parent med">
+                <div id="med" class="parent med">
                     <div class="card">
                         <div class="logo">
                             
@@ -163,7 +163,7 @@ export default{
                         </div>
                     </div>
                 </div>
-                <div class="parent pro">
+                <div id="pro" class="parent pro">
                     <div class="card">
                         <div class="logo">
                             
@@ -349,22 +349,23 @@ export default{
     .price{
         text-shadow: 2px 2px 15px rgba(58, 61, 90, 0.9);
         font-size: 1.5rem;
+        text-transform: uppercase;
         .mese{
             font-weight: bold;
-            font-size: 2.7rem;
+            font-size: 3.6rem;
             text-shadow: 0 0 4px rgba(179, 175, 232, 0.849);
         }
         .anno{
             font-weight: bold;
-            font-size: 2.5rem;
+            font-size: 4rem;
             position: relative;
             .from{
                 font-size: 1.6rem;
                 text-decoration: line-through;
                 font-weight: normal;
                 position: absolute;
-                left: 60px;
-                top:-10px;
+                left: 90px;
+                top:-16px;
             }   
         }
 
@@ -440,7 +441,7 @@ export default{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap:.4em;
+        gap:.6em;
         justify-content: space-between;
         transform: translate3d(0, 0, 26px);
         }
@@ -567,6 +568,15 @@ export default{
 
         .parent:hover .card .logo .circle5 {
         transform: translate3d(0, 0, 100px);
+        }
+        #sta{
+            height: 600px;
+        }
+        #med{
+            height: 650px!important;
+        }
+        #pro{
+            height: 700px!important;
         }
 }
 @media (max-width: 470px) {

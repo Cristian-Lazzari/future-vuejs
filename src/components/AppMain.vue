@@ -34,9 +34,11 @@ export default{
 <style lang="scss" scoped >
    @use '../assets/styles/general.scss' as *;
    .container{
-    margin: 0;
+   
     width: 100%;
     color: $c-white;   
+    z-index: 2;
+    //overflow: hidden;
   }
 
 </style>
