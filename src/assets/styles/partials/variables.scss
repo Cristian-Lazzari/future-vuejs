@@ -8,10 +8,13 @@ $c-x-light-grey:#EBEAEA;
 $c-light-grey:#999999;
 $c-light-dgrey:#464646;
 $c-bg:rgb(124, 156, 179);
-$c-bg-1:rgb(178, 222, 237);
+//$c-bg-1:rgb(178, 222, 237);
+$c-bg-1:rgba(20, 23, 83, 0);
 $c-bg-2:rgb(150, 170, 224);
-$c-f-az-op: rgb(240, 254, 255);
-$c-f-az-op-med: rgba(181, 238, 249, 0.793);
+$c-f-az-op: rgba(236, 254, 255, 0.975);
+$c-f-az-op-med: rgba(37, 90, 101, 0.873);
+$c-p: rgba(187, 29, 201, 0.792);
+$c-p-s: rgba(217, 207, 229, 0.344);
 
 
 $d-title1-max:7rem;
@@ -241,11 +244,14 @@ width: 200px;
     width:100%;
     background-position: right;
     aspect-ratio: 2;
+
+    transform: translate( 0, -50%);
    
     
     box-shadow: -50px -300px 5px $c-bg-1, 10px -300px 5px $c-bg-1;
     
-    animation: waves ease-in-out 20s infinite;
+    animation: waves ease-in-out 27s infinite;
+    z-index: 100;
 }
 .wave-3{
 
@@ -253,12 +259,12 @@ width: 200px;
     background-repeat: no-repeat;
     width:100%;
     background-position: right;
-    aspect-ratio: 2.1;
+    aspect-ratio: 2.6;
    
     transform: rotateX(-30deg);
     
     
-    animation: wave-2 ease-in-out 23s infinite alternate;
+   // animation: wave-2 ease-in-out 23s infinite alternate;
 }
 
 

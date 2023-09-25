@@ -29,7 +29,7 @@ export default{
 
 
 .section-a{
-    background-color: rgb(178, 222, 237);
+    background-color: $c-bg-1;
     display: flex;
     flex-direction: column;
     

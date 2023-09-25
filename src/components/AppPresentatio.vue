@@ -20,12 +20,10 @@ export default{
  
 
     <div class="container">
-      <div class="sub-c">
-
-        <Asection />
-        <Bsection />
-        <Csection />
-      </div>
+      <Home />
+      <Asection />
+      <Bsection />
+      <Csection />
       <ServicePacchetti />
  
   
@@ -41,9 +39,6 @@ export default{
     color: $c-white;   
     z-index: 2;
     //overflow: hidden;
-    .sub-c{
-      background: linear-gradient(23deg,#4a82fa 5%, #6c32ad 30%, #3d62c5  63%);
-    }
   }
 
 </style>

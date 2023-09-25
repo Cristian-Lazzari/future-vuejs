@@ -98,23 +98,24 @@ export default{
         .p1{
             align-self: flex-end;
             align-items: center;
-            box-shadow: 6px -4px 15px #92B6C3;
+            box-shadow: 6px -4px 15px $c-p-s;
             padding: 1.6em 1em 1em;
             //padding: 3rem;
-            background: linear-gradient(90deg, #1a358600 , #92b6c392 30%, #92B6C3 60%);
+            background: linear-gradient(90deg, #1a358600 , $c-p);
             flex-direction: column;
             text-align: right;
             
             
         }
         .p2{
+            background: linear-gradient(270deg, #1a358600 , $c-p);
             
             text-align: left;
             flex-direction: column;
             margin-top: 4rem;
             padding: 1.6em 1em 1em;
-            box-shadow: -6px -4px 15px #92B6C3;
-            background: linear-gradient(270deg, #1a358600 , #92b6c380 30%, #92B6C3 60%);
+            box-shadow: -6px -4px 15px $c-p-s;
+         
         }
        
         .card-section{

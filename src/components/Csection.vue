@@ -30,7 +30,7 @@ export default{
     .container{
         
         max-width: $m-w;
-        padding: 10rem 1rem;
+        padding: 20rem 1rem;
         margin: 0 auto;
         font-family: 'Roboto Condensed', sans-serif;
         display: flex;

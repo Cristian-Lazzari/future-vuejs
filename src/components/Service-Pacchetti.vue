@@ -229,20 +229,20 @@ export default{
 
 .section-a{
     background: linear-gradient(23deg,#4a82fa 5%, #6c32ad 30%, #3d62c5  63%);
-    padding: 1rem 0 9rem 0;
+    padding: 0rem 0 9rem 0;
     font-family: 'Roboto Condensed', sans-serif;
         .wave-2{
             background-image: url('../assets/img/wave-3.svg');
         }
     .container{
-        padding: 2rem 0;
+        padding: 0rem 0;
         max-width: $m-w;
         margin: 0 auto;
         height: 100%;
         h2{
             font-size: $d-title2-max;
             color: $c-f-az-op;
-            margin: 4rem 0 4rem 0;
+            margin: 0rem 0 4rem 0;
             text-align: center;
             text-shadow: 5px 5px 13px rgb(29, 103, 103);
             text-transform: uppercase;
