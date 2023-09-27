@@ -591,7 +591,7 @@ export default {
   }
   .p-container {
     h2 {
-      font-size: $d-title1-min;
+      font-size: $d-title2-min;
     }
   }
   .container {
