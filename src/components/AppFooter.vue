@@ -36,15 +36,15 @@ export default{
         display: flex;
         align-content: center;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 15px;
         .p-i{
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             text-transform: uppercase;
         }
         .social{
             @include dfc;
             gap: 1em;
-            font-size: 2rem;
+            font-size: 1.7rem;
            
         }
     }

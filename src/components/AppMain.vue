@@ -3,6 +3,7 @@ import Asection from '../components/Asection.vue'
 import Bsection from '../components/Bsection.vue'
 import Csection from '../components/Csection.vue'
 import ServicePacchetti from '../components/Service-Pacchetti.vue'
+import Contatti from '../components/Contatti.vue'
 
 
 export default{
@@ -11,6 +12,7 @@ export default{
     Bsection,
     Csection,
     ServicePacchetti,
+    Contatti,
   }
 
 }
@@ -21,14 +23,16 @@ export default{
 
     <div class="container">
       <div class="sub-c">
-
+        
         <Asection />
         <Bsection />
         <Csection />
       </div>
       <ServicePacchetti />
+
+        <Contatti />
  
-  
+
     </div>
 
 </template>
