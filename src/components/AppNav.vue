@@ -28,21 +28,28 @@ export default {
 <template>
   <nav :class="{ white: scroll }">
     <ul class="flex">
-      <li>Home</li>
-      <li>Contacts</li>
-      <li>About</li>
+      <li> <a href="#home"> Home </a> </li>
+      <li> <a href="#why"> Perchè avere un sito? </a> </li>
+      <li> <a href="#servizi"> Servizi </a> </li>
+      <li> <a href="#pacchetti"> Pacchetti </a> </li>
+      <li> <a href="#contatti"> Contatti </a> </li>
     </ul>
   </nav>
 </template>
 
-<style>
+<style lang="scss" scoped>
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 5rem;
+  padding: 15px;
   box-shadow: -2px 21px 25px -21px rgb(248, 248, 248);
+  a{
+    text-decoration:none;
+    color:white;
+    font-weight: bolder;
+  }
 }
 
 .white {

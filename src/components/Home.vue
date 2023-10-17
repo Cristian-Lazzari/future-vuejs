@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <div class="section-1">
+  <div id="home" class="section-1">
     <div class="b-2"></div>
     <div class="b-3"></div>
     <div class="b-5"></div>

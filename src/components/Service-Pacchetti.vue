@@ -8,7 +8,7 @@ export default{
 </script>
 
 <template>
-    <div class="section-a">
+    <div id="servizi" class="section-a">
         <div class="wave-2"></div>
         <div class="container">
             <h2 class="top-title">Scopri i nostri servizi</h2>
