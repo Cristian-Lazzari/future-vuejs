@@ -68,159 +68,198 @@ export default{
             </div>
             
         </div>
+        <div class="feature card-sef">
+          <div class="blob-sef"></div>
+          <div class="bg-sef">
+            <div class="top">
+              <h3>Pannello di amministrazione</h3>
+              <span class="material-symbols-outlined ic">empty_dashboard</span>
+            </div>
+            <p>
+              Oltre a garantirti una presenza online impeccabile creeremo per te
+              una Dashboard con accesso privato in cui puoi monitorare e gestire
+              i dati della tua pagina
+            </p>
+          </div>
+        </div>
+        <div class="feature card-sef">
+          <div class="blob-sef"></div>
+          <div class="bg-sef">
+            <div class="top">
+              <h3>Prenotazione servizi online</h3>
+              <span class="material-symbols-outlined ic"
+                >confirmation_number</span
+              >
+            </div>
+            <p>
+              Permette ai tuoi clienti di inviare una prenotazione di un tuo
+              servizio direttamente dal sito web alla tuo pannello di
+              amministrazione
+            </p>
+          </div>
+        </div>
+        <div class="feature card-sef">
+          <div class="blob-sef"></div>
+          <div class="bg-sef">
+            <div class="top">
+              <h3>Prenotazione prodotti online</h3>
+              <span class="material-symbols-outlined ic">shopping_bag</span>
+            </div>
+            <p>
+              Se la tua attività offre prodotti acquistabili su prenotazione ora
+              i tuoi clienti potranno prenotare il loro carrello di prodotti
+              direttamente dal sito web e tu potrai gestire tutte le tue
+              prenotazioni direttamente dal pannello di amministrazione
+            </p>
+          </div>
+        </div>
+        <div class="feature card-sef">
+          <div class="blob-sef"></div>
+          <div class="bg-sef">
+            <div class="top">
+              <h3>Qr Code</h3>
+              <span class="material-symbols-outlined ic">qr_code_scanner</span>
+            </div>
+            <p>
+              Creeremo per te un qr code personalizzato con logo della tua
+              azienda così che il tuo sito o i tuoi servizi siano sempre alla
+              portata di uno scatto
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-        <div class="wave-3"></div>
-        <div class="p-container">
-            <h2>Scopri i nostri Pacchetti</h2>
-            <h5 class="promo">Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al servizio ti REGALIAMO i primi 3 mesi di qualsiasi pacchetto tu scelga.</h5>
-            <div class="p-cont">
-            
-                <div id="sta" class="parent">
-                    <div class="card">
-                        <div class="logo">
-                            
-                            <span class="circle circle2"></span>
-                            <span class="circle circle3"></span>
-                            <span class="circle circle4">FUTURE +</span>
-                            
-
-                        </div>
-                        <div class="glass"></div>
-                        <div class="content">
-                            <div class="name">START</div>
-                            <div class="feat">
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Presenza Online</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Pannello Amministatore</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>QR Code</div>
-                            </div>
-
-                        </div>
-                        <div class="bottom price">
-                            <h4>Mensile</h4>
-                            <div class="mese">€49
-                            </div>
-                            <h4>Annuale</h4>
-                            <div class="anno">€299
-                                
-                                <div class="from">€588</div>
-                            </div>
-                            
-                        </div>
-                    </div>
+    <!-- <div class="wave-3"></div> -->
+    <div class="p-container">
+      <h2>Scopri i nostri Pacchetti</h2>
+      <h5 class="promo">
+        Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al
+        servizio ti REGALIAMO i primi 3 mesi di qualsiasi pacchetto tu scelga.
+      </h5>
+      <div class="p-cont">
+        <div id="sta" class="parent">
+          <div class="card">
+            <div class="logo">
+              <span class="circle circle2"></span>
+              <span class="circle circle3"></span>
+              <span class="circle circle4">FUTURE +</span>
+            </div>
+            <div class="glass"></div>
+            <div class="content">
+              <div class="name">START</div>
+              <div class="feat">
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Presenza
+                  Online
                 </div>
-                <div id="med" class="parent med">
-                    <div class="card">
-                        <div class="logo">
-                            
-                            <span class="circle circle2"></span>
-                            <span class="circle circle3"></span>
-                            <span class="circle circle4">FUTURE +</span>
-                            
-
-                        </div>
-                        <div class="glass"></div>
-                        <div class="content">
-                            <div class="name">MEDIUM</div>
-                            <div class="feat">
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Presenza Online</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Pannello Amministatore</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>QR Code</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Prenotazione Servizi Online</div>
-                            </div>
-                            
-                        </div>
-                        <div class="bottom price">
-                            <h4>Mensile</h4>
-                            <div class="mese">€69
-                            </div>
-                            <h4>Annuale</h4>
-                            <div class="anno">€499
-                                
-                                <div class="from">€828</div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Pannello
+                  Amministatore
                 </div>
-                <div id="pro" class="parent pro">
-                    <div class="card">
-                        <div class="logo">
-                            
-                            <span class="circle circle2"></span>
-                            <span class="circle circle3"></span>
-                            <span class="circle circle4">FUTURE +</span>
-                            
-                            
-                        </div>
-                        <div class="glass"></div>
-                        <div class="content">
-                            <div class="name">PREMIUM</div>
-                            <div class="feat">
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Presenza Online</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Pannello Amministatore</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>QR Code</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Prenotazione Servizi Online</div>
-                                <div class="line">
-                                    <span class="material-symbols-outlined">
-                                    done
-                                    </span>Prenotazione Prodotti Online</div>
-                            </div>
-
-                        </div>
-                        <div class="bottom price">
-                            <h4>Mensile</h4>
-                            <div class="mese">€89
-                            </div>
-                            <h4>Annuale</h4>
-                            <div class="anno">€599
-                                
-                                <div class="from">€1068</div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>QR Code
                 </div>
-     
+              </div>
+            </div>
+            <div class="bottom price">
+              <h4>Mensile</h4>
+              <div class="mese">€49</div>
+              <h4>Annuale</h4>
+              <div class="anno">
+                €299
+
+                <div class="from">€588</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="med" class="parent med">
+          <div class="card">
+            <div class="logo">
+              <span class="circle circle2"></span>
+              <span class="circle circle3"></span>
+              <span class="circle circle4">FUTURE +</span>
+            </div>
+            <div class="glass"></div>
+            <div class="content">
+              <div class="name">MEDIUM</div>
+              <div class="feat">
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Presenza
+                  Online
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Pannello
+                  Amministatore
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>QR Code
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span
+                  >Prenotazione Servizi Online
+                </div>
+              </div>
+            </div>
+            <div class="bottom price">
+              <h4>Mensile</h4>
+              <div class="mese">€69</div>
+              <h4>Annuale</h4>
+              <div class="anno">
+                €499
+
+                <div class="from">€828</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pro" class="parent pro">
+          <div class="card">
+            <div class="logo">
+              <span class="circle circle2"></span>
+              <span class="circle circle3"></span>
+              <span class="circle circle4">FUTURE +</span>
+            </div>
+            <div class="glass"></div>
+            <div class="content">
+              <div class="name">PREMIUM</div>
+              <div class="feat">
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Presenza
+                  Online
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Pannello
+                  Amministatore
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>QR Code
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span
+                  >Prenotazione Servizi Online
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span
+                  >Prenotazione Prodotti Online
+                </div>
+              </div>
+            </div>
+            <div class="bottom price">
+              <h4>Mensile</h4>
+              <div class="mese">€89</div>
+              <h4>Annuale</h4>
+              <div class="anno">
+                €599
+
+                <div class="from">€1068</div>
+              </div>
             </div>
             
         </div>
     </div>
-
-  
+  </div>
 </template>
 
 <style lang="scss" scoped >
