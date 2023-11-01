@@ -24,7 +24,7 @@ $d-title2-min: 3.55rem;
 $d-title3-min: 2.6rem;
 $d-title4-min: 2.3rem;
 
-$time-home-effect: 10s;
+$time-home-effect: 17s;
 $d-i-f-max: 60px;
 
 $m-w: 1100px;
@@ -303,19 +303,7 @@ $m-w: 1100px;
     z-index: 100;
 }
 
-.wave-3 {
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: right;
-    aspect-ratio: 2.6;
-
-    transform: rotateX(-30deg);
-
-
-    // animation: wave-2 ease-in-out 23s infinite alternate;
-}
 
 
 @keyframes waves {
@@ -366,37 +354,29 @@ $m-w: 1100px;
 
 .card-sef {
     position: relative;
-    z-index: 1111;
+    
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    ;
 }
 
 .bg-sef {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    z-index: 2;
-    background: rgba(127, 137, 189, 0.892);
-    backdrop-filter: blur(24px);
+  
+    background: rgba(127, 143, 220, 0.74);
+    backdrop-filter: blur(20px);
     border-radius: 27px;
     overflow: hidden;
-    padding: 1.5em;
+    padding: 1.8em;
 }
 
 .blob-sef {
     position: absolute;
-    z-index: 1;
     top: 50%;
     left: 50%;
-    width: 200px;
-    height: 200px;
+    height: 60%;
+    width: 60%; 
     border-radius: 50%;
     background-color: #00eeff;
     opacity: 1;

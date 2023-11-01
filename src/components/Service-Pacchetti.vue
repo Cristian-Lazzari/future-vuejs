@@ -7,21 +7,21 @@ export default {
 <template>
     <div id="servizi" class="section-a">
       <div class="wave-2"></div>
-      <div class="container">
+      <div id="servizi" class="container">
           <h2 class="top-title">Scopri i nostri servizi</h2>
           <div class="c-cont">
+
               <div class="feature card-sef">
+                <div class="blob-sef"></div>
                   <div class="bg-sef">
                       <div class="top">
                           <h3>Presenza Online</h3>
-                          <span class="material-symbols-outlined ic ">Devices
-                          </span>
+                          <span class="material-symbols-outlined ic ">Devices</span>
                       </div>
                       <p>Con ciò intendiamo un sito web sviluppatto interamente da zero da nostri developer per adattarsi in pieno alle esigenze del cliente e caricare al meglio ed istantaneamente ogni pagina</p>
                   </div>
-                  <div class="blob-sef"></div>
-                  
               </div>
+
               <div class="feature card-sef">
                   <div class="blob-sef"></div>
                   <div class="bg-sef">
@@ -32,6 +32,7 @@ export default {
                       <p>Oltre a garantirti una presenza online impeccabile creeremo per te una Dashboard con accesso privato in cui puoi monitorare e gestire i dati della tua pagina</p>
                   </div>
               </div>
+
               <div class="feature card-sef">
                   <div class="blob-sef"></div>
                   <div class="bg-sef">
@@ -63,78 +64,13 @@ export default {
                   </div>
               </div>
           </div>
-          <p>
-            Con ciò intendiamo un sito web sviluppatto interamente da zero da
-            nostri developer per adattarsi in pieno alle esigenze del cliente
-            e caricare al meglio ed istantaneamente ogni pagina
-          </p>
-        </div>
-        <div class="blob-sef"></div>
       </div>
-      <div class="feature card-sef">
-        <div class="blob-sef"></div>
-        <div class="bg-sef">
-          <div class="top">
-            <h3>Pannello di amministrazione</h3>
-            <span class="material-symbols-outlined ic">empty_dashboard</span>
-          </div>
-          <p>
-            Oltre a garantirti una presenza online impeccabile creeremo per te
-            una Dashboard con accesso privato in cui puoi monitorare e gestire
-            i dati della tua pagina
-          </p>
-        </div>
-      </div>
-      <div class="feature card-sef">
-        <div class="blob-sef"></div>
-        <div class="bg-sef">
-          <div class="top">
-            <h3>Prenotazione servizi online</h3>
-            <span class="material-symbols-outlined ic"
-              >confirmation_number</span
-            >
-          </div>
-          <p>
-            Permette ai tuoi clienti di inviare una prenotazione di un tuo
-            servizio direttamente dal sito web alla tuo pannello di
-            amministrazione
-          </p>
-        </div>
-      </div>
-      <div class="feature card-sef">
-        <div class="blob-sef"></div>
-        <div class="bg-sef">
-          <div class="top">
-            <h3>Prenotazione prodotti online</h3>
-            <span class="material-symbols-outlined ic">shopping_bag</span>
-          </div>
-          <p>
-            Se la tua attività offre prodotti acquistabili su prenotazione ora
-            i tuoi clienti potranno prenotare il loro carrello di prodotti
-            direttamente dal sito web e tu potrai gestire tutte le tue
-            prenotazioni direttamente dal pannello di amministrazione
-          </p>
-        </div>
-      </div>
-      <div class="feature card-sef">
-          <div class="blob-sef"></div>
-          <div class="bg-sef">
-            <div class="top">
-              <h3>Qr Code</h3>
-              <span class="material-symbols-outlined ic">qr_code_scanner</span>
-            </div>
-            <p>
-              Creeremo per te un qr code personalizzato con logo della tua
-              azienda così che il tuo sito o i tuoi servizi siano sempre alla
-              portata di uno scatto
-            </p>
-          </div>
-        </div>
+    
+          
     
 
-    <!-- <div class="wave-3"></div> -->
     <div class="p-container">
-      <h2>Scopri i nostri Pacchetti</h2>
+      <h2>Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
         Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al
         servizio ti REGALIAMO i primi 3 mesi di qualsiasi pacchetto tu scelga.
@@ -262,6 +198,7 @@ export default {
         </div>
       </div>
     </div>
+  </div>
   
 </template>
 
@@ -288,9 +225,7 @@ export default {
       text-shadow: 5px 5px 13px rgb(29, 103, 103);
       text-transform: uppercase;
     }
-    .c-cont .feature:nth-child(even) {
-      //border: 3px solid $c-white;
-    }
+  
     .c-cont {
       @include dfj;
       justify-content: center;
@@ -301,15 +236,15 @@ export default {
         //background-color: rgba(206, 214, 229, 0.26);
         box-shadow: 5px 5px 10px #303435, -5px -5px 10px #c8e7f7d6;
         width: 400px;
-        height: 400px;
+        padding: .5em;
         border-radius: 32px;
-        padding: 2em;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 1em;
-
+        
+        
         .top {
+          margin-bottom: 30px;
           display: flex;
           justify-content: space-between;
           h3 {
@@ -632,9 +567,7 @@ export default {
   .wave-2 {
     box-shadow: -50px -100px 5px $c-bg-1, 10px -100px 5px $c-bg-1;
   }
-  .container .feature {
-    height: 480px !important;
-  }
+ 
   .p-container {
     h2 {
       font-size: $d-title2-min;

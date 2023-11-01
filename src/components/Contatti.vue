@@ -46,7 +46,7 @@ export default {
     flex-direction: column;
     .contact{
       border: 2px solid white;
-      //width: 100px;
+      width: 170px;
       text-align: center;
       text-transform: uppercase;
       padding: 5px 40px;
