@@ -9,7 +9,7 @@ export default {
     actionScroll(event) {
       const scroll = window.scrollY;
       //   console.log(scroll);
-      if (scroll > 300) {
+      if (scroll > 800) {
         this.scroll = true;
       } else if (scroll == 0) {
         this.scroll = false;
@@ -27,17 +27,18 @@ export default {
 
 <template>
   <nav :class="{ white: scroll }">
-    <ul class="flex">
-      <li> <a href="#home"> Home </a> </li>
-      <li> <a href="#why"> Perchè avere un sito? </a> </li>
-      <li> <a href="#servizi"> Servizi </a> </li>
-      <li> <a href="#pacchetti"> Pacchetti </a> </li>
-      <li> <a href="#contatti"> Contatti </a> </li>
+    <ul class="flex" >
+      <li> <a :class="{ black: scroll }" href="#home"> Home </a> </li>
+      <li> <a :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a> </li>
+      <li> <a :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
+      <li> <a :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a> </li>
+      <li> <a :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
     </ul>
   </nav>
 </template>
 
 <style lang="scss" scoped>
+   @use '../assets/styles/general.scss' as *;
 nav {
   position: fixed;
   top: 0;
@@ -45,6 +46,8 @@ nav {
   right: 0;
   padding: 15px;
   box-shadow: -2px 21px 25px -21px rgb(248, 248, 248);
+  font-family: 'Roboto Condensed', sans-serif;
+  @include dfc;
   a{
     text-decoration:none;
     color:white;
@@ -53,7 +56,10 @@ nav {
 }
 
 .white {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.812);
+}
+.black {
+  color: black;
 }
 
 .flex {
