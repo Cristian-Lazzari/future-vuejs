@@ -79,70 +79,92 @@ export default {
     }
 }  */
 
-@keyframes loopb1 {
-  0% {
-    scale: 1;
-    top: 30%;
-    left: 30%;
-  }
-  30% {
-    scale: 1.05;
-    top: 35%;
-    left: 30%;
-  }
-  40% {
-    scale: 1;
-    top: 35%;
-    left: 32.5%;
-  }
-  50% {
-    scale: 1.06;
-    top: 32.5%;
-    left: 32.5%;
-  }
-  80% {
-    scale: 1;
-    top: 32.5%;
-    left: 27.5%;
-  }
-  90% {
-    scale: 1.05;
-    top: 30%;
-    left: 27.5%;
-  }
-  100% {
-    scale: 1;
-    top: 30%;
-    left: 30%;
-  }
+@keyframes moveb1{
+    0%{
+        left: 5%
+    }
+    50%{
+        left: 20%
+    }
+    100%{
+        left: 5%
+    }
 }
-@keyframes loopb2 {
-  0% {
-    scale: 1;
-    top: 15%;
-    left: 15%;
-  }
-  10% {
-    scale: 1.05;
-    top: 13%;
-    left: 15%;
-  }
-  50% {
-    scale: 1.05;
-    top: 20%;
-    left: 22%;
-  }
+@keyframes moveb2{
+    0%{
+        top:25%
+    }
+    50%{
+    
+    top:5%
+    }
+    100%{
+        top:25%
+    }
+}
+@keyframes moveb3{
+    0%{
+        top: 30%;
+    left: 30%;
+    }
+    25%{
+        top: 40%;
+        left: 40%;
+    }
+    50%{
+        top: 20%;
+    left: 20%;
 
-  90% {
-    scale: 1.05;
-    top: 13%;
-    left: 20.5%;
-  }
-  100% {
-    scale: 1;
-    top: 15%;
-    left: 15%;
-  }
+    }
+    100%{
+        top: 30%;
+    left: 30%;
+    }
+}
+@keyframes moveb4{
+    0%{
+        bottom: 30%;
+        right: 30%;
+    }
+    25%{
+        bottom: 40%;
+        right: 40%;
+    }
+    50%{
+        bottom: 20%;
+        right: 20%;
+    }
+    100%{
+        bottom: 30%;
+        right: 30%;
+    }
+}
+@keyframes moveb5{
+    0%{
+        bottom: 15%;
+        right: 15%;
+    }
+    50%{
+        bottom: 5%;
+    
+    }
+    100%{
+        bottom: 15%;
+        right: 15%;
+    }
+}
+@keyframes moveb6{
+    0%{
+        bottom: 5%;
+        right: 5%;
+    }
+    25%{
+        right: 15%;
+    }
+    100%{
+        bottom: 5%;
+        right: 5%;
+    }
 }
 
 @media (max-width: 670px) {
