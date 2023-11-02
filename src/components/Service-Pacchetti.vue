@@ -69,8 +69,8 @@ export default {
           
     
 
-    <div class="p-container">
-      <h2>Ecco i nostri Pacchetti</h2>
+    <div id="pacchetti" class="p-container">
+      <h2 >Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
         Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al
         servizio ti REGALIAMO i primi 3 mesi di qualsiasi pacchetto tu scelga.
@@ -269,13 +269,13 @@ export default {
 }
 
 .wave-3 {
-  background-image: url("../assets/img/wave-4.svg");
+  background-image: url("../assets/img/wave-3.svg");
 }
 
 .p-container {
   padding: 0 1rem;
   max-width: $m-w;
-  margin: 0 auto;
+  margin: 100px auto;
   height: 100%;
   h2 {
     font-size: $d-title1-max;
@@ -550,15 +550,7 @@ export default {
   .parent:hover .card .logo .circle5 {
     transform: translate3d(0, 0, 100px);
   }
-  #sta {
-    height: 650px !important;
-  }
-  #med {
-    height: 700px !important;
-  }
-  #pro {
-    height: 750px !important;
-  }
+ 
   .line {
     white-space: wrap !important;
   }
