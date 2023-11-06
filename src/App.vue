@@ -42,7 +42,7 @@ export default{
 
     <div class="container">
       <AppNav class="nav"/>
-      <div class="nav-mobile" @click="openmenu">
+      <div :class="side ? 'nav-mobile-on' : 'nav-mobile-off'" @click="openmenu">
         <div class="line"></div> <div class="line"></div> <div class="line"></div>
       </div>
       <div :class="side ? 'mobile-on' : 'mobile-off' ">
@@ -73,10 +73,33 @@ export default{
   .mobile-on{
     display: block;
     background-color: rgba(255, 255, 255, 0.929);
-    
     position: fixed;
     inset: 0;
     z-index: 1112!important;
+    .flex{
+      @include dfc;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      padding: 20% 0 30%;
+      li{
+        a{
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 25px;
+          font-weight: bolder;
+          color: black;
+          text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.623);
+        }
+        a:active{
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 30px;
+          font-weight: bolder;
+          color: rgb(255, 255, 255);
+          text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.623);
+          user-select: none;
+        }
+      }
+    }
   }
   .mobile-off{
     display: none;
@@ -86,19 +109,39 @@ export default{
   .nav{
     display: none !important;
   }
-  .nav-mobile{
+  .nav-mobile-on{
   @include dfc;
   position: fixed;
   z-index: 1113 !important;
   flex-direction: column;
   
   gap: 6px;
-  top: 5px;
-  right: 5px;
+  top: 30px;
+  right: 30px;
 
   .line{
     height: 3px;
-    width: 25px;
+    width: 27px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px black;
+  }
+  
+
+}
+  .nav-mobile-off{
+  @include dfc;
+  position: fixed;
+  z-index: 1113 !important;
+  flex-direction: column;
+  
+  gap: 6px;
+  top: 30px;
+  right: 30px;
+
+  .line{
+    height: 3px;
+    width: 27px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 7px black;

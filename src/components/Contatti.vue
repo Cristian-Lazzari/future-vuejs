@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="contatti">
+  <div id="contatti" class="contatti">
     <div class="wave-2"></div>
     <div class="color"></div>
     <h3>contatti</h3>

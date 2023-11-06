@@ -15,7 +15,9 @@ export default{
     <div class="social">
         <i class="bi bi-instagram"></i>
         <i class="bi bi-facebook"></i>
-        <i class="bi bi-whatsapp"></i>
+        <a href="https://wa.me/3271622244">
+            <i class="bi bi-whatsapp"></i>
+        </a> 
     </div>
 
    </div>

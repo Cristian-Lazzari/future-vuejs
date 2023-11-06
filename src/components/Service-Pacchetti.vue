@@ -102,12 +102,12 @@ export default {
             </div>
             <div class="bottom price">
               <h4>Mensile</h4>
-              <div class="mese">€49</div>
+              <div class="mese">€59</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €299
+                €349
 
-                <div class="from">€588</div>
+                <div class="from">€708</div>
               </div>
             </div>
           </div>
@@ -142,12 +142,12 @@ export default {
             </div>
             <div class="bottom price">
               <h4>Mensile</h4>
-              <div class="mese">€69</div>
+              <div class="mese">€79</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €499
+                €599
 
-                <div class="from">€828</div>
+                <div class="from">€948</div>
               </div>
             </div>
           </div>
@@ -186,12 +186,12 @@ export default {
             </div>
             <div class="bottom price">
               <h4>Mensile</h4>
-              <div class="mese">€89</div>
+              <div class="mese">€99</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €599
+                €699
 
-                <div class="from">€1068</div>
+                <div class="from">€1188</div>
               </div>
             </div>
           </div>
