@@ -18,9 +18,9 @@ export default {
     <div class="b-6"></div>
 
     <div class="container">
-      <div class="c-title">
+
         <img src="../assets/img/logo.png" alt="">
-      </div>
+
     </div>
   </div>
 </template>
@@ -41,10 +41,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.c-title{
-    @include dfc;
-}
-.section-1 .container .c-title img {
+
+.section-1 .container  img {
     box-shadow: 0px 0px 10px white;
 
   position: relative;
@@ -54,6 +52,7 @@ export default {
   z-index: 1100;
   border-radius: 5px;
   width: 40%;
+  min-width: 250px;
  
   animation: pulselogo 3.3s ease-in-out infinite;
 }
