@@ -43,15 +43,17 @@ export default{
     <div class="container">
       <AppNav class="nav"/>
       <div :class="side ? 'nav-mobile-on' : 'nav-mobile-off'" @click="openmenu">
-        <div class="line"></div> <div class="line"></div> <div class="line"></div>
+        <div class="line l1"></div>
+        <div class="line l2"></div> 
+        <div class="line l3"></div>
       </div>
       <div :class="side ? 'mobile-on' : 'mobile-off' ">
         <ul class="flex" >
-          <li> <a :class="{ black: scroll }" href="#home"> Home </a> </li>
-          <li> <a :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a> </li>
-          <li> <a :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
-          <li> <a :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a> </li>
-          <li> <a :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
+          <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
+          <li> <a @click="openmenu" :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a> </li>
+          <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
+          <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a> </li>
+          <li> <a @click="openmenu" :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
         </ul>
       </div>
       <Home />
@@ -106,48 +108,61 @@ export default{
     
   }
   @media (max-width:600px) {
-  .nav{
-    display: none !important;
+    .nav{
+      display: none !important;
+    }
+    .nav-mobile-on{
+      @include dfc;
+      position: fixed;
+      z-index: 1113 !important;
+      flex-direction: column;
+      
+      gap: 6px;
+      top: 30px;
+      right: 30px;
+      
+      .line{
+        height: 3px;
+        width: 27px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 7px black;
+      }
+      .l1, .l2{
+        position: absolute;
+        transform: rotateZ(405deg);
+        transition: all .3s linear;
+      }
+      .l3{
+        position: absolute;
+        transform: rotateZ(-405deg);
+        transition: all .3s linear;
+      }
+      .l2{
+        box-shadow: 0px 0px 0px black;
+      }
+      
+    }
+    .nav-mobile-off{
+      @include dfc;
+      position: fixed;
+      z-index: 1113 !important;
+      flex-direction: column;
+      
+      gap: 6px;
+      top: 30px;
+      right: 30px;
+      
+      .line{
+        height: 3px;
+        width: 27px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 7px black;
+        transition: all .3s linear;
+      }
+      
+      
+    }
   }
-  .nav-mobile-on{
-  @include dfc;
-  position: fixed;
-  z-index: 1113 !important;
-  flex-direction: column;
-  
-  gap: 6px;
-  top: 30px;
-  right: 30px;
-
-  .line{
-    height: 3px;
-    width: 27px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 7px black;
-  }
-  
-
-}
-  .nav-mobile-off{
-  @include dfc;
-  position: fixed;
-  z-index: 1113 !important;
-  flex-direction: column;
-  
-  gap: 6px;
-  top: 30px;
-  right: 30px;
-
-  .line{
-    height: 3px;
-    width: 27px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 7px black;
-  }
-  
-
-}
-}
 </style>

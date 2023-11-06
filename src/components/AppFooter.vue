@@ -13,8 +13,12 @@ export default{
         p. iva:123123123123
     </div>
     <div class="social">
-        <i class="bi bi-instagram"></i>
+        <a href="https://www.instagram.com/cristian_lazzari_/?hl=it">
+            <i class="bi bi-instagram"></i>
+        </a>
+       
         <i class="bi bi-facebook"></i>
+        
         <a href="https://wa.me/3271622244">
             <i class="bi bi-whatsapp"></i>
         </a> 
@@ -47,6 +51,9 @@ export default{
             @include dfc;
             gap: 1em;
             font-size: 1.7rem;
+            a{
+                color: white;
+            }
            
         }
     }
