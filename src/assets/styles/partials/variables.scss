@@ -369,10 +369,12 @@ $m-w: 1100px;
     border-radius: 27px;
     overflow: hidden;
     padding: 1.8em;
+    z-index: 5;
 }
 
 .blob-sef {
     position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     height: 60%;
