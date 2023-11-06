@@ -48,6 +48,8 @@ nav {
   z-index: 1122 !important;
   box-shadow: -2px 21px 25px -21px rgb(122, 39, 39);
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgba(255, 255, 255, 0.283);
+
   @include dfc;
   gap: 1rem;
   a{
@@ -57,6 +59,10 @@ nav {
     color:rgb(255, 255, 255);
     font-weight: bolder;
   }
+}
+.nav-mobile{
+  display: none;
+
 }
 
 .white {
@@ -72,4 +78,5 @@ nav {
   gap: 2rem;
   list-style: none;
 }
+
 </style>
