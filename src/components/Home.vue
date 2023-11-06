@@ -44,7 +44,7 @@ export default {
 
 .section-1 .container  img {
     box-shadow: 0px 0px 10px white;
-
+    background-color: rgba(0, 0, 0, 0.343);
   position: relative;
   padding:10px 60px;
   border: 4px solid $c-white;
