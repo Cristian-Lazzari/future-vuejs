@@ -19,7 +19,7 @@ export default {
 
     <div class="container">
       <div class="c-title">
-        <div>Future +</div>
+        <img src="../assets/img/logo.png" alt="">
       </div>
     </div>
   </div>
@@ -36,29 +36,25 @@ export default {
 }
 .section-1 .container {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-1 .container .c-title {
-  padding: 1.1rem 5.8rem 1.2rem;
-  text-align: center;
+.c-title{
+    @include dfc;
+}
+.section-1 .container .c-title img {
+    box-shadow: 0px 0px 10px white;
+
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding:10px 60px;
   border: 4px solid $c-white;
-  box-shadow: 3px 3px 15px black;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: 1200;
-}
-.section-1 .container .c-title div {
-  font-family: "Bukhari Script", sans-serif;
-  font-size: 3rem;
-  display: inline;
-  z-index: 1000;
-  color: $c-white;
-  text-shadow: 4px 4px 6px black;
+
+  z-index: 1100;
+  border-radius: 5px;
+  width: 40%;
+ 
   animation: pulselogo 3.3s ease-in-out infinite;
 }
 
