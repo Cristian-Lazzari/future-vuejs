@@ -18,8 +18,8 @@ export default{
         </a>
        
         <i class="bi bi-facebook"></i>
-        
-        <a href="https://wa.me/3271622244">
+
+        <a href="https://wa.me/393271622244">
             <i class="bi bi-whatsapp"></i>
         </a> 
     </div>
