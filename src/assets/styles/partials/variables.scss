@@ -68,9 +68,9 @@ $m-w: 1100px;
     position: absolute;
     z-index: 50;
     transition: all ease-in-out 1s;
-    filter: blur(60px);
+    filter: blur(50px);
 
-    /* border-radius: 70px; */
+     border-radius: 70px; 
 }
 
 /*
@@ -113,11 +113,11 @@ $m-w: 1100px;
 
 
 .b-1 {
-    background-color: #5D0B53;
+    background-color: #4c1595;
     top: 30%;
     left: 30%;
-    height: 200px;
-    width: 150px;
+    height: 250px;
+    width: 200px;
     animation: moveb3 linear $time-home-effect infinite;
     position: absolute;
     z-index: 3;
