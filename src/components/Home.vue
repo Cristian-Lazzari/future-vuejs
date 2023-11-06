@@ -1,13 +1,10 @@
 <script>
-import AppNav from "./AppNav.vue";
 
 // import Bsection from './components/Bsection.vue'
 // import Csection from './components/Csection.vue'
 // import Dsection from './components/Dsection.vue'
 export default {
-  components: {
-    AppNav,
-  },
+
 };
 </script>
 
@@ -19,7 +16,7 @@ export default {
     <div class="b-4"></div>
     <div class="b-1"></div>
     <div class="b-6"></div>
-    <app-nav />
+
     <div class="container">
       <div class="c-title">
         <div>Future +</div>

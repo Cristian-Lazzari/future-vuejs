@@ -46,7 +46,7 @@ nav {
   right: 0;
   padding: 15px;
   z-index: 1122 !important;
-  box-shadow: -2px 21px 25px -21px rgb(248, 248, 248);
+  box-shadow: -2px 21px 25px -21px rgb(122, 39, 39);
   font-family: 'Roboto Condensed', sans-serif;
   @include dfc;
   gap: 1rem;
@@ -54,7 +54,7 @@ nav {
     position: relative;
     z-index: 100;
     text-decoration:none;
-    color:white;
+    color:rgb(255, 255, 255);
     font-weight: bolder;
   }
 }

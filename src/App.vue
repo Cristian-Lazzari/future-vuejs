@@ -2,6 +2,7 @@
 import Home from './components/Home.vue';
 import appMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppNav from "./components/AppNav.vue";
 
 // import Bsection from './components/Bsection.vue'
 // import Csection from './components/Csection.vue'
@@ -11,7 +12,8 @@ export default{
     Home,
     appMain,
     AppFooter,
-   
+    AppNav,
+
 
   }
 
@@ -22,6 +24,7 @@ export default{
  
 
     <div class="container">
+      <AppNav/>
       <Home />
       <appMain />
       <AppFooter />
