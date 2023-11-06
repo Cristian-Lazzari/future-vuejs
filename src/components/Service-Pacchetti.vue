@@ -229,6 +229,7 @@ export default {
     .c-cont {
       @include dfj;
       justify-content: center;
+      align-items: flex-start;
       flex-wrap: wrap;
       gap: 3.6em;
       padding: 1rem;
@@ -558,6 +559,12 @@ export default {
 @media (max-width: 490px) {
   .wave-2 {
     box-shadow: -50px -100px 5px $c-bg-1, 10px -100px 5px $c-bg-1;
+  }
+  .feature{
+    width: 100% !important;
+  }
+  .bg-sef{
+    width: 100% !important;
   }
  
   .p-container {
