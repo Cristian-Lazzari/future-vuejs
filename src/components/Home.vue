@@ -51,7 +51,8 @@ export default {
 
   z-index: 1100;
   border-radius: 15px;
-  width: 30%;
+  width: 60%;
+  max-width: 580px;
   min-width: 260px;
  
   animation: pulselogo 3.3s ease-in-out infinite;
