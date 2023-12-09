@@ -73,7 +73,7 @@ export default {
       <h2 >Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
         Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al
-        servizio ti REGALIAMO i primi 3 mesi di qualsiasi pacchetto tu scelga.
+        servizio ti REGALIAMO il primo mese di qualsiasi pacchetto tu scelga.
       </h5>
       <div class="p-cont">
         <div id="sta" class="parent">
@@ -145,7 +145,7 @@ export default {
               <div class="mese">€129</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €1099
+                €1099 
 
                 <div class="from">€1548</div>
               </div>

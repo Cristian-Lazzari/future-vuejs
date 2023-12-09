@@ -17,11 +17,11 @@ export default {
     <div class="b-1"></div>
     <div class="b-6"></div>
 
-    <div class="container">
+    <a class="container" href="#why">
 
         <img src="../assets/img/logo.png" alt="">
 
-    </div>
+    </a>
   </div>
 </template>
 
@@ -43,16 +43,16 @@ export default {
 }
 
 .section-1 .container  img {
-    box-shadow: 0px 0px 10px white;
-    background-color: rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 0px 10px white;
+  background-color: rgba(0, 0, 0, 0.21);
   position: relative;
-  padding:10px 60px;
-  border: 4px solid $c-white;
+  padding:15px 60px;
+  border: 8px solid $c-white;
 
   z-index: 1100;
-  border-radius: 5px;
-  width: 40%;
-  min-width: 250px;
+  border-radius: 15px;
+  width: 30%;
+  min-width: 230px;
  
   animation: pulselogo 3.3s ease-in-out infinite;
 }

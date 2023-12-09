@@ -10,7 +10,7 @@ export default{
 <template>
    <div class="footer">
     <div class="p-i"><h5>FUTURE +</h5>
-        p. iva:123123123123
+        p. iva:in apertura a gennaio 2024
     </div>
     <div class="social">
         <a href="https://www.instagram.com/cristian_lazzari_/?hl=it">
