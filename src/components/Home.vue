@@ -52,7 +52,7 @@ export default {
   z-index: 1100;
   border-radius: 15px;
   width: 30%;
-  min-width: 230px;
+  min-width: 260px;
  
   animation: pulselogo 3.3s ease-in-out infinite;
 }
@@ -72,17 +72,16 @@ export default {
 }  */
 
 
+
 @media (max-width: 670px) {
-  .section-1 .container .c-title {
-  }
+
   .section-1 .container .c-title div {
     font-size: $d-title4-min;
   }
 }
 
 @media (max-width: 470px) {
-  .section-1 .container .c-title {
-  }
+  
   .section-1 .container .c-title div {
     font-size: $d-title4-min;
   }

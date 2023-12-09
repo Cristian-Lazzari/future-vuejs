@@ -24,7 +24,7 @@ $d-title2-min: 3.55rem;
 $d-title3-min: 2.6rem;
 $d-title4-min: 2.3rem;
 
-$time-home-effect: 17s;
+$time-home-effect: 4s;
 $d-i-f-max: 60px;
 
 $m-w: 1100px;
@@ -73,43 +73,6 @@ $m-w: 1100px;
      border-radius: 70px; 
 }
 
-/*
-.b-1:hover {
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-
-.b-2:hover {
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-
-.b-3:hover {
-    height: 170px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-
-.b-4:hover {
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-
-.b-5:hover {
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-
-.b-6:hover {
-    height: 370px;
-    width: 260px;
-    transition: all linear 1s !important;
-}
-*/
 
 
 .b-1 {
@@ -118,7 +81,8 @@ $m-w: 1100px;
     left: 30%;
     height: 250px;
     width: 200px;
-    animation: moveb3 linear $time-home-effect infinite;
+    animation: pulseblob ease-in-out $time-home-effect infinite;
+    animation-delay: 2s;
     position: absolute;
     z-index: 65;
 }
@@ -129,7 +93,8 @@ $m-w: 1100px;
     left: 20%;
     height: 200px;
     width: 150px;
-    animation: moveb2 linear $time-home-effect infinite;
+    animation: pulseblob ease-in-out $time-home-effect infinite;
+    animation-delay: 1s;
     position: absolute;
     z-index: 10;
 }
@@ -140,7 +105,8 @@ $m-w: 1100px;
     left: 5%;
     height: 200px;
     width: 200px;
-    animation: moveb1 linear $time-home-effect infinite;
+    animation: pulseblob ease-in-out $time-home-effect infinite;
+    animation-delay: 0s;
     position: absolute;
     z-index: 50;
 }
@@ -151,7 +117,8 @@ $m-w: 1100px;
     right: 30%;
     height: 300px;
     width: 200px;
-    animation: moveb4 linear $time-home-effect infinite;
+    animation: pulseblob ease-in-out $time-home-effect infinite;
+    animation-delay: 3s;
     position: absolute;
     z-index: 25;
 }
@@ -162,7 +129,8 @@ $m-w: 1100px;
     right: 15%;
     height: 300px;
     width: 250px;
-    animation: moveb5 linear $time-home-effect infinite;
+    animation: pulseblob ease-in-out $time-home-effect infinite;
+    animation-delay: 4s;
     position: absolute;
     z-index: 20;
 }
@@ -173,10 +141,24 @@ $m-w: 1100px;
     right: 5%;
     height: 200px;
     width: 200px;
-    animation: moveb6 linear $time-home-effect infinite;
+    animation: pulseblob ease-in-out $time-home-effect infinite;
+    animation-delay: 5s;
     position: absolute;
     z-index: 9;
 }
+
+@keyframes pulseblob {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
 @media (max-width:600px) {
     .b-5, .b-2{
         display: none;
