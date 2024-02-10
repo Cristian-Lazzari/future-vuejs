@@ -10,7 +10,11 @@ export default{
 <template>
    <div class="footer">
     <div class="p-i"><h5>FUTURE +</h5>
-        p. iva: 02974730422
+       
+        <p>
+            p. iva: 02974730422
+        </p>
+        <a href="https://www.iubenda.com/privacy-policy/16412600/legal"> Privacy policy</a>
 
     </div>
     <div class="social">
@@ -47,6 +51,10 @@ export default{
         .p-i{
             font-size: 1.2rem;
             text-transform: uppercase;
+            a{
+                color: white
+
+            }
         }
         .social{
             @include dfc;
