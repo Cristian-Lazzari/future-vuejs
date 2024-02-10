@@ -51,10 +51,8 @@ export default {
 
   z-index: 1100;
   border-radius: 15px;
-  width: 60%;
-  max-width: 580px;
-  min-width: 260px;
- 
+  width: clamp(300px, 60%, 500px);
+
   animation: pulselogo 3s ease-out infinite;
 }
 
@@ -73,18 +71,10 @@ export default {
 }  
 
 
-
-@media (max-width: 670px) {
-
-  .section-1 .container .c-title div {
-    font-size: $d-title4-min;
+@media only screen and (max-device-width: 480px) {
+  .section-1 .container  img {
+    padding: 10px 50px;
+  } 
   }
-}
 
-@media (max-width: 470px) {
-  
-  .section-1 .container .c-title div {
-    font-size: $d-title4-min;
-  }
-}
 </style>
