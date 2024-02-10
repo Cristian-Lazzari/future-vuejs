@@ -57,6 +57,16 @@ export default {
                   <div class="blob-sef"></div>
                   <div class="bg-sef">
                       <div class="top">
+                          <h3>Crezione di Post</h3>
+                          <span class="material-symbols-outlined ic ">post_add</span>
+                      </div>
+                      <p>Nella tua Web-App non può mancare una sezione dove postare novià, pomozioni, chiusure o qualsiasi altra notiza tu voglia dare ai tuoi clienti riguardo alla tua attività</p>
+                    </div>
+              </div>
+              <div class="feature card-sef">
+                  <div class="blob-sef"></div>
+                  <div class="bg-sef">
+                      <div class="top">
                           <h3>Qr Code</h3>
                           <span class="material-symbols-outlined ic ">qr_code_scanner</span>
                       </div>
@@ -215,11 +225,11 @@ export default {
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
-                  >Prenotazione Servizi Online
+                  >Prenotazione SERVIZI Online
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
-                  >Prenotazione Prodotti Online
+                  >Prenotazione prodotti Online
                 </div>
               </div>
             </div>
@@ -314,7 +324,7 @@ export default {
 
 .p-container {
   padding: 0 1rem;
-  max-width: $m-w;
+
   margin: 100px auto;
   height: 100%;
   h2 {
