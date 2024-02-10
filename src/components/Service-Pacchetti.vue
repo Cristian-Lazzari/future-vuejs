@@ -18,7 +18,7 @@ export default {
                           <h3>Presenza Online</h3>
                           <span class="material-symbols-outlined ic ">Devices</span>
                       </div>
-                      <p>Con ciò intendiamo un sito web sviluppatto interamente da zero da nostri developer per adattarsi in pieno alle esigenze del cliente e caricare al meglio ed istantaneamente ogni pagina</p>
+                      <p>Configureremo la tua presenza online da 0, garantendoti una Web-App peronalizzata, fluida, veloce e compatibile con tutti i dispositivi. Inoltre ci occuperemo noi della gestione e dell'approvigionamento dei servi terzi necessari per ogni sito web (dominio, hosting...)</p>
                   </div>
               </div>
 
@@ -29,7 +29,7 @@ export default {
                           <h3>Pannello di amministrazione</h3>
                           <span class="material-symbols-outlined ic">empty_dashboard</span>
                       </div>
-                      <p>Oltre a garantirti una presenza online impeccabile creeremo per te una Dashboard con accesso privato in cui puoi monitorare e gestire i dati della tua pagina</p>
+                      <p>Oltre a garantirti una presenza online impeccabile configureremo per te una Dashboard con accesso privato in cui potrai monitorare e gestire i dati della tua pagina</p>
                   </div>
               </div>
 
@@ -40,7 +40,7 @@ export default {
                           <h3>Prenotazione servizi online</h3>
                           <span class="material-symbols-outlined ic">confirmation_number</span>
                       </div>
-                      <p>Permette ai tuoi clienti di inviare una prenotazione di un tuo servizio direttamente dal sito web alla tuo pannello di amministrazione</p>
+                      <p>Potrai permettere ai tuoi clienti di prenotare un tuo servizio direttamente dal sito web ricevendo istantaneamente la prenotazione sul tuo pannello di amministrazione</p>
                   </div>
               </div>
               <div class="feature card-sef">
@@ -50,7 +50,7 @@ export default {
                           <h3>Prenotazione prodotti online</h3>
                           <span class="material-symbols-outlined ic ">shopping_bag</span>
                       </div>
-                      <p>Se la tua attività offre prodotti acquistabili su prenotazione ora i tuoi clienti potranno prenotare il loro carrello di prodotti direttamente dal sito web e tu potrai gestire tutte le tue prenotazioni direttamente dal pannello di amministrazione</p>
+                      <p>Se ad esempio la tua attività è un locale o un ristorante, potrai permettere ai tuoi clienti di prenotare un "carrello" di prodotti personalizzabili (togliendo/aggiungiendo ingredeinti se possibile), per offrire un servizio di asporto o di consegna a domicilio, con eventuale pagamento alla consegna/ritiro</p>
                   </div>
               </div>
               <div class="feature card-sef">
@@ -72,8 +72,7 @@ export default {
     <div id="pacchetti" class="p-container">
       <h2 >Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
-        Iscriverti a FUTURE + costa solo €200 e con il primo allaccio al
-        servizio ti REGALIAMO il primo mese di qualsiasi pacchetto tu scelga.
+        Solo fino al 15/03/2024 abbonandoti al nostro servizio ti OFFRIAMO 3 MESI DI PROVA GRATUITA.
       </h5>
       <div class="p-cont">
         <div id="sta" class="parent">
@@ -102,12 +101,12 @@ export default {
             </div>
             <div class="bottom price">
               <h4>Mensile</h4>
-              <div class="mese">€99</div>
+              <div class="mese">€49</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €699
+                €399
 
-                <div class="from">€1188</div>
+                <div class="from">€588</div>
               </div>
             </div>
           </div>
@@ -121,7 +120,7 @@ export default {
             </div>
             <div class="glass"></div>
             <div class="content">
-              <div class="name">MEDIUM</div>
+              <div class="name">MEDIUM <br> SERVICE</div>
               <div class="feat">
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span>Presenza
@@ -136,18 +135,58 @@ export default {
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
-                  >Prenotazione Servizi Online
+                  >Prenotazione SERVIZI Online
                 </div>
               </div>
             </div>
             <div class="bottom price">
               <h4>Mensile</h4>
-              <div class="mese">€129</div>
+              <div class="mese">€99</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €1099 
+                €799 
 
-                <div class="from">€1548</div>
+                <div class="from">€1068</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="med" class="parent med">
+          <div class="card">
+            <div class="logo">
+              <span class="circle circle2"></span>
+              <span class="circle circle3"></span>
+              <span class="circle circle4">FUTURE +</span>
+            </div>
+            <div class="glass"></div>
+            <div class="content">
+              <div class="name">MEDIUM <br> PRODUCT</div>
+              <div class="feat">
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Presenza
+                  Online
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Pannello
+                  Amministatore
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>QR Code
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span
+                  >Prenotazione PRODOTTI Online
+                </div>
+              </div>
+            </div>
+            <div class="bottom price">
+              <h4>Mensile</h4>
+              <div class="mese">€99</div>
+              <h4>Annuale</h4>
+              <div class="anno">
+                €899 
+
+                <div class="from">€1188</div>
               </div>
             </div>
           </div>
@@ -186,12 +225,12 @@ export default {
             </div>
             <div class="bottom price">
               <h4>Mensile</h4>
-              <div class="mese">€179</div>
+              <div class="mese">€129</div>
               <h4>Annuale</h4>
               <div class="anno">
-                €1699
+                €1199
 
-                <div class="from">€2148</div>
+                <div class="from">€1548</div>
               </div>
             </div>
           </div>

@@ -55,22 +55,22 @@ export default {
   max-width: 580px;
   min-width: 260px;
  
-  animation: pulselogo 3.3s ease-in-out infinite;
+  animation: pulselogo 3s ease-out infinite;
 }
 
-/* 
+
 @keyframes pulselogo {
     0%{
         scale: 1;
     }
-    36%{
-        scale: 1.03;
+    50%{
+        scale: 1.02;
     }
 
     100%{
         scale: 1;
     }
-}  */
+}  
 
 
 

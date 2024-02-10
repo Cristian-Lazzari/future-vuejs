@@ -41,7 +41,7 @@ export default{
 
 .wave{
     margin-top: -10px;
-    background-image: url('../assets/img/wave-2.svg');
+    background-image: url('../assets/img/wave-5.png');
 }
 .section-a .container{
     max-width: $m-w;

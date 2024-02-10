@@ -16,7 +16,7 @@ export default{
         <div class="container">
 
             <div class="p1">
-                <span id="txt" >per rimanere al passo con il progresso che sta affrantando la tua concorrenza</span>
+                <span id="txt" >per rimanere al passo con il progresso che la tua concorrenza sta già affrontando </span>
                 <div class="card-section cs1">
                 
                     <span id="f1" class="material-symbols-outlined conc c1 ">person 

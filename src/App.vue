@@ -59,6 +59,7 @@ export default{
       <Home />
       <appMain />
       <AppFooter />
+      
     </div>
 
 </template>

@@ -11,6 +11,7 @@ export default{
    <div class="footer">
     <div class="p-i"><h5>FUTURE +</h5>
         p. iva: 02974730422
+
     </div>
     <div class="social">
         <a href="https://www.instagram.com/cristian_lazzari_/?hl=it">
@@ -51,19 +52,13 @@ export default{
             @include dfc;
             gap: 1em;
             font-size: 1.7rem;
+            margin-right: 50px;
             a{
                 color: white;
             }
            
         }
     }
-@media (max-width:500px) {
-    .footer{
-        justify-content: center;
-        .p-i{
-            display: none;
-        }
-    }
-}
+
 
 </style>
