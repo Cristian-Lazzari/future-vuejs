@@ -82,7 +82,7 @@ export default {
     <div id="pacchetti" class="p-container">
       <h2 >Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
-        Solo fino al 15/03/2024 abbonandoti al nostro servizio ti OFFRIAMO 3 MESI DI PROVA GRATUITA.
+        Solo fino al 15/03/2024 abbonandoti al nostro servizio ti OFFRIAMO 1 MESE DI PROVA GRATUITA.
       </h5>
       <div class="p-cont">
         <div id="sta" class="parent">
@@ -144,6 +144,9 @@ export default {
                   <span class="material-symbols-outlined"> done </span>QR Code
                 </div>
                 <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Creazione Post
+                </div>
+                <div class="line">
                   <span class="material-symbols-outlined"> done </span
                   >Prenotazione SERVIZI Online
                 </div>
@@ -184,6 +187,9 @@ export default {
                   <span class="material-symbols-outlined"> done </span>QR Code
                 </div>
                 <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Creazione Post
+                </div>
+                <div class="line">
                   <span class="material-symbols-outlined"> done </span
                   >Prenotazione PRODOTTI Online
                 </div>
@@ -222,6 +228,9 @@ export default {
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span>QR Code
+                </div>
+                <div class="line">
+                  <span class="material-symbols-outlined"> done </span>Creazione Post
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
