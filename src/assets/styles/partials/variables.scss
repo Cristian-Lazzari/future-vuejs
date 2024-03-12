@@ -24,7 +24,7 @@ $d-title2-min: 3.55rem;
 $d-title3-min: 2.6rem;
 $d-title4-min: 2.3rem;
 
-$time-home-effect: 5s;
+$time-home-effect: 4s;
 $d-i-f-max: 60px;
 
 $m-w: 1100px;
@@ -65,8 +65,19 @@ $m-w: 1100px;
     position: absolute;
    
     transition: all ease-in-out 1s;
-    filter: blur(80px);
+    filter: blur(100px);
 
+}
+@media (min-width: 1350px) {
+    .b-1,
+.b-3,
+.b-4,
+    .b-6 {
+
+        filter: blur(250px) !important;
+    
+    }
+    
 }
 
 
@@ -86,6 +97,7 @@ $m-w: 1100px;
     left: 5%;
     height: 35vh;
     width: 30vw;
+    max-width: 850px;
     animation: pulseblob ease-in-out $time-home-effect infinite;
     position: absolute;
     z-index: 50;
@@ -95,8 +107,9 @@ $m-w: 1100px;
     background-color: #4c1595;
     top: 30%;
     left: 25%;
-    height: 20vh;
-    width: 25vw;
+    height: 23vh;
+    width: 28vw;
+    max-width: 850px;
     animation: pulseblob ease-in-out $time-home-effect infinite;
     border-radius: 100%;
     
@@ -112,6 +125,7 @@ $m-w: 1100px;
     right: 30%;
     height: 25vh;
     width: 20vw;
+    max-width: 850px;
     border-radius: 100%;
     animation: pulseblob ease-in-out $time-home-effect infinite;
     animation-delay: 2s;
@@ -127,6 +141,7 @@ $m-w: 1100px;
     right: 5%;
     height: 27vh;
     width: 30vw;
+    max-width: 850px;
     animation: pulseblob ease-in-out $time-home-effect infinite;
     animation-delay: 3s;
     position: absolute;
@@ -341,59 +356,3 @@ $m-w: 1100px;
 
 }
 
-.card-sef {
-    position: relative;
-    
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.bg-sef {
-  
-    background: rgba(127, 143, 220, 0.74);
-    backdrop-filter: blur(70px);
-    border-radius: 27px;
-    overflow: hidden;
-    padding: 1.8em;
-    z-index: 2;
-}
-
-.blob-sef {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    height: 60%;
-    width: 60%; 
-    border-radius: 50%;
-    background-color: #00eeff;
-    opacity: 1;
-    filter: blur(20px);
-    animation: blob-bounce 8s infinite ease-in-out;
-}
-
-
-@keyframes blob-bounce {
-    0% {
-        transform: translate(-100%, -100%) translate3d(-20%, -30%, 0);
-    }
-
-    25% {
-        transform: translate(-100%, -100%) translate3d(130%, 0, 0);
-    }
-
-    50% {
-        transform: translate(-100%, -100%) translate3d(130%, 130%, 0);
-    }
-
-    75% {
-        transform: translate(-100%, -100%) translate3d(-20%, 130%, 0);
-    }
-
-    100% {
-        transform: translate(-100%, -100%) translate3d(-20%, -30%, 0);
-    }
-}

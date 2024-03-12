@@ -46,7 +46,8 @@ export default{
     z-index: 2;
     //overflow: hidden;
     .sub-c{
-      background: linear-gradient(23deg,#4a82fa 5%, #6c32ad 30%, #3d62c5  63%);
+      background: linear-gradient(23deg, #6c32ad , #3d62c5 );
+      
     }
   }
 
