@@ -27,18 +27,20 @@ export default {
 
 <template>
   <nav :class="{ white: scroll }">
-    <ul class="flex" >
-      <li> <a :class="{ black: scroll }" href="#home"> Home </a> </li>
-      <li> <a :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a> </li>
-      <li> <a :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
-      <li> <a :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a> </li>
-      <li> <a :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
+    <ul class="flex">
+      <li><a :class="{ black: scroll }" href="#home"> Home </a></li>
+      <li>
+        <a :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a>
+      </li>
+      <li><a :class="{ black: scroll }" href="#servizi"> Servizi </a></li>
+      <li><a :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a></li>
+      <li><a :class="{ black: scroll }" href="#contatti"> Contatti </a></li>
     </ul>
   </nav>
 </template>
 
 <style lang="scss" scoped>
-   @use '../assets/styles/general.scss' as *;
+@use "../assets/styles/general.scss" as *;
 nav {
   position: fixed;
   top: 0;
@@ -47,22 +49,21 @@ nav {
   padding: 15px;
   z-index: 1122 !important;
   box-shadow: -2px 21px 25px -21px rgb(122, 39, 39);
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   background-color: rgba(255, 255, 255, 0.283);
 
   @include dfc;
   gap: 1rem;
-  a{
+  a {
     position: relative;
     z-index: 100;
-    text-decoration:none;
-    color:rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
   }
 }
-.nav-mobile{
+.nav-mobile {
   display: none;
-
 }
 
 .white {
@@ -78,5 +79,4 @@ nav {
   gap: 2rem;
   list-style: none;
 }
-
 </style>
