@@ -1,102 +1,135 @@
 <script>
 export default {
   components: {},
-  data(){
-    return{
-      typepay: 1
-    }
-  }
+  data() {
+    return {
+      typepay: 1,
+    };
+  },
 };
 </script>
 
 <template>
-    <div  class="section-a">
-      <div   class="wave-2"></div>
-      <h1 id="servizi" class="top-title">Scopri i nostri servizi</h1>
- 
-      <div  class="f-cont">
+  <div class="section-a">
+    <div class="wave-2"></div>
+    <h1 id="servizi" class="top-title">Scopri i nostri servizi</h1>
 
-            <div  class="feature ft-1">
-              <section>
-                <div class="text">
-                  <h2>Presenza Online</h2>
-                  <p>Configureremo la tua presenza online da 0, garantendoti una Web-App peronalizzata, fluida, veloce e compatibile con tutti i dispositivi. Inoltre ci occuperemo noi della gestione e dell'approvigionamento dei servi terzi necessari per ogni sito web (dominio, hosting...)</p>
-                  <div class="line"></div>
-                </div>
-                <img src="../assets/img/iph.png" alt="">
-              </section>
-            </div>
-            <div class="feature ft-2">
-              <section>
-                <div class="text">
-                  <h2>Pannello di controllo</h2>
-                  <p>Oltre a garantirti una presenza online impeccabile configureremo per te una Dashboard con accesso privato in cui potrai monitorare e gestire i dati della tua pagina e scegliere le tue disponibilità per impostare il sistema di prenotazione automatico</p>
-                  <div class="line"></div>
-                </div>
-                <img src="../assets/img/test.png" alt="">
-              </section>
-            </div>
-            <div class="feature ft-3">
-              <section>
-                <div class="text">
-                  <h2>Prenotazione servizi online</h2>
-                  <p>Potrai permettere ai tuoi clienti di prenotare un tuo servizio direttamente dal sito web ricevendo istantaneamente la prenotazione sul tuo pannello di amministrazione</p>
-                  <div class="line"></div>
-                </div>
-                <img src="../assets/img/f1.png" alt="">
-              </section>
-            </div>
-            <div class="feature ft-4">
-              <section>
-                <div class="text">
-                  <h2>Prenotazione prodotti online</h2>
-                  <p>Se ad esempio la tua attività è un locale o un ristorante, potrai permettere ai tuoi clienti di prenotare un "carrello" di prodotti personalizzabili (togliendo/aggiungiendo ingredeinti se possibile), per offrire un servizio di asporto o di consegna a domicilio, con eventuale pagamento alla consegna/ritiro</p>
-                  <div class="line"></div>
-                </div>
-                <img src="../assets/img/f2.png" alt="">
-              </section>
-            </div>
-            <div class="feature ft-5">
-              <section>
-                <div class="text">
-                  <h2>Creazione di Post</h2>
-                  <p>Nella tua Web-App non può mancare una sezione dove postare novià, pomozioni, chiusure o qualsiasi altra notiza tu voglia dare ai tuoi clienti riguardo alla tua attività</p>
-                  <div class="line"></div>
-                </div>
-                <img src="../assets/img/f3.png" alt="">
-              </section>
-            </div>
-            <div class="feature ft-6">
-              <section>
-                <div class="text">
-                  <h2>Qr-code</h2>
-                  <p>Creeremo per la tua azienda un qr-code che possa raggiungiere o il tuo sito oppure una specifica pagina su cui ad esempio potresti avere l'elenco dei tuoi prodotti così che i tuoi clienti li possano sempre avere a disposizione</p>
-                  <div class="line"></div>
-                </div>
-                <img src="" alt="">
-              </section>
-            </div>
+    <div class="f-cont">
+      <div class="feature ft-1">
+        <section>
+          <div class="text">
+            <h2>Presenza Online</h2>
+            <p>
+              Configureremo la tua presenza online da 0, garantendoti una
+              Web-App peronalizzata, fluida, veloce e compatibile con tutti i
+              dispositivi. Inoltre ci occuperemo noi della gestione e
+              dell'approvigionamento dei servi terzi necessari per ogni sito web
+              (dominio, hosting...)
+            </p>
+            <div class="line"></div>
           </div>
-          
-     
-
-    
-           
-    
+          <img src="../assets/img/iph.png" alt="" />
+        </section>
+      </div>
+      <div class="feature ft-2">
+        <section>
+          <div class="text">
+            <h2>Pannello di controllo</h2>
+            <p>
+              Oltre a garantirti una presenza online impeccabile configureremo
+              per te una Dashboard con accesso privato in cui potrai monitorare
+              e gestire i dati della tua pagina e scegliere le tue disponibilità
+              per impostare il sistema di prenotazione automatico
+            </p>
+            <div class="line"></div>
+          </div>
+          <img src="../assets/img/test.png" alt="" />
+        </section>
+      </div>
+      <div class="feature ft-3">
+        <section>
+          <div class="text">
+            <h2>Prenotazione servizi online</h2>
+            <p>
+              Potrai permettere ai tuoi clienti di prenotare un tuo servizio
+              direttamente dal sito web ricevendo istantaneamente la
+              prenotazione sul tuo pannello di amministrazione
+            </p>
+            <div class="line"></div>
+          </div>
+          <img src="../assets/img/f1.png" alt="" />
+        </section>
+      </div>
+      <div class="feature ft-4">
+        <section>
+          <div class="text">
+            <h2>Prenotazione prodotti online</h2>
+            <p>
+              Se ad esempio la tua attività è un locale o un ristorante, potrai
+              permettere ai tuoi clienti di prenotare un "carrello" di prodotti
+              personalizzabili (togliendo/aggiungiendo ingredeinti se
+              possibile), per offrire un servizio di asporto o di consegna a
+              domicilio, con eventuale pagamento alla consegna/ritiro
+            </p>
+            <div class="line"></div>
+          </div>
+          <img src="../assets/img/f2.png" alt="" />
+        </section>
+      </div>
+      <div class="feature ft-5">
+        <section>
+          <div class="text">
+            <h2>Creazione di Post</h2>
+            <p>
+              Nella tua Web-App non può mancare una sezione dove postare novià,
+              pomozioni, chiusure o qualsiasi altra notiza tu voglia dare ai
+              tuoi clienti riguardo alla tua attività
+            </p>
+            <div class="line"></div>
+          </div>
+          <img src="../assets/img/f3.png" alt="" />
+        </section>
+      </div>
+      <div class="feature ft-6">
+        <section>
+          <div class="text">
+            <h2>Qr-code</h2>
+            <p>
+              Creeremo per la tua azienda un qr-code che possa raggiungiere o il
+              tuo sito oppure una specifica pagina su cui ad esempio potresti
+              avere l'elenco dei tuoi prodotti così che i tuoi clienti li
+              possano sempre avere a disposizione
+            </p>
+            <div class="line"></div>
+          </div>
+          <img src="" alt="" />
+        </section>
+      </div>
+      <div class="feature ft-7">
+        <section>
+          <div class="text">
+            <h2>E tu cosa aspetti?</h2>
+            <a href="#contatti">CONTATTACI</a>
+            <!-- <div class="line"></div> -->
+          </div>
+        </section>
+      </div>
+    </div>
 
     <div id="pacchetti" class="p-container">
-      <h2 >Ecco i nostri Pacchetti</h2>
+      <h2>Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
-        Solo fino al 15/03/2024 abbonandoti al nostro servizio ti OFFRIAMO 1 MESE DI PROVA GRATUITA.
+        Solo fino al 15/03/2024 abbonandoti al nostro servizio ti OFFRIAMO 1
+        MESE DI PROVA GRATUITA.
       </h5>
       <p>Scegli come pagare</p>
       <div class="radio-inputs">
         <label class="radio">
-          <input type="radio" name="radio" checked="" @click="typepay = true">
+          <input type="radio" name="radio" checked="" @click="typepay = true" />
           <span class="name">Annuale</span>
-        </label>      
-        <label class="radio" >
-          <input type="radio" name="radio" @click="typepay = false">
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio" @click="typepay = false" />
           <span class="name">Mensile</span>
         </label>
       </div>
@@ -127,16 +160,16 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€33,25</span> 
-                <span v-if="!typepay">€49</span> 
+                <span v-if="typepay">€33,25</span>
+                <span v-if="!typepay">€49</span>
                 <h4>al mese</h4>
               </div>
-              
+
               <div class="anno">
                 <span> totale annuo</span>
                 <span v-if="typepay"> €399</span>
                 <span v-if="!typepay"> €588</span>
-                                
+
                 <!-- <div class="from"></div> -->
               </div>
             </div>
@@ -151,7 +184,10 @@ export default {
             </div>
             <div class="glass"></div>
             <div class="content">
-              <div class="name">MEDIUM <br> SERVICE</div>
+              <div class="name">
+                MEDIUM <br />
+                SERVICE
+              </div>
               <div class="feat">
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span>Presenza
@@ -165,7 +201,8 @@ export default {
                   <span class="material-symbols-outlined"> done </span>QR Code
                 </div>
                 <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Creazione Post
+                  <span class="material-symbols-outlined"> done </span>Creazione
+                  Post
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
@@ -175,16 +212,16 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€66,58</span> 
-                <span v-if="!typepay">€89</span> 
+                <span v-if="typepay">€66,58</span>
+                <span v-if="!typepay">€89</span>
                 <h4>al mese</h4>
               </div>
-              
+
               <div class="anno">
                 <span> totale annuo</span>
                 <span v-if="typepay"> €799</span>
                 <span v-if="!typepay"> €1068</span>
-                           
+
                 <!-- <div class="from"></div> -->
               </div>
             </div>
@@ -199,7 +236,10 @@ export default {
             </div>
             <div class="glass"></div>
             <div class="content">
-              <div class="name">MEDIUM <br> PRODUCT</div>
+              <div class="name">
+                MEDIUM <br />
+                PRODUCT
+              </div>
               <div class="feat">
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span>Presenza
@@ -213,7 +253,8 @@ export default {
                   <span class="material-symbols-outlined"> done </span>QR Code
                 </div>
                 <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Creazione Post
+                  <span class="material-symbols-outlined"> done </span>Creazione
+                  Post
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
@@ -223,16 +264,16 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€74,91</span> 
-                <span v-if="!typepay">€99</span> 
+                <span v-if="typepay">€74,91</span>
+                <span v-if="!typepay">€99</span>
                 <h4>al mese</h4>
               </div>
-              
+
               <div class="anno">
                 <span> totale annuo</span>
                 <span v-if="typepay"> €899</span>
                 <span v-if="!typepay"> €1188</span>
-                                
+
                 <!-- <div class="from"></div> -->
               </div>
             </div>
@@ -261,7 +302,8 @@ export default {
                   <span class="material-symbols-outlined"> done </span>QR Code
                 </div>
                 <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Creazione Post
+                  <span class="material-symbols-outlined"> done </span>Creazione
+                  Post
                 </div>
                 <div class="line">
                   <span class="material-symbols-outlined"> done </span
@@ -275,16 +317,16 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€99,91</span> 
-                <span v-if="!typepay">€129</span> 
+                <span v-if="typepay">€99,91</span>
+                <span v-if="!typepay">€129</span>
                 <h4>al mese</h4>
               </div>
-              
+
               <div class="anno">
                 <span> totale annuo</span>
                 <span v-if="typepay"> €1199</span>
                 <span v-if="!typepay"> €1548</span>
-                       
+
                 <!-- <div class="from"></div> -->
               </div>
             </div>
@@ -293,14 +335,13 @@ export default {
       </div>
     </div>
   </div>
-  
 </template>
 
 <style lang="scss" scoped>
 @use "../assets/styles/general.scss" as *;
 
 .section-a {
-  background: linear-gradient(23deg, #041740 , #6c32ad ,);
+  background: linear-gradient(23deg, #041740, #6c32ad);
   padding: 0rem 0 25% 0;
   font-family: "Roboto Condensed", sans-serif;
   .wave-2 {
@@ -308,162 +349,178 @@ export default {
   }
 
   h1 {
-      font-size: $d-title2-max;
-      color: $c-f-az-op;
-      margin: -15% 0 10%;
-      text-align: center;
-      text-shadow: 0px 0px 18px rgba(194, 247, 255, 0.195);
-      text-transform: uppercase;
-    }
-    .f-cont::-webkit-scrollbar {
-      width: 8px;
-      
-    }
-    
-    .f-cont::-webkit-scrollbar-thumb {
-      width: 8px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.534);
-    }
-    .f-cont::-webkit-scrollbar-track {
-      width: 8px;
-      border-radius: 20px;
-      background: rgba(0, 0, 0, 0);
-    }
-    .f-cont::-webkit-scrollbar-thumb:hover {
-      width: 8px;
-      border-radius: 20px;
-      background-color:white;
+    font-size: $d-title2-max;
+    color: $c-f-az-op;
+    margin: -15% 0 10%;
+    text-align: center;
+    text-shadow: 0px 0px 18px rgba(194, 247, 255, 0.195);
+    text-transform: uppercase;
+  }
+  .f-cont::-webkit-scrollbar {
+    width: 8px;
+  }
 
-    }
-    .f-cont{
-      display: flex;
-      flex-direction: column;
-      scroll-snap-type: y mandatory;
-      overflow: auto;
-      width: 95%;
-      height: 60vh;
-      margin: 0 auto;
-      background-color: #2d0c5335;
-      border-radius: 20px;
-     
-      gap: 100%;
-      .ft-2, .ft-4, .ft-6{
-        section{
-          background: linear-gradient(23deg, #0742e44e,  #7c1cc6b9) !important;
-        }
-        justify-content: flex-end;
+  .f-cont::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.534);
+  }
+  .f-cont::-webkit-scrollbar-track {
+    width: 8px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+  }
+  .f-cont::-webkit-scrollbar-thumb:hover {
+    width: 8px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  .f-cont {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: #2d0c5335;
+    border-radius: 20px;
+
+    gap: 100%;
+    .ft-2,
+    .ft-4,
+    .ft-6 {
+      section {
+        background: linear-gradient(23deg, #0742e44e, #7c1cc6b9) !important;
       }
+      justify-content: flex-end;
+    }
 
-      .ft-3{
-        .line{
-          height: 55% !important;
-        }
+    .ft-3 {
+      .line {
+        height: 55% !important;
       }
-      .ft-6{
-        margin-bottom: 50%
-      }
-      .feature{
-        width: 100%;
-        scroll-snap-align: start;
-
-        @include dfa;
-        
-        section{
-          width: 91%;
-          background: linear-gradient(23deg, #6f0ebab7 , #0742e44f);
-          @include dfc;
-          padding:5% 5%;
-          gap: 30px;
-          justify-content: space-between;
-          box-shadow: 10px 10px 50px rgba(31, 2, 47, 0.585);
-          .text{
-            position: relative;
-            @include dfj;
-            flex-direction: column;
-            gap: 2rem;
-            font-size: clamp(18px, 4vw, 27px);
-            max-width: 25vw;
-            text-shadow: 0 0 18px rgba(255, 255, 255, 0.169);
-            h2{
-              font-family: "Kanit", sans-serif;
-              font-weight: 400;
-              font-style: normal;
-              line-height: 100%;
-            }
-            p{
-              max-width: 23vw;
-              
-              font-family: "Kodchasan", sans-serif;
-              font-weight: 400;
-              font-style: normal;
-              
-              font-size: clamp(15px, 2.3vw, 20px);
-              margin:0 0 0 8% ;
-              opacity: .7;
-
-
-            }
+    }
+    .ft-7 {
+      margin-bottom: 50%;
+      section {
+        width: 100% !important;
+        justify-content: center !important;
+        .text {
+          max-width: 100% !important;
+          text-align: center;
+          gap: 5rem !important;
+          h2 {
+            font-size: 2.4em;
+            font-weight: bold;
           }
-          .line{
-            position: absolute;
-            left: 0%;
-            bottom: 0;
-            height: 67%;
-            width: 4px;
-            background-color: white;
-          }
-          img{
-            width: 50%;
-            filter: drop-shadow(10px 0px 18px rgba(0, 0, 0, 0.617));
-            
-          }
-
         }
       }
-      .ft-1{
-        
+      a {
+        color: rgba(255, 255, 255, 0.856);
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.5rem 2.5rem;
+        border: 3px solid white;
+        border-radius: 8px;
+        align-self: center;
+        box-shadow: 12px 10px 20px rgba(0, 0, 0, 0.4001);
+      }
+    }
+    .feature {
+      width: 100%;
+      scroll-snap-align: start;
 
-        section{
+      @include dfa;
+
+      section {
+        width: 91%;
+        background: linear-gradient(23deg, #6f0ebab7, #0742e44f);
+        @include dfc;
+        padding: 5% 5%;
+        gap: 30px;
+        justify-content: space-between;
+        box-shadow: 10px 10px 50px rgba(31, 2, 47, 0.585);
+        .text {
           position: relative;
-          img{
-            width: 40% ;
-            max-width: 380px !important;
-            position: absolute;
-            bottom: 0;
-            right: 10%;
+          @include dfj;
+          flex-direction: column;
+          gap: 2rem;
+          font-size: clamp(18px, 4vw, 27px);
+          max-width: 25vw;
+          text-shadow: 0 0 18px rgba(255, 255, 255, 0.169);
+          h2 {
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 100%;
+          }
+          p {
+            max-width: 23vw;
+
+            font-family: "Kodchasan", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            font-size: clamp(15px, 2.3vw, 20px);
+            margin: 0 0 0 8%;
+            opacity: 0.7;
           }
         }
-      }
-      .ft-2{
+        .line {
+          position: absolute;
+          left: 0%;
+          bottom: 0;
+          height: 67%;
+          width: 4px;
+          background-color: white;
+        }
         img {
-          width: 40% ;
-          max-width: 500px;
+          width: 50%;
+          filter: drop-shadow(10px 0px 18px rgba(0, 0, 0, 0.617));
         }
       }
     }
+    .ft-1 {
+      section {
+        position: relative;
+        img {
+          width: 40%;
+          max-width: 380px !important;
+          position: absolute;
+          bottom: 0;
+          right: 10%;
+        }
+      }
+    }
+    .ft-2 {
+      img {
+        width: 40%;
+        max-width: 500px;
+      }
+    }
+  }
 }
 @media (max-width: 800px) {
-  .f-cont{
-    .feature{
-      section{
+  .f-cont {
+    .feature {
+      section {
         flex-direction: column !important;
         width: 100% !important;
-        img{
-          
+        img {
           width: 90% !important;
         }
-        .text{
+        .text {
           max-width: 95% !important;
-          p{
+          p {
             max-width: 100% !important;
-            
           }
         }
       }
     }
-    .ft-1{
-      img{
+    .ft-1 {
+      img {
         position: relative !important;
         right: 0 !important;
         width: 100% !important;
@@ -495,13 +552,11 @@ export default {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.316);
     margin-bottom: 4rem;
   }
-  p{
+  p {
     text-align: center;
   }
-  .radio-inputs{
-
+  .radio-inputs {
     margin: 2rem auto 4rem;
-
   }
   .p-cont {
     @include dfc;
@@ -514,7 +569,7 @@ export default {
   font-size: 3rem;
   font-weight: bolder;
   text-shadow: 2px 2px 15px rgba(58, 61, 90, 0.9);
-  margin-left: 10px ;
+  margin-left: 10px;
 }
 .feat {
   text-shadow: 2px 1px 10px rgba(58, 61, 90, 0.9);
@@ -542,7 +597,7 @@ export default {
     gap: 10px;
     justify-content: center;
     align-items: flex-end;
-    h4{
+    h4 {
       line-height: 250%;
       font-size: 1rem;
     }
@@ -743,7 +798,7 @@ export default {
   transform: translate3d(0, 0, 120px);
 }
 .radio-inputs {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   user-select: none;
   position: relative;
   display: flex;
@@ -754,7 +809,6 @@ export default {
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
   width: 220px;
-
 }
 
 .radio-inputs .radio {
@@ -774,9 +828,9 @@ export default {
   justify-content: center;
   border-radius: 0.5rem;
   border: none;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   color: rgba(51, 65, 85, 0.48);
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   margin: 0 !important;
 }
 
@@ -784,7 +838,6 @@ export default {
   color: rgba(51, 65, 85, 1);
   background-color: #fff;
   font-weight: 600;
-  
 }
 @media (max-width: 670px) {
   .wave-2 {
@@ -817,7 +870,7 @@ export default {
   .parent:hover .card .logo .circle5 {
     transform: translate3d(0, 0, 100px);
   }
- 
+
   .line {
     white-space: wrap !important;
   }
@@ -826,13 +879,13 @@ export default {
   .wave-2 {
     box-shadow: -50px -100px 5px $c-bg-1, 10px -100px 5px $c-bg-1;
   }
-  .feature{
+  .feature {
     width: 100% !important;
   }
-  .bg-sef{
+  .bg-sef {
     width: 100% !important;
   }
- 
+
   .p-container {
     h2 {
       font-size: $d-title2-min;
