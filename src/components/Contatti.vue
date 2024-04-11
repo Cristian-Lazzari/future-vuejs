@@ -160,7 +160,8 @@ export default {
     <div class="container">
       <!-- <div class="contact">mail</div>
       <span>futureplus.commerciale@gmail.com</span> -->
-      <div class="contact">telefono</div>
+
+      <a class="contact" href="tel:+393271622244">telefono</a>
       <span><a href="tel:+393271622244">+39 3271622244</a></span>
     </div>
 
@@ -301,6 +302,7 @@ export default {
     padding: 2rem;
     flex-direction: column;
     .contact {
+      color: white;
       border: 2px solid white;
       width: 170px;
       text-align: center;

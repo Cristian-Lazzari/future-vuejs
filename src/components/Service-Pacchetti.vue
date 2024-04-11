@@ -109,9 +109,11 @@ export default {
         <section>
           <div class="text">
             <h2>E tu cosa aspetti?</h2>
-            <a href="#contatti">CONTATTACI</a>
+            <a class="bt" href="#contatti">CONTATTACI</a>
             <!-- <div class="line"></div> -->
           </div>
+          <a href="#pacchetti" class="pack">SCOPRI I PACCHETTI</a>
+          <a href="#home" class="home">Torna alla Home</a>
         </section>
       </div>
     </div>
@@ -119,7 +121,7 @@ export default {
     <div id="pacchetti" class="p-container">
       <h2>Ecco i nostri Pacchetti</h2>
       <h5 class="promo">
-        Solo fino al 15/03/2024 abbonandoti al nostro servizio ti OFFRIAMO 1
+        Solo fino al 15/05/2024 abbonandoti al nostro servizio ti OFFRIAMO 1
         MESE DI PROVA GRATUITA.
       </h5>
       <p>Scegli come pagare</p>
@@ -402,7 +404,9 @@ export default {
       }
     }
     .ft-7 {
-      margin-bottom: 50%;
+      
+      margin-bottom: 10% !important;
+      position: relative ;
       section {
         width: 100% !important;
         justify-content: center !important;
@@ -416,16 +420,61 @@ export default {
           }
         }
       }
-      a {
+      .pack, .home{
+        color: white;
+        position: absolute;
+        bottom: 10px;
+      }
+      .home{
+        right: 10px;
+        font-size: clamp(14px, 2.3vw, 16px);
+        
+      }
+      .pack{
+        
+        font-size: clamp(14px, 2.3vw, 19px);
+        
+      }
+      .bt {
         color: rgba(255, 255, 255, 0.856);
+        font-family: "Kanit", sans-serif;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
-        padding: 0.5rem 2.5rem;
+        padding: 0.4rem 3.5rem;
         border: 3px solid white;
         border-radius: 8px;
         align-self: center;
-        box-shadow: 12px 10px 20px rgba(0, 0, 0, 0.4001);
+        box-shadow: 0px 10px 50px rgba(51, 6, 99, 0.99);
+        text-shadow: 0px 0px 10px rgba(246, 245, 245, 0.294);
+        animation: contpulse 5s ease-in infinite;
+        
+      }
+      @keyframes contpulse {
+        0%{
+          scale: 1;
+          text-shadow: 0px 0px 20px rgba(246, 245, 245, 0.725);
+        }
+        25%{
+          scale: 1.08;
+          text-shadow: 0px 0px 20px rgba(246, 245, 245, 0.494);
+          
+        }
+        50%{
+          scale: 1;
+          text-shadow: 0px 0px 20px rgba(228, 155, 247, 0.339);
+          
+        }
+        75%{
+          scale: 1.11;
+          text-shadow: 0px 0px 30px rgba(224, 237, 255, 0.841);
+          
+        }
+        100%{
+          scale: 1.0;
+          text-shadow: 0px 0px 20px rgba(247, 237, 247, 0.725);
+
+        }
       }
     }
     .feature {

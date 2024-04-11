@@ -98,23 +98,23 @@ export default{
         .p1{
             align-self: flex-end;
             align-items: center;
-            box-shadow: 6px -4px 15px $c-p-s;
+            box-shadow: 20px -10px 40px rgba(24, 10, 119, 0.256);
             padding: 1.6em 1em 1em;
             //padding: 3rem;
-            background: linear-gradient(90deg, #1a358600 , $c-p);
+            background: linear-gradient(90deg, #1a358600 , rgba(50, 27, 198, 0.652));
             flex-direction: column;
             text-align: right;
             
             
         }
         .p2{
-            background: linear-gradient(270deg, #1a358600 , $c-p);
+            background: linear-gradient(270deg, #1a358600 , rgba(189, 63, 164, 0.681));
             
             text-align: left;
             flex-direction: column;
             margin-top: 4rem;
             padding: 1.6em 1em 1em;
-            box-shadow: -6px -4px 15px $c-p-s;
+            box-shadow: -20px 10px 40px rgba(93, 12, 76, 0.236);
          
         }
        
