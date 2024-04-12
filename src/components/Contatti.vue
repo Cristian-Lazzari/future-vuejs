@@ -204,6 +204,9 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    max-width: 600px;
+    width: 90%;
+    
     .standard {
       color: white;
       border: 2px solid #e8e8e8;
