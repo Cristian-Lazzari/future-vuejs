@@ -1,8 +1,8 @@
 <script >
-import Home from './components/Home.vue';
-import appMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
-import AppNav from "./components/AppNav.vue";
+import Home from '../components/Home.vue';
+import appMain from '../components/AppMain.vue';
+import AppFooter from '../components/AppFooter.vue';
+import AppNav from "../components/AppNav.vue";
 
 // import Bsection from './components/Bsection.vue'
 // import Csection from './components/Csection.vue'
@@ -65,7 +65,7 @@ export default{
 </template>
 
 <style lang="scss" scoped >
-   @use './assets/styles/general.scss' as *;
+   @use '../assets/styles/general.scss' as *;
   .container{
   
     height: 100vh ;

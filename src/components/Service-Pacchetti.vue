@@ -174,6 +174,8 @@ export default {
 
                 <!-- <div class="from"></div> -->
               </div>
+              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click=" " >Avvia la prova gratuita</router-link>
+
             </div>
           </div>
         </div>
@@ -759,6 +761,12 @@ export default {
   gap: 0.6em;
   justify-content: space-between;
   transform: translate3d(0, 0, 26px);
+  position: relative;
+  .shop-btn{
+    width: 70%;
+    align-self: center;
+
+  }
 }
 
 .logo {

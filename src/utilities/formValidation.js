@@ -35,9 +35,7 @@ export function form_validations(formValues) {
   // Telefono
   if (!formValues.phone && (formValues.reply == 2 || formValues.reply == 3)) {
     errValid.push("Il campo 'N° 'telefono' è richiesto!");
-  } else if (formValues.phone.startsWith("+39")) {
-    errValid.push("Il 'N° 'telefono' non deve contenere il prefisso '+39'");
-  }
+  } 
 
   return errValid;
 }

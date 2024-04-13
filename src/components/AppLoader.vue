@@ -22,11 +22,11 @@ export default {
 <style lang="scss" scoped>
 $speed-of-animation: 0.9s;
 $gap: 6px;
-$first-color: white;
-$second-color: white;
-$third-color: white;
-$fourth-color: white;
-$fifth-color: white;
+$first-color: rgb(213, 239, 244);
+$second-color: rgb(139, 170, 209);
+$third-color: rgb(134, 139, 241);
+$fourth-color: rgb(206, 166, 233);
+$fifth-color: rgb(250, 219, 236);
 
 .loading {
   --speed-of-animation: #{$speed-of-animation};

@@ -15,7 +15,9 @@ $c-f-az-op: rgba(236, 254, 255, 0.975);
 $c-f-az-op-med: rgba(37, 90, 101, 0.873);
 $c-p: rgba(187, 29, 201, 0.792);
 $c-p-s: rgba(217, 207, 229, 0.344);
-
+$c-form: rgb(197, 215, 243);
+$c-form-f: rgb(109, 109, 109);
+$c-form-1: rgb(7, 4, 77);
 
 $d-title1-max: 7rem;
 $d-title2-max: 6rem;
@@ -29,7 +31,16 @@ $d-i-f-max: 60px;
 
 $m-w: 1100px;
 
-
+.shop-btn{
+    text-align: center;
+    background: linear-gradient(70deg, rgb(69, 3, 91), rgb(10, 10, 145) ) ;
+    padding: .4em 2em;
+    border-radius: 8px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.663);
+    box-shadow: 3px 3px 10px rgba(2, 0, 18, 0.555);
+    color: white;
+    
+}
 
 ///**MIXIN**///
 @mixin dfc {
@@ -79,7 +90,16 @@ $m-w: 1100px;
     }
     
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+/* Nascondi i controlli di tipo numero per Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 
 @media only screen and (max-device-width: 480px) {
     .b-1,
@@ -180,19 +200,24 @@ $m-w: 1100px;
 }
 
 
-/* 
-@keyframes pulselogo {
-0%{
-    scale: 1;
-}
-36%{
-    scale: 1.03;
-}
-
-100%{
-    scale: 1;
-}
-}  */
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .scroll::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgba(225, 220, 244, 0.613);
+  }
+  .scroll::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: rgba(6, 1, 16, 0.467);
+  }
+  .scroll::-webkit-scrollbar-thumb:hover {
+    border-radius: 20px;
+    background-color: rgb(136, 150, 221);
+    border: 2px solid rgba(255, 0, 0, 0);
+  }
 
 @keyframes loopb1 {
     0% {
@@ -356,3 +381,97 @@ $m-w: 1100px;
 
 }
 
+
+
+
+
+
+.form {
+    background: $c-form;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+      0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+      0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    width: clamp(290px, 50vw, 500px) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+    border-radius: 25px;
+
+    .label {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     height: -moz-fit-content;
+     height: fit-content;
+   }
+   .label:has(input:focus) .title {
+     top: 0;
+     left: 0;
+     color: $c-form-1;
+   }
+   .label .title {
+     padding: 0 10px;
+     transition: all 300ms;
+     font-size: 12px;
+     color: $c-form-f;
+     font-weight: 600;
+     width: -moz-fit-content;
+     width: fit-content;
+     top: 14px;
+     position: relative;
+     left: 15px;
+     background: $c-form;
+   }
+   .input-field {
+     width: auto;
+     height: 50px;
+     text-indent: 15px;
+     border-radius: 15px;
+     outline: none;
+     background-color: transparent;
+     border: 1px solid $c-form-f;
+     transition: all 0.3s;
+     caret-color: $c-form-1;
+     color: $c-form-1;
+   }
+}
+  
+  .form .input-field:hover {
+    border-color: $c-form-1;
+  }
+  
+  .form .input-field:focus {
+    border-color: $c-form-1;
+  }
+  
+  .form .checkout-btn {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    fill: #fff;
+    color: #fff;
+    border: 2px solid transparent;
+    background: $c-form-1;
+    transition: all 200ms;
+  }
+  .form .checkout-btn:active {
+    scale: 0.95;
+  }
+  
+  .form .checkout-btn:hover {
+    color: $c-form-1;
+    border: 2px solid $c-form-1;
+    background: transparent;
+  }
+  

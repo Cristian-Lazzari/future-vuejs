@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 
+import Home from "./pages/Home.vue";
 import ConsumersRegistration from "./pages/ConsumersRegistration.vue";
 
 const router = createRouter({
@@ -17,11 +18,7 @@ const router = createRouter({
       name: "ConsumersRegistration",
       component: ConsumersRegistration,
     },
-    {
-      path: "/conferma",
-      name: "conferma",
-      component: Conferma,
-    },
+
   ],
 });
 

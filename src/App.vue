@@ -25,18 +25,6 @@ body{
 }
 
 
-body::-webkit-scrollbar{
-  width: 10px;
-}
-body::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: $c-header;
-}
-body::-webkit-scrollbar-thumb:hover {
-  border-radius: 20px;
-  background-color: $c-nav-link;
-  border: 2px solid $c-header;
-    
-}
+
 
 </style>

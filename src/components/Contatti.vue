@@ -35,8 +35,8 @@ export default {
           store.baseUrl + "api/email",
           this.formValues
         );
-        if (!message) {
-          this.message = "Impossibile inviare il messaggio";
+        if (message.data.error) {
+          this.message = message.data.error;
           throw new Error("Impossibile inviare il messaggio");
         }
 
@@ -55,7 +55,10 @@ export default {
           reply: "1",
         };
       } catch (error) {
-        console.log("Errore: " + error.message);
+        this.loader = false
+        setTimeout(() => {
+          this.message = "";
+        }, 5000);
       }
     },
   },
@@ -99,7 +102,7 @@ export default {
         v-model="formValues.email"
       />
       <input
-        type="text"
+        type="number"
         class="standard"
         name="phone"
         placeholder="Telefono"
@@ -320,24 +323,7 @@ export default {
     }
   }
 
-  .loader_overlay {
-    background: rgba(0, 0, 0, 0.726);
-    position: fixed;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    z-index: 1000;
-
-    .loader_container {
-      color: white;
-      background-color: black;
-      padding: 2rem 4rem;
-      border: 1px solid white;
-      border-radius: 10px;
-    }
-  }
+ 
 }
 
 input:-webkit-autofill,
