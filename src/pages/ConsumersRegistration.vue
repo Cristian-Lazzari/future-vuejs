@@ -356,11 +356,9 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
             this.store.stepRegistration.b.address = this.consumersData[1].address
             this.store.stepRegistration.b.district = this.consumersData[1].district
             this.store.steps = 3
-            this.message = "Passaggio completato";
-            setTimeout(() => {
-              this.message = "";
-              this.loader= false
-            }, 2000);
+            //this.message = "Passaggio completato";
+            this.loader= false
+           
           }
         }else if(this.store.steps == 4){
           this.consumersDataError[2].service_time.mod = ''
@@ -380,7 +378,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
             this.store.stepRegistration.c.service_time.max_pz_q = this.consumersData[2].service_time.max_pz_q
             this.store.stepRegistration.c.service_time.max_pz_t = this.consumersData[2].service_time.max_pz_t       
             this.loader= false
-            setTimeout(() => {
+             setTimeout(() => {
               this.store.steps = 5
               this.message = "";
             }, 2000);
@@ -653,7 +651,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
               type="text"
               name="input-name"
               title="Input title"
-              placeholder="Inserici la tua città o della tua azienda"
+              placeholder="Inserici la città"
               v-model="consumersData[1].city"
               />
               <p>{{ consumersDataError[1].city }}</p>
@@ -995,9 +993,10 @@ filter: blur(130px) !important;
       border-radius: 17px;
       padding: 2.9em .4em ;
       z-index: 1;
-
+      font-size: clamp(12px, 2vw, 13px);
       
       .op-act{
+        font-size: clamp(13px, 2vw, 15px);
         background-color: $c-form-1;
         width: 90%;
         border-radius: 3px;

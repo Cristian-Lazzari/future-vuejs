@@ -1,4 +1,6 @@
 <script>
+import { store } from '../store';
+
 export default {
   components: {},
   data() {
@@ -174,7 +176,7 @@ export default {
 
                 <!-- <div class="from"></div> -->
               </div>
-              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click=" " >Avvia la prova gratuita</router-link>
+              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Avvia la prova gratuita</router-link>
 
             </div>
           </div>
@@ -225,9 +227,8 @@ export default {
                 <span> totale annuo</span>
                 <span v-if="typepay"> €799</span>
                 <span v-if="!typepay"> €1068</span>
-
-                <!-- <div class="from"></div> -->
               </div>
+              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Avvia la prova gratuita</router-link>
             </div>
           </div>
         </div>
@@ -277,9 +278,8 @@ export default {
                 <span> totale annuo</span>
                 <span v-if="typepay"> €899</span>
                 <span v-if="!typepay"> €1188</span>
-
-                <!-- <div class="from"></div> -->
               </div>
+              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Avvia la prova gratuita</router-link>
             </div>
           </div>
         </div>
@@ -330,9 +330,8 @@ export default {
                 <span> totale annuo</span>
                 <span v-if="typepay"> €1199</span>
                 <span v-if="!typepay"> €1548</span>
-
-                <!-- <div class="from"></div> -->
               </div>
+              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Avvia la prova gratuita</router-link>
             </div>
           </div>
         </div>

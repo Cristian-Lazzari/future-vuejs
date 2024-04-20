@@ -4,7 +4,7 @@
 
 
   export default {
-  
+    
   }
 </script>
 
@@ -25,6 +25,9 @@ body{
 }
 
 
-
+.autofilled{
+  border: 4px solid red;
+  background-color: red;
+}
 
 </style>
