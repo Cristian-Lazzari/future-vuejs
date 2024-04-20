@@ -5,7 +5,7 @@ export default {
   components: {},
   data() {
     return {
-      typepay: 1,
+      store,
     };
   },
 };
@@ -129,11 +129,11 @@ export default {
       <p>Scegli come pagare</p>
       <div class="radio-inputs">
         <label class="radio">
-          <input type="radio" name="radio" checked="" @click="typepay = true" />
+          <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
           <span class="name">Annuale</span>
         </label>
         <label class="radio">
-          <input type="radio" name="radio" @click="typepay = false" />
+          <input type="radio" name="radio" @click="store.typepay = 0" />
           <span class="name">Mensile</span>
         </label>
       </div>
@@ -164,15 +164,15 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€33,25</span>
-                <span v-if="!typepay">€49</span>
+                <span v-if="store.typepay">€33,<span style="font-size: 50%;">25</span></span>
+                <span v-if="!store.typepay">€49</span>
                 <h4>al mese</h4>
               </div>
 
               <div class="anno">
                 <span> totale annuo</span>
-                <span v-if="typepay"> €399</span>
-                <span v-if="!typepay"> €588</span>
+                <span v-if="store.typepay"> €399</span>
+                <span v-if="!store.typepay"> €588</span>
 
                 <!-- <div class="from"></div> -->
               </div>
@@ -218,15 +218,15 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€66,58</span>
-                <span v-if="!typepay">€89</span>
+                <span v-if="store.typepay">€66,<span style="font-size: 50%;">58</span></span>
+                <span v-if="!store.typepay">€89</span>
                 <h4>al mese</h4>
               </div>
 
               <div class="anno">
                 <span> totale annuo</span>
-                <span v-if="typepay"> €799</span>
-                <span v-if="!typepay"> €1068</span>
+                <span v-if="store.typepay"> €799</span>
+                <span v-if="!store.typepay"> €1068</span>
               </div>
               <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Avvia la prova gratuita</router-link>
             </div>
@@ -269,15 +269,15 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€74,91</span>
-                <span v-if="!typepay">€99</span>
+                <span v-if="store.typepay">€74,<span style="font-size: 50%;">91</span></span>
+                <span v-if="!store.typepay">€99</span>
                 <h4>al mese</h4>
               </div>
 
               <div class="anno">
                 <span> totale annuo</span>
-                <span v-if="typepay"> €899</span>
-                <span v-if="!typepay"> €1188</span>
+                <span v-if="store.typepay"> €899</span>
+                <span v-if="!store.typepay"> €1188</span>
               </div>
               <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Avvia la prova gratuita</router-link>
             </div>
@@ -321,15 +321,15 @@ export default {
             </div>
             <div class="bottom price">
               <div class="mese">
-                <span v-if="typepay">€99,91</span>
-                <span v-if="!typepay">€129</span>
+                <span v-if="store.typepay">€99,<span style="font-size: 50%;">91</span></span>
+                <span v-if="!store.typepay">€129</span>
                 <h4>al mese</h4>
               </div>
 
               <div class="anno">
                 <span> totale annuo</span>
-                <span v-if="typepay"> €1199</span>
-                <span v-if="!typepay"> €1548</span>
+                <span v-if="store.typepay"> €1199</span>
+                <span v-if="!store.typepay"> €1548</span>
               </div>
               <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Avvia la prova gratuita</router-link>
             </div>

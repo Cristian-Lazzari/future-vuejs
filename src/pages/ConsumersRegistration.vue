@@ -420,10 +420,10 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
               this.message = "Registrazione Dati generali avvenuta con successo!";
               setTimeout(() => {
                 this.message = "";
-                const newUrl = 'https://buy.stripe.com/14keYs9qFavKfE44gg';
+                
 
                 // Reindirizza l'utente all'URL specificato
-                window.location.href = newUrl;
+                window.location.href = store.pUrl[store.typepay][store.package];
               }, 3000);
             })
             .catch(error => {
@@ -1155,5 +1155,16 @@ filter: blur(130px) !important;
   background-color: rgb(199, 221, 243);
   color: $c-form-1 !important;
   border: 1px solid $c-form-1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* -webkit-background-clip: text; */
+  background-color: none !important;
+  -webkit-text-fill-color: none !important;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px rgba(0, 0, 255, 0.066) !important;
 }
 </style>

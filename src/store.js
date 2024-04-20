@@ -2,6 +2,24 @@ import { reactive } from "vue";
 
 export const store = reactive({
   baseUrl: "http://127.0.0.1:8000/",
+  typepay: 1,
+  pUrl:[
+    [
+      '',
+      'https://buy.stripe.com/3cs4jOgT7gU80JafZ3',
+      'https://buy.stripe.com/00g6rW46l7jy9fG8wC',
+      'https://buy.stripe.com/8wMg2w0U95bq63ueV1',
+      'https://buy.stripe.com/3cs7w0cCR47meA09AI'
+    ],
+    [
+      '',
+      'https://buy.stripe.com/bIY8A47ix1Ze1Ne8wA',
+      'https://buy.stripe.com/4gw9E86eteM02Ri9AD',
+      'https://buy.stripe.com/cN27w046lavKdvW4gi',
+      'https://buy.stripe.com/4gwcQkgT79rG2Ri9AB'
+    ],
+
+  ],
   //baseUrl: "https://dashboard.future-plus.it/",
   stepRegistration : {
     a : {

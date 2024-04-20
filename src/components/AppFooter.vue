@@ -18,7 +18,7 @@ export default{
 
     </div>
     <div class="social">
-        <a href="https://www.instagram.com/cristian_lazzari_/?hl=it">
+        <a href="https://www.instagram.com/future.plus_/?hl=it">
             <i class="bi bi-instagram"></i>
         </a>
        
