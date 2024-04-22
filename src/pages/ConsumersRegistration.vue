@@ -176,12 +176,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
               this.store.stepRegistration.a.email == this.consumersData[0].email 
               this.store.stepRegistration.a.phone == this.consumersData[0].phone 
 
-              this.consumersData[0] = {
-                firstName: "",
-                lastName: "",
-                email: "",
-                phone: "",
-              };
+           
               this.loader = false;
               this.message = "Registrazione Dati generali avvenuta con successo!";
               setTimeout(() => {
@@ -420,13 +415,13 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
               this.message = "Registrazione Dati generali avvenuta con successo!";
               setTimeout(() => {
                 this.message = "";
-                
-
-                // Reindirizza l'utente all'URL specificato
+    // Reindirizza l'utente all'URL specificato
                 window.location.href = store.pUrl[store.typepay][store.package];
               }, 3000);
             })
             .catch(error => {
+              this.loader= false;
+              this.message = 'c?è stato un errore nella fase3 di raccolta dati, ci dispiace riprovare piu tardi'
               console.error('Error uploading images:', error);
             });
         }
@@ -487,7 +482,14 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
           this.consumersData[3].images_menu.push(event.target.files[i]);
         }
         console.log(this.consumersData[3].images_menu)
-      }
+      },
+      stepselection(){
+        if(this.store.package >= 2){
+          this.store.steps = 4
+        }else{
+          this.store.steps = 6
+        }  
+      },
     },
     created(){
       
@@ -731,7 +733,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
          
 
 
-          <input @click="store.steps = 4" class="checkout-btn" type="button" value="Continua" />
+          <input @click="stepselection" class="checkout-btn" type="button" value="Continua" />
         </form>
       </section>    
       <section v-if="store.steps == 4 && store.package >= 2" class="d-step">

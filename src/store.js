@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-  //baseUrl: "http://127.0.0.1:8000/",
+  baseUrl: "http://127.0.0.1:8000/",
   typepay: 1,
   pUrl:[
     [
@@ -20,7 +20,7 @@ export const store = reactive({
     ],
 
   ],
-  baseUrl: "https://dashboard.future-plus.it/",
+  //baseUrl: "https://dashboard.future-plus.it/",
   stepRegistration : {
     a : {
       passed : false,
@@ -63,7 +63,7 @@ export const store = reactive({
     },
   },
   package : 4,
-  steps :1,
+  steps :6,
   pv : [
     "AG", // Agrigento
     "AL", // Alessandria
