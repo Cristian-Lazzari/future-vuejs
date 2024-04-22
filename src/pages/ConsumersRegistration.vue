@@ -874,10 +874,10 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
       <section v-if="store.steps == 6" class="b-step">
         <form class="form">
           <p class="crumbles"><span>4</span> - 4</p>
-          <label for="name" class="label l-s" v-if="store.package >=3 ">
+          <label for="name" class="label l-s">
             <span class="title">Scegli come ricevere i tuoi ordini </span>       
           </label>
-          <div class="select" v-if="store.package >=3 ">
+          <div class="select" >
             <span>Scegli come caricare il tuo menu</span>
             <div class="option" :class="menu== 1 ? 'op-act' : ''"
              @click="menu= 1">Link</div>

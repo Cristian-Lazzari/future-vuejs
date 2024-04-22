@@ -63,7 +63,7 @@ export const store = reactive({
     },
   },
   package : 4,
-  steps :6,
+  steps :1,
   pv : [
     "AG", // Agrigento
     "AL", // Alessandria
