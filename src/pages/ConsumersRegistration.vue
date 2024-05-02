@@ -421,7 +421,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
             })
             .catch(error => {
               this.loader= false;
-              this.message = 'c?è stato un errore nella fase3 di raccolta dati, ci dispiace riprovare piu tardi'
+              this.message = 'si è veificato un errore nella fase di raccolta dati, ci dispiace riprovare piu tardi'
               console.error('Error uploading images:', error);
             });
         }
