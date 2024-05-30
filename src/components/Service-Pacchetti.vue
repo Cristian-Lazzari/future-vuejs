@@ -83,8 +83,8 @@ export default {
           <div class="text">
             <h2>Creazione di Post</h2>
             <p>
-              Nella tua Web-App non può mancare una sezione dove postare novià,
-              pomozioni, chiusure o qualsiasi altra notiza tu voglia dare ai
+              Nella tua Web-App non può mancare una sezione dove postare novità,
+              promozioni, chiusure o qualsiasi altra notiza tu voglia dare ai
               tuoi clienti riguardo alla tua attività
             </p>
             <div class="line"></div>
@@ -104,7 +104,9 @@ export default {
             </p>
             <div class="line"></div>
           </div>
-          <img src="" alt="" />
+          <span class="material-symbols-outlined qr">
+          qr_code_2_add
+          </span>
         </section>
       </div>
       <div class="feature ft-7">
@@ -114,18 +116,21 @@ export default {
             <a class="bt" href="#contatti">CONTATTACI</a>
             <!-- <div class="line"></div> -->
           </div>
-          <a href="#pacchetti" class="pack">SCOPRI I PACCHETTI</a>
-          <a href="#home" class="home">Torna alla Home</a>
+          <div class="link">
+
+            <a href="#pacchetti" class="pack">SCOPRI I PACCHETTI</a>
+            <a href="#home" class="home">Torna alla Home</a>
+          </div>
         </section>
       </div>
     </div>
 
     <div id="pacchetti" class="p-container">
       <h2>Ecco i nostri Pacchetti</h2>
-      <h5 class="promo">
-        Solo fino al 15/05/2024 abbonandoti al nostro servizio ti OFFRIAMO 1
-        MESE DI PROVA GRATUITA.
-      </h5>
+      <div class="promo">
+        Non perderti l'occasione di accedere al nostro servizio con i prezzi di lancio
+        <p class="promo">La promo di lancio termina tra poco affrettati!</p>
+      </div>
       <p>Scegli come pagare</p>
       <div class="radio-inputs">
         <label class="radio">
@@ -344,11 +349,13 @@ export default {
 @use "../assets/styles/general.scss" as *;
 
 .section-a {
-  background: linear-gradient(23deg, #041740, #6c32ad);
+  background: linear-gradient(23deg, #041740, #6c32ad, #041740);
   padding: 0rem 0 25% 0;
   font-family: "Roboto Condensed", sans-serif;
   .wave-2 {
     background-image: url("../assets/img/wave-3.svg");
+    position: relative;
+    z-index: 200;
   }
 
   h1 {
@@ -359,37 +366,13 @@ export default {
     text-shadow: 0px 0px 18px rgba(194, 247, 255, 0.195);
     text-transform: uppercase;
   }
-  .f-cont::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .f-cont::-webkit-scrollbar-thumb {
-    width: 8px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.534);
-  }
-  .f-cont::-webkit-scrollbar-track {
-    width: 8px;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0);
-  }
-  .f-cont::-webkit-scrollbar-thumb:hover {
-    width: 8px;
-    border-radius: 20px;
-    background-color: white;
-  }
   .f-cont {
     display: flex;
     flex-direction: column;
-    scroll-snap-type: y mandatory;
-    overflow: auto;
-    width: 95%;
-    height: 60vh;
-    margin: 0 auto;
-    background-color: #2d0c5335;
+    //background-color: #2d0c5335;
     border-radius: 20px;
-
-    gap: 100%;
+    gap: 20vh ;
+    
     .ft-2,
     .ft-4,
     .ft-6 {
@@ -398,7 +381,11 @@ export default {
       }
       justify-content: flex-end;
     }
-
+    .ft-6{
+      .qr{
+        font-size: clamp(150px, 30vw, 300px);
+      }
+    }
     .ft-3 {
       .line {
         height: 55% !important;
@@ -406,40 +393,42 @@ export default {
     }
     .ft-7 {
       
-      margin-bottom: 10% !important;
       position: relative ;
       section {
         width: 100% !important;
         justify-content: center !important;
+        flex-direction: column;
         .text {
           max-width: 100% !important;
           text-align: center;
-          gap: 5rem !important;
+          gap: 3rem !important;
           h2 {
             font-size: 2.4em;
             font-weight: bold;
           }
         }
       }
+      .link{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
       .pack, .home{
         color: white;
-        position: absolute;
-        bottom: 10px;
       }
       .home{
-        right: 10px;
         font-size: clamp(14px, 2.3vw, 16px);
         
       }
-      .pack{
-        
+      .pack{   
         font-size: clamp(14px, 2.3vw, 19px);
         
       }
       .bt {
-        color: rgba(255, 255, 255, 0.856);
+        color: rgba(108, 9, 201, 0.856);
+        background-color: white;
         font-family: "Kanit", sans-serif;
-        font-weight: bold;
+        font-weight: bolder;
         text-align: center;
         text-decoration: none;
         padding: 0.4rem 3.5rem;
@@ -447,32 +436,32 @@ export default {
         border-radius: 8px;
         align-self: center;
         box-shadow: 0px 10px 50px rgba(51, 6, 99, 0.99);
-        text-shadow: 0px 0px 10px rgba(246, 245, 245, 0.294);
+        text-shadow: 0px 0px 10px rgba(115, 5, 206, 0.294);
         animation: contpulse 5s ease-in infinite;
         
       }
       @keyframes contpulse {
         0%{
-          scale: 1;
+          transform: scale(1);
           text-shadow: 0px 0px 20px rgba(246, 245, 245, 0.725);
         }
         25%{
-          scale: 1.08;
+          transform: scale(1.03);
           text-shadow: 0px 0px 20px rgba(246, 245, 245, 0.494);
           
         }
         50%{
-          scale: 1;
+          transform: scale(1);
           text-shadow: 0px 0px 20px rgba(228, 155, 247, 0.339);
           
         }
         75%{
-          scale: 1.11;
+          transform: scale(1.07);
           text-shadow: 0px 0px 30px rgba(224, 237, 255, 0.841);
           
         }
         100%{
-          scale: 1.0;
+          transform: scale(1.0);
           text-shadow: 0px 0px 20px rgba(247, 237, 247, 0.725);
 
         }

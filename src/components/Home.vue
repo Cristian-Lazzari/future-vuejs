@@ -29,7 +29,7 @@ export default {
 @use "../assets/styles/general.scss" as *;
 .section-1 {
   background-color: $c-bg;
-  height: 100%;
+  height: 120vh;
   position: relative;
   scroll-snap-align: start;
   z-index: 5;
@@ -37,17 +37,19 @@ export default {
 .section-1 .container {
   height: 100%;
   width: 100%;
+  position: relative;
+  top: -10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section-1 .container  img {
-  box-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.34);
   background-color: rgba(0, 0, 0, 0.21);
   position: relative;
   padding:15px 60px;
-  border: 8px solid $c-white;
+  border: clamp(4px, .9vw, 8px) solid rgba(255, 255, 255, 0.796);
 
   z-index: 1100;
   border-radius: 15px;

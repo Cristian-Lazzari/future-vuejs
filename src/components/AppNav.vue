@@ -29,9 +29,7 @@ export default {
   <nav :class="{ white: scroll }">
     <ul class="flex">
       <li><a :class="{ black: scroll }" href="#home"> Home </a></li>
-      <li>
-        <a :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a>
-      </li>
+      
       <li><a :class="{ black: scroll }" href="#servizi"> Servizi </a></li>
       <li><a :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a></li>
       <li><a :class="{ black: scroll }" href="#contatti"> Contatti </a></li>

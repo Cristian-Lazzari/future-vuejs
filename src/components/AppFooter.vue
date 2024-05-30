@@ -9,26 +9,23 @@ export default{
 
 <template>
    <div class="footer">
-    <div class="p-i"><h5>FUTURE +</h5>
-       
-        <p>
-            p. iva: 02974730422
-        </p>
+    <div class="p-i">
+        <h4>FUTURE +</h4>     
+        <p>p. iva: 02974730422 </p>
         <a href="https://www.iubenda.com/privacy-policy/16412600/legal"> Privacy policy</a>
-
     </div>
     <div class="social">
         <a href="https://www.instagram.com/future.plus_/?hl=it">
             <i class="bi bi-instagram"></i>
         </a>
+        <a href="https://www.facebook.com/profile.php?id=61558817374447">
+            <i class="bi bi-facebook"></i>
+        </a>
        
-        <i class="bi bi-facebook"></i>
-
         <a href="https://wa.me/393271622244">
             <i class="bi bi-whatsapp"></i>
         </a> 
     </div>
-
    </div>
 </template>
 
@@ -49,9 +46,10 @@ export default{
         justify-content: space-between;
         padding: 15px;
         .p-i{
-            font-size: 1.2rem;
+            font-size: clamp(13px, 2vw, 16px);
             text-transform: uppercase;
             a{
+                font-weight: lighter;
                 color: white
 
             }
@@ -60,7 +58,6 @@ export default{
             @include dfc;
             gap: 1em;
             font-size: 1.7rem;
-            margin-right: 50px;
             a{
                 color: white;
             }

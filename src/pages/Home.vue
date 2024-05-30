@@ -50,7 +50,6 @@ export default{
       <div :class="side ? 'mobile-on' : 'mobile-off' ">
         <ul class="flex" >
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
-          <li> <a @click="openmenu" :class="{ black: scroll }" href="#why"> Perchè avere un sito? </a> </li>
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a> </li>
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
@@ -75,7 +74,7 @@ export default{
 
   .mobile-on{
     display: block;
-    background-color: rgba(255, 255, 255, 0.929);
+    background-color: rgba(2, 4, 47, 0.967);
     position: fixed;
     inset: 0;
     z-index: 1112!important;
@@ -90,16 +89,18 @@ export default{
           font-family: 'Roboto Condensed', sans-serif;
           font-size: 25px;
           font-weight: bolder;
-          color: black;
+          color: rgb(254, 254, 254);
           text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.623);
+          transition: all .2s ease-in-out ;
         }
-        a:active{
+        a:hover{
           font-family: 'Roboto Condensed', sans-serif;
           font-size: 30px;
           font-weight: bolder;
-          color: rgb(255, 255, 255);
+          color: rgba(254, 252, 255, 0.775);
           text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.623);
           user-select: none;
+          transition: all .2s ease-in-out ;
         }
       }
     }
