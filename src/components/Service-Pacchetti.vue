@@ -97,10 +97,9 @@ export default {
           <div class="text">
             <h2>Qr-code</h2>
             <p>
-              Creeremo per la tua azienda un qr-code che possa raggiungiere o il
-              tuo sito oppure una specifica pagina su cui ad esempio potresti
-              avere l'elenco dei tuoi prodotti così che i tuoi clienti li
-              possano sempre avere a disposizione
+              Creeremo per il tuo locale un qr-code che possa raggiungiere il
+              tuo sito e uno che puntera direttamente al tuo menu cosi che potrai
+              sostituire i tuoi vecchi menu cartacei con dei nuovi menu digitali piu comodi e semplici da gestire
             </p>
             <div class="line"></div>
           </div>
