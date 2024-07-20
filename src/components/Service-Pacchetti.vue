@@ -129,7 +129,7 @@ export default {
  
       <div class="p-cont">
         <section>
-          <h3>Il kit base per lanciare il proprio locale online</h3>
+          <h3>L'offerta base per lanciare il tuo locale online</h3>
           <p>Se ancora non hai un sito web e desideri inziare a farti conoscere online questa è l'occasione perfetta per te. Potrai gia sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi e tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
           <span>Scegli come pagare</span>
           <div class="radio-inputs">
@@ -306,9 +306,8 @@ export default {
           </div>
         </section>
         <section>
-          <h3>Il kit base per lanciare il proprio locale online</h3>
-          <p>Se ancora non hai un sito web e desideri inziare a farti conoscere online questa è l'occasione perfetta per te. Potrai gia sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi e tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
-
+          <h3>La nostra offerta più completa</h3>
+          <p>Nel pacchetto premium includiamo tutti i nostri servirzi per permettere ai tuoi clienti di prenotare ogni tuo tipo di prodotto o servizio direttamente dal tuo sito web, in questo modo non solo ti distinguerai dalla concorrenza ma ottimizzerai la gestione del tuo locale e del tuo lavoro.</p>
           <span>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
