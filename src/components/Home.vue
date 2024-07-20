@@ -45,17 +45,13 @@ export default {
 }
 
 .section-1 .container  img {
-  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.34);
-  background-color: rgba(0, 0, 0, 0.21);
-  position: relative;
-  padding:15px 60px;
-  border: clamp(4px, .9vw, 8px) solid rgba(255, 255, 255, 0.796);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.324));
 
+  position: relative;
   z-index: 1100;
-  border-radius: 15px;
   width: clamp(300px, 60%, 500px);
 
-  animation: pulselogo 3s ease-out infinite;
+  animation: pulselogo 3s ease-in infinite;
 }
 
 
@@ -64,7 +60,8 @@ export default {
         scale: 1;
     }
     50%{
-        scale: 1.02;
+      scale: 1.02;
+      filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.324));
     }
 
     100%{

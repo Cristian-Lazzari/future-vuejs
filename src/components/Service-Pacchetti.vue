@@ -51,11 +51,11 @@ export default {
       <div class="feature ft-3">
         <section>
           <div class="text">
-            <h2>Prenotazione servizi online</h2>
+            <h2>Prenotazione cene e pranzi </h2>
             <p>
-              Potrai permettere ai tuoi clienti di prenotare un tuo servizio
-              direttamente dal sito web ricevendo istantaneamente la
-              prenotazione sul tuo pannello di amministrazione
+              Potrai permettere ai tuoi clienti di prenotare cene e pranzi,
+              in base ai tuoi coperti direttamente dal sito web
+              ricevendo istantaneamente la prenotazione sul tuo pannello di controllo
             </p>
             <div class="line"></div>
           </div>
@@ -65,13 +65,14 @@ export default {
       <div class="feature ft-4">
         <section>
           <div class="text">
-            <h2>Prenotazione prodotti online</h2>
+            <h2>Ordini d'asporto e domicilio</h2>
             <p>
-              Se ad esempio la tua attività è un locale o un ristorante, potrai
-              permettere ai tuoi clienti di prenotare un "carrello" di prodotti
-              personalizzabili (togliendo/aggiungiendo ingredeinti se
-              possibile), per offrire un servizio di asporto o di consegna a
-              domicilio, con eventuale pagamento alla consegna/ritiro
+              Se gia lavori con ordini d'asporto e a domicilio, potrai
+              riceverli e gestirli comodamente dal tuo pannello di controllo.
+              Il sistema ti garantisce di non andare in sovraccarico e
+              di essere sempre al massimo della tua efficienza.
+              Inoltre i tuoi clienti potranno arricchire, modificare o addirittura creare un prodotto secondo le tue specifiche.
+              A breve verrà inserito il pagamento online direttamente dal sito!
             </p>
             <div class="line"></div>
           </div>
@@ -112,14 +113,9 @@ export default {
         <section>
           <div class="text">
             <h2>E tu cosa aspetti?</h2>
-            <a class="bt" href="#contatti">CONTATTACI</a>
-            <!-- <div class="line"></div> -->
+            <a class="bt" href="#pacchetti">SCOPRI I PACCHETTI</a>
           </div>
-          <div class="link">
-
-            <a href="#pacchetti" class="pack">SCOPRI I PACCHETTI</a>
-            <a href="#home" class="home">Torna alla Home</a>
-          </div>
+          <a class="pack" href="#contatti">* <strong>Contattaci</strong> per maggiori informazioni</a>
         </section>
       </div>
     </div>
@@ -128,217 +124,255 @@ export default {
       <h2>Ecco i nostri Pacchetti</h2>
       <div class="promo">
         Non perderti l'occasione di accedere al nostro servizio con i prezzi di lancio
-        <p class="promo">La promo di lancio termina tra poco affrettati!</p>
+        <p>La promozione termina tra poco</p>
       </div>
-      <p>Scegli come pagare</p>
-      <div class="radio-inputs">
-        <label class="radio">
-          <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
-          <span class="name">Annuale</span>
-        </label>
-        <label class="radio">
-          <input type="radio" name="radio" @click="store.typepay = 0" />
-          <span class="name">Mensile</span>
-        </label>
-      </div>
+ 
       <div class="p-cont">
-        <div id="sta" class="parent">
-          <div class="card">
-            <div class="logo">
-              <span class="circle circle2"></span>
-              <span class="circle circle3"></span>
-              <span class="circle circle4">FUTURE +</span>
-            </div>
-            <div class="glass"></div>
-            <div class="content">
-              <div class="name">START</div>
-              <div class="feat">
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Presenza
-                  Online
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Pannello
-                  Amministatore
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>QR Code
+        <section>
+          <h3>Il kit base per lanciare il proprio locale online</h3>
+          <p>Se ancora non hai un sito web e desideri inziare a farti conoscere online questa è l'occasione perfetta per te. Potrai gia sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi e tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
+          <span>Scegli come pagare</span>
+          <div class="radio-inputs">
+            <label class="radio">
+              <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
+              <span :class="store.typepay == 1 ? 'r-active' : ''" class="name">Annuale</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio" @click="store.typepay = 0" />
+              <span :class="store.typepay == 0 ? 'r-active' : ''" class="name">Mensile</span>
+            </label>
+          </div>
+          <div id="sta" class="parent">
+            <div class="card">
+              <div class="logo">
+                <span class="circle circle2"></span>
+                <span class="circle circle3"></span>
+                <span class="circle circle4">FUTURE +</span>
+              </div>
+              <div class="glass"></div>
+              <div class="content">
+                <div class="name">Essentials</div>
+                <div class="feat">
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>Presenza
+                    Online
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>Pannello
+                    Amministatore
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>QR Code
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="bottom price">
-              <div class="mese">
-                <span v-if="store.typepay">€33,<span style="font-size: 50%;">25</span></span>
-                <span v-else>€49</span>
-                <h4>al mese</h4>
+              <div class="bottom price">
+                <div class="mese">
+                  <span v-if="store.typepay">€33,<span style="font-size: 50%;">25</span></span>
+                  <span v-else>€49</span>
+                  <h4>al mese</h4>
+                </div>
+
+                <div class="anno">
+                  <span> totale annuo</span>
+                  <span v-if="store.typepay"> €399</span>
+                  <span v-else> €588</span>
+
+                  <!-- <div class="from"></div> -->
+                </div>
+                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Avvia la prova gratuita</router-link>
+
               </div>
-
-              <div class="anno">
-                <span> totale annuo</span>
-                <span v-if="store.typepay"> €399</span>
-                <span v-else> €588</span>
-
-                <!-- <div class="from"></div> -->
-              </div>
-              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Avvia la prova gratuita</router-link>
-
             </div>
           </div>
-        </div>
-        <div id="med" class="parent med">
-          <div class="card">
-            <div class="logo">
-              <span class="circle circle2"></span>
-              <span class="circle circle3"></span>
-              <span class="circle circle4">FUTURE +</span>
+        </section>
+        <section class="medium">
+          <h3>I nostri pacchetti intermedi</h3>
+          <p>Se oltre ad un impeccabbile presenza online vuoi anche dare la possibilita al tuo cliente acquistare o riservare direttamente dal sito senza la scomoda chiamata puoi scegliere tra in nostri pacchetti intermedi in base alle tue esigienze</p>
+          <span>Scegli come pagare</span>
+          <div class="radio-inputs">
+            <label class="radio">
+              <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
+              <span :class="store.typepay == 1 ? 'r-active' : ''" class="name">Annuale</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio" @click="store.typepay = 0" />
+              <span :class="store.typepay == 0 ? 'r-active' : ''" class="name">Mensile</span>
+            </label>
+          </div>
+          <div class="cont">
+            <div id="med" class="parent med">
+              <div class="card">
+                <div class="logo">
+                  <span class="circle circle2"></span>
+                  <span class="circle circle3"></span>
+                  <span class="circle circle4">FUTURE +</span>
+                </div>
+                <div class="glass"></div>
+                <div class="content">
+                  <div class="name">
+                    Cene & <br />
+                    Pranzi 
+                  </div>
+                  <div class="feat">
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>Presenza
+                      Online
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>Pannello
+                      Amministatore
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>QR Code
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>Creazione
+                      Post
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span
+                      >Prenotazione SERVIZI Online
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom price">
+                  <div class="mese">
+                    <span v-if="store.typepay">€66,<span style="font-size: 50%;">58</span></span>
+                    <span v-else>€89</span>
+                    <h4>al mese</h4>
+                  </div>
+    
+                  <div class="anno">
+                    <span> totale annuo</span>
+                    <span v-if="store.typepay"> €799</span>
+                    <span v-else> €1068</span>
+                  </div>
+                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Avvia la prova gratuita</router-link>
+                </div>
+              </div>
             </div>
-            <div class="glass"></div>
-            <div class="content">
-              <div class="name">
-                MEDIUM <br />
-                SERVICE
+            <div id="med" class="parent med">
+              <div class="card">
+                <div class="logo">
+                  <span class="circle circle2"></span>
+                  <span class="circle circle3"></span>
+                  <span class="circle circle4">FUTURE +</span>
+                </div>
+                <div class="glass"></div>
+                <div class="content">
+                  <div class="name">
+                    Delivery & <br />
+                    Asporto
+                  </div>
+                  <div class="feat">
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>Presenza
+                      Online
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>Pannello
+                      Amministatore
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>QR Code
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span>Creazione
+                      Post
+                    </div>
+                    <div class="line">
+                      <span class="material-symbols-outlined"> done </span
+                      >Prenotazione PRODOTTI Online
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom price">
+                  <div class="mese">
+                    <span v-if="store.typepay">€74,<span style="font-size: 50%;">91</span></span>
+                    <span v-else>€99</span>
+                    <h4>al mese</h4>
+                  </div>
+    
+                  <div class="anno">
+                    <span> totale annuo</span>
+                    <span v-if="store.typepay"> €899</span>
+                    <span v-else> €1188</span>
+                  </div>
+                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Avvia la prova gratuita</router-link>
+                </div>
               </div>
-              <div class="feat">
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Presenza
-                  Online
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Pannello
-                  Amministatore
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>QR Code
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Creazione
-                  Post
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span
-                  >Prenotazione SERVIZI Online
-                </div>
-              </div>
-            </div>
-            <div class="bottom price">
-              <div class="mese">
-                <span v-if="store.typepay">€66,<span style="font-size: 50%;">58</span></span>
-                <span v-else>€89</span>
-                <h4>al mese</h4>
-              </div>
-
-              <div class="anno">
-                <span> totale annuo</span>
-                <span v-if="store.typepay"> €799</span>
-                <span v-else> €1068</span>
-              </div>
-              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Avvia la prova gratuita</router-link>
             </div>
           </div>
-        </div>
-        <div id="med" class="parent med">
-          <div class="card">
-            <div class="logo">
-              <span class="circle circle2"></span>
-              <span class="circle circle3"></span>
-              <span class="circle circle4">FUTURE +</span>
-            </div>
-            <div class="glass"></div>
-            <div class="content">
-              <div class="name">
-                MEDIUM <br />
-                PRODUCT
-              </div>
-              <div class="feat">
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Presenza
-                  Online
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Pannello
-                  Amministatore
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>QR Code
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Creazione
-                  Post
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span
-                  >Prenotazione PRODOTTI Online
-                </div>
-              </div>
-            </div>
-            <div class="bottom price">
-              <div class="mese">
-                <span v-if="store.typepay">€74,<span style="font-size: 50%;">91</span></span>
-                <span v-else>€99</span>
-                <h4>al mese</h4>
-              </div>
+        </section>
+        <section>
+          <h3>Il kit base per lanciare il proprio locale online</h3>
+          <p>Se ancora non hai un sito web e desideri inziare a farti conoscere online questa è l'occasione perfetta per te. Potrai gia sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi e tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
 
-              <div class="anno">
-                <span> totale annuo</span>
-                <span v-if="store.typepay"> €899</span>
-                <span v-else> €1188</span>
+          <span>Scegli come pagare</span>
+          <div class="radio-inputs">
+            <label class="radio">
+              <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
+              <span :class="store.typepay == 1 ? 'r-active' : ''" class="name">Annuale</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio" @click="store.typepay = 0" />
+              <span :class="store.typepay == 0 ? 'r-active' : ''" class="name">Mensile</span>
+            </label>
+          </div>
+          <div id="pro" class="parent pro">
+            <div class="card">
+              <div class="logo">
+                <span class="circle circle2"></span>
+                <span class="circle circle3"></span>
+                <span class="circle circle4">FUTURE +</span>
               </div>
-              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Avvia la prova gratuita</router-link>
+              <div class="glass"></div>
+              <div class="content">
+                <div class="name">PREMIUM</div>
+                <div class="feat">
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>Presenza
+                    Online
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>Pannello
+                    Amministatore
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>QR Code
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span>Creazione
+                    Post
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span
+                    >Prenotazione SERVIZI Online
+                  </div>
+                  <div class="line">
+                    <span class="material-symbols-outlined"> done </span
+                    >Prenotazione PRODOTTI Online
+                  </div>
+                </div>
+              </div>
+              <div class="bottom price">
+                <div class="mese">
+                  <span v-if="store.typepay">€99,<span style="font-size: 50%;">91</span></span>
+                  <span v-else>€129</span>
+                  <h4>al mese</h4>
+                </div>
+  
+                <div class="anno">
+                  <span> totale annuo</span>
+                  <span v-if="store.typepay"> €1199</span>
+                  <span v-else> €1548</span>
+                </div>
+                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Avvia la prova gratuita</router-link>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="pro" class="parent pro">
-          <div class="card">
-            <div class="logo">
-              <span class="circle circle2"></span>
-              <span class="circle circle3"></span>
-              <span class="circle circle4">FUTURE +</span>
-            </div>
-            <div class="glass"></div>
-            <div class="content">
-              <div class="name">PREMIUM</div>
-              <div class="feat">
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Presenza
-                  Online
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Pannello
-                  Amministatore
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>QR Code
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span>Creazione
-                  Post
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span
-                  >Prenotazione SERVIZI Online
-                </div>
-                <div class="line">
-                  <span class="material-symbols-outlined"> done </span
-                  >Prenotazione PRODOTTI Online
-                </div>
-              </div>
-            </div>
-            <div class="bottom price">
-              <div class="mese">
-                <span v-if="store.typepay">€99,<span style="font-size: 50%;">91</span></span>
-                <span v-else>€129</span>
-                <h4>al mese</h4>
-              </div>
-
-              <div class="anno">
-                <span> totale annuo</span>
-                <span v-if="store.typepay"> €1199</span>
-                <span v-else> €1548</span>
-              </div>
-              <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Avvia la prova gratuita</router-link>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   </div>
@@ -589,17 +623,49 @@ export default {
     font-size: 2rem;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.316);
     margin-bottom: 4rem;
+    p{
+      font-size: clamp(14px, 2.3vw, 18px);
+    }
   }
   p {
     text-align: center;
   }
   .radio-inputs {
-    margin: 2rem auto 4rem;
+    margin: 10px auto 4rem;
   }
   .p-cont {
     @include dfc;
+    flex-direction: column;
     gap: 2.5rem;
     flex-wrap: wrap;
+    section{
+      margin: 2rem 0;
+      @include dfc;
+
+      flex-direction: column;
+      h3{
+        font-size:clamp(17px, 5vw, 35px);
+        font-family: "Kanit", sans-serif;
+        align-self: flex-start;
+      }
+      p{
+        align-self: flex-start;
+        text-align: left;
+        font-size:clamp(18px, 2vw, 35px);
+        margin-bottom: 1rem;
+        font-family: "Kodchasan", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+    .medium{
+      .cont{
+        flex-wrap: wrap;
+        @include dfc;
+        gap: 1rem;
+
+      }
+    }
   }
 }
 
@@ -878,8 +944,8 @@ export default {
   margin: 0 !important;
 }
 
-.radio-inputs .radio input:checked + .name {
-  color: rgba(51, 65, 85, 1);
+.r-active {
+  color: rgba(40, 35, 74, 0.62) !important;
   background-color: #fff;
   font-weight: 600;
 }
