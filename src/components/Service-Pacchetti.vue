@@ -178,7 +178,7 @@ export default {
 
                   <!-- <div class="from"></div> -->
                 </div>
-                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Avvia la prova gratuita</router-link>
+                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Inizia prova gratuita</router-link>
 
               </div>
             </div>
@@ -246,7 +246,7 @@ export default {
                     <span v-if="store.typepay"> €799</span>
                     <span v-else> €1068</span>
                   </div>
-                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Avvia la prova gratuita</router-link>
+                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Inizia prova gratuita</router-link>
                 </div>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default {
                     <span v-if="store.typepay"> €899</span>
                     <span v-else> €1188</span>
                   </div>
-                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Avvia la prova gratuita</router-link>
+                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Inizia prova gratuita</router-link>
                 </div>
               </div>
             </div>
@@ -365,7 +365,7 @@ export default {
                   <span v-if="store.typepay"> €1199</span>
                   <span v-else> €1548</span>
                 </div>
-                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Avvia la prova gratuita</router-link>
+                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Inizia prova gratuita</router-link>
               </div>
             </div>
           </div>
