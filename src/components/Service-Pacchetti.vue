@@ -24,8 +24,9 @@ export default {
             <p>
               Configureremo la tua presenza online da 0, garantendoti una
               Web-App peronalizzata, fluida, veloce e compatibile con tutti i
-              dispositivi. Inoltre ci occuperemo noi della gestione e
-              dell'approvigionamento dei servi terzi necessari per ogni sito web
+              dispositivi. Ti garantiremo il supporto e gli aggiornamenti necessari,
+              inoltre ci occuperemo noi della gestione e
+              dell'approvigionamento dei servizi terzi necessari per ogni sito web
               (dominio, hosting...)
             </p>
             <div class="line"></div>
@@ -39,9 +40,9 @@ export default {
             <h2>Pannello di controllo</h2>
             <p>
               Oltre a garantirti una presenza online impeccabile configureremo
-              per te una Dashboard con accesso privato in cui potrai monitorare
-              e gestire i dati della tua pagina e scegliere le tue disponibilità
-              per impostare il sistema di prenotazione automatico
+              per te una Dashboard con accesso privato in cui potrai monitorare, 
+              gestire i dati della tua pagina e scegliere le tue disponibilità
+              per impostare il nostro sistema di prenotazione automatico
             </p>
             <div class="line"></div>
           </div>
@@ -84,7 +85,8 @@ export default {
           <div class="text">
             <h2>Creazione di Post</h2>
             <p>
-              Nella tua Web-App non può mancare una sezione dove postare novità,
+              Nel tuo sito web non può mancare una sezione dove postare novità,
+              piatti specciali,
               promozioni, chiusure o qualsiasi altra notiza tu voglia dare ai
               tuoi clienti riguardo alla tua attività
             </p>
@@ -122,16 +124,12 @@ export default {
 
     <div id="pacchetti" class="p-container">
       <h2>Ecco i nostri Pacchetti</h2>
-      <div class="promo">
-        Non perderti l'occasione di accedere al nostro servizio con i prezzi di lancio
-        <p>La promozione termina tra poco</p>
-      </div>
- 
+      
       <div class="p-cont">
         <section>
           <h3>L'offerta base per lanciare il tuo locale online</h3>
           <p>Se ancora non hai un sito web e desideri inziare a farti conoscere online questa è l'occasione perfetta per te. Potrai gia sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi e tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
-          <span>Scegli come pagare</span>
+          <span cla>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
               <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
@@ -189,7 +187,7 @@ export default {
         <section class="medium">
           <h3>I nostri pacchetti intermedi</h3>
           <p>Se oltre ad un impeccabbile presenza online vuoi anche dare la possibilita al tuo cliente acquistare o riservare direttamente dal sito senza la scomoda chiamata puoi scegliere tra in nostri pacchetti intermedi in base alle tue esigienze</p>
-          <span>Scegli come pagare</span>
+          <span cla>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
               <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
@@ -308,7 +306,7 @@ export default {
         <section>
           <h3>La nostra offerta più completa</h3>
           <p>Nel pacchetto premium includiamo tutti i nostri servirzi per permettere ai tuoi clienti di prenotare ogni tuo tipo di prodotto o servizio direttamente dal tuo sito web, in questo modo non solo ti distinguerai dalla concorrenza ma ottimizzerai la gestione del tuo locale e del tuo lavoro.</p>
-          <span>Scegli come pagare</span>
+          <span cla>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
               <input type="radio" name="radio" checked="" @click="store.typepay = 1" />
@@ -373,6 +371,7 @@ export default {
           </div>
         </section>
       </div>
+      <span>*Non perderti l'occasione di accedere al nostro servizio con i prezzi di lancio. La promozione termina tra poco</span>
     </div>
   </div>
 </template>
@@ -638,20 +637,25 @@ export default {
     gap: 2.5rem;
     flex-wrap: wrap;
     section{
-      margin: 2rem 0;
+      margin: 3rem 0;
       @include dfc;
+      .come_pagare{
+        font-family: "Kanit", sans-serif;
 
+      }
       flex-direction: column;
       h3{
-        font-size:clamp(17px, 5vw, 35px);
+        font-size:clamp(20px, 5vw, 35px);
+        line-height: 100%;
+        text-align: center;
         font-family: "Kanit", sans-serif;
-        align-self: flex-start;
+        margin-bottom: 10px;
       }
       p{
         align-self: flex-start;
-        text-align: left;
-        font-size:clamp(18px, 2vw, 35px);
-        margin-bottom: 1rem;
+        
+        font-size:clamp(16px, 2vw, 35px);
+        margin-bottom: 2rem;
         font-family: "Kodchasan", sans-serif;
         font-weight: 400;
         font-style: normal;

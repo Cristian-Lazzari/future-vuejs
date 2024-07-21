@@ -191,6 +191,9 @@ export default {
   gap: 2rem;
   //height: 100vh;
   padding: 0 0 50% 0;
+  p{
+    margin: 10px;
+  }
   h3 {
     text-transform: uppercase;
     font-size: $d-title2-min;
