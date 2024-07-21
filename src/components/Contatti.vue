@@ -44,7 +44,7 @@ export default {
         this.message = "Messaggio inviato";
         setTimeout(() => {
           this.message = "";
-        }, 2500);
+        }, 1500);
 
         this.formValues = {
           firstName: "",

@@ -29,7 +29,7 @@ export default {
 @use "../assets/styles/general.scss" as *;
 .section-1 {
   background-color: $c-bg;
-  height: 120vh;
+  height: 100vh;
   position: relative;
   scroll-snap-align: start;
   z-index: 5;
@@ -46,11 +46,9 @@ export default {
 
 .section-1 .container  img {
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.324));
-
   position: relative;
   z-index: 1100;
   width: clamp(300px, 60%, 500px);
-
   animation: pulselogo 3s ease-in infinite;
 }
 
@@ -69,11 +67,5 @@ export default {
     }
 }  
 
-
-@media only screen and (max-device-width: 480px) {
-  .section-1 .container  img {
-    padding: 10px 50px;
-  } 
-  }
 
 </style>
