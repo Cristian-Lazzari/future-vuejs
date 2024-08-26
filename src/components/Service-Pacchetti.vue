@@ -248,7 +248,7 @@ export default {
                     <span v-else> €1068</span>
                   </div>
                   <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Inizia prova gratuita</router-link> -->
-                   <a href="tel:3271622244" class="shop-btn"></a>
+                   <a href="tel:3271622244" class="shop-btn">Provalo GRATIS 30 giorni</a>
                 </div>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default {
                     <span v-else> €1068</span>
                   </div>
                   <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Inizia prova gratuita</router-link> -->
-                   <a href="tel:3271622244" class="shop-btn"></a>
+                   <a href="tel:3271622244" class="shop-btn">Provalo GRATIS 30 giorni</a>
                 </div>
               </div>
             </div>
@@ -369,7 +369,7 @@ export default {
                   <span v-else> €1548</span>
                 </div>
                 <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Inizia prova gratuita</router-link> -->
-                 <a href="tel:3271622244" class="shop-btn"></a>
+                 <a href="tel:3271622244" class="shop-btn">Provalo GRATIS 30 giorni</a>
               </div>
             </div>
           </div>
