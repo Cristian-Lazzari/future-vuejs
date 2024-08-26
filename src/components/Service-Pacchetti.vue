@@ -178,7 +178,8 @@ export default {
 
                   <!-- <div class="from"></div> -->
                 </div>
-                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Inizia prova gratuita</router-link>
+                <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 1" >Inizia prova gratuita</router-link> -->
+                 <a href="tel:3271622244" class="shop-btn">Provalo GRATIS 30 giorni</a>
 
               </div>
             </div>
@@ -246,7 +247,8 @@ export default {
                     <span v-if="store.typepay"> €799</span>
                     <span v-else> €1068</span>
                   </div>
-                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Inizia prova gratuita</router-link>
+                  <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 2" >Inizia prova gratuita</router-link> -->
+                   <a href="tel:3271622244" class="shop-btn"></a>
                 </div>
               </div>
             </div>
@@ -288,16 +290,17 @@ export default {
                 <div class="bottom price">
                   <div class="mese">
                     <span v-if="store.typepay">€74,<span style="font-size: 50%;">91</span></span>
-                    <span v-else>€99</span>
+                    <span v-else>€89</span>
                     <h4>al mese</h4>
                   </div>
     
                   <div class="anno">
                     <span> totale annuo</span>
                     <span v-if="store.typepay"> €899</span>
-                    <span v-else> €1188</span>
+                    <span v-else> €1068</span>
                   </div>
-                  <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Inizia prova gratuita</router-link>
+                  <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 3" >Inizia prova gratuita</router-link> -->
+                   <a href="tel:3271622244" class="shop-btn"></a>
                 </div>
               </div>
             </div>
@@ -365,7 +368,8 @@ export default {
                   <span v-if="store.typepay"> €1199</span>
                   <span v-else> €1548</span>
                 </div>
-                <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Inizia prova gratuita</router-link>
+                <!-- <router-link :to="{ name: 'ConsumersRegistration' }" class="shop-btn" @click="store.package = 4" >Inizia prova gratuita</router-link> -->
+                 <a href="tel:3271622244" class="shop-btn"></a>
               </div>
             </div>
           </div>
