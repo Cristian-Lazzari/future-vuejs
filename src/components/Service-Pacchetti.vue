@@ -23,7 +23,7 @@ export default {
             <h2>Presenza Online</h2>
             <p>
               Configureremo la tua presenza online da 0, garantendoti una
-              Web-App peronalizzata, fluida, veloce e compatibile con tutti i
+              Web-App personalizzata, fluida, veloce e compatibile con tutti i
               dispositivi. Ti garantiremo il supporto e gli aggiornamenti necessari,
               inoltre ci occuperemo noi della gestione e
               dell'approvigionamento dei servizi terzi necessari per ogni sito web
@@ -68,7 +68,7 @@ export default {
           <div class="text">
             <h2>Ordini d'asporto e domicilio</h2>
             <p>
-              Se gia lavori con ordini d'asporto e a domicilio, potrai
+              Se già lavori con ordini d'asporto e a domicilio, potrai
               riceverli e gestirli comodamente dal tuo pannello di controllo.
               Il sistema ti garantisce di non andare in sovraccarico e
               di essere sempre al massimo della tua efficienza.
@@ -86,9 +86,9 @@ export default {
             <h2>Creazione di Post</h2>
             <p>
               Nel tuo sito web non può mancare una sezione dove postare novità,
-              piatti specciali,
+              piatti speciali,
               promozioni, chiusure o qualsiasi altra notiza tu voglia dare ai
-              tuoi clienti riguardo alla tua attività
+              tuoi clienti riguardo la tua attività
             </p>
             <div class="line"></div>
           </div>
@@ -101,8 +101,8 @@ export default {
             <h2>Qr-code</h2>
             <p>
               Creeremo per il tuo locale un qr-code che possa raggiungiere il
-              tuo sito e uno che puntera direttamente al tuo menu cosi che potrai
-              sostituire i tuoi vecchi menu cartacei con dei nuovi menu digitali piu comodi e semplici da gestire
+              tuo sito e uno che punterà direttamente al tuo menu cosicchè potrai
+              sostituire i tuoi vecchi menu cartacei con dei nuovi menu digitali più comodi e semplici da gestire
             </p>
             <div class="line"></div>
           </div>
@@ -127,8 +127,8 @@ export default {
       
       <div class="p-cont">
         <section>
-          <h3>L'offerta base per lanciare il tuo locale online</h3>
-          <p>Se ancora non hai un sito web e desideri inziare a farti conoscere online questa è l'occasione perfetta per te. Potrai gia sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi e tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
+          <h4>L'offerta base per lanciare il tuo locale online</h4>
+          <p>Se ancora non hai un sito web e desideri iniziare a farti conoscere online questa è l'occasione perfetta per te. Potrai già sostituire i menu cartacei con quelli digitali così che il tuo sito inizi a indicizzarsi ed i tuoi clienti potranno scoprire il tuo menu anche da casa, per prenotare asporto e tavoli potranno comunque usare il tasto "chiama"</p>
           <span cla>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
@@ -157,7 +157,7 @@ export default {
                   </div>
                   <div class="line">
                     <span class="material-symbols-outlined"> done </span>Pannello
-                    Amministatore
+                    Amministratore
                   </div>
                   <div class="line">
                     <span class="material-symbols-outlined"> done </span>QR Code
@@ -186,8 +186,8 @@ export default {
           </div>
         </section>
         <section class="medium">
-          <h3>I nostri pacchetti intermedi</h3>
-          <p>Se oltre ad un impeccabbile presenza online vuoi anche dare la possibilita al tuo cliente acquistare o riservare direttamente dal sito senza la scomoda chiamata puoi scegliere tra in nostri pacchetti intermedi in base alle tue esigienze</p>
+          <h4>I nostri pacchetti intermedi</h4>
+          <p>Se oltre ad un impeccabile presenza online vuoi anche dare la possibilita al tuo cliente di acquistare o riservare direttamente dal sito senza la scomoda chiamata puoi scegliere tra in nostri pacchetti intermedi in base alle tue esigenze</p>
           <span cla>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
@@ -220,7 +220,7 @@ export default {
                     </div>
                     <div class="line">
                       <span class="material-symbols-outlined"> done </span>Pannello
-                      Amministatore
+                      Amministratore
                     </div>
                     <div class="line">
                       <span class="material-symbols-outlined"> done </span>QR Code
@@ -272,7 +272,7 @@ export default {
                     </div>
                     <div class="line">
                       <span class="material-symbols-outlined"> done </span>Pannello
-                      Amministatore
+                      Amministratore
                     </div>
                     <div class="line">
                       <span class="material-symbols-outlined"> done </span>QR Code
@@ -307,8 +307,8 @@ export default {
           </div>
         </section>
         <section>
-          <h3>La nostra offerta più completa</h3>
-          <p>Nel pacchetto premium includiamo tutti i nostri servirzi per permettere ai tuoi clienti di prenotare ogni tuo tipo di prodotto o servizio direttamente dal tuo sito web, in questo modo non solo ti distinguerai dalla concorrenza ma ottimizzerai la gestione del tuo locale e del tuo lavoro.</p>
+          <h4>La nostra offerta più completa</h4>
+          <p>Nel pacchetto premium includiamo tutti i nostri servirzi per permettere ai tuoi clienti di prenotare ogni tuo tipo di prodotto o servizio direttamente dal tuo sito web, in questo modo non solo ti distinguerai dalla concorrenza, ma ottimizzerai la gestione del tuo locale e del tuo lavoro.</p>
           <span cla>Scegli come pagare</span>
           <div class="radio-inputs">
             <label class="radio">
@@ -337,7 +337,7 @@ export default {
                   </div>
                   <div class="line">
                     <span class="material-symbols-outlined"> done </span>Pannello
-                    Amministatore
+                    Amministratore
                   </div>
                   <div class="line">
                     <span class="material-symbols-outlined"> done </span>QR Code
@@ -648,7 +648,7 @@ export default {
 
       }
       flex-direction: column;
-      h3{
+      h4{
         font-size:clamp(20px, 5vw, 35px);
         line-height: 100%;
         text-align: center;
@@ -658,7 +658,7 @@ export default {
       p{
         align-self: flex-start;
         
-        font-size:clamp(16px, 2vw, 35px);
+        font-size:clamp(16px, 2vw, 25px);
         margin-bottom: 2rem;
         font-family: "Kodchasan", sans-serif;
         font-weight: 400;
