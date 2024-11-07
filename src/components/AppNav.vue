@@ -19,19 +19,17 @@ export default {
   created() {
     window.addEventListener("scroll", this.actionScroll);
   },
-  destroyed() {
-    window.removeEventListener("scroll", this.actionScroll);
-  },
+
 };
 </script>
 
 <template>
-  <nav :class="{ white: scroll }">
+  <nav :class="{ nav_scroll: scroll }">
     <ul class="flex">
       <li><a :class="{ black: scroll }" href="#home"> Home </a></li>
       
       <li><a :class="{ black: scroll }" href="#servizi"> Servizi </a></li>
-      <li><a :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a></li>
+      <li><a :class="{ black: scroll }" href="#pacchetti"> Pricing </a></li>
       <li><a :class="{ black: scroll }" href="#contatti"> Contatti </a></li>
     </ul>
   </nav>
@@ -45,10 +43,11 @@ nav {
   left: 0;
   right: 0;
   padding: 15px;
-  z-index: 1122 !important;
-  box-shadow: -2px 21px 25px -21px rgb(122, 39, 39);
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: rgba(255, 255, 255, 0.283);
+  z-index: 7 !important;
+  
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  //background-color: rgba(255, 255, 255, 0.283);
 
   @include dfc;
   gap: 1rem;
@@ -64,8 +63,9 @@ nav {
   display: none;
 }
 
-.white {
+.nav_scroll {
   background-color: rgba(255, 255, 255, 0.812);
+  box-shadow: -2px 21px 25px -21px rgb(0, 0, 0);
 }
 .black {
   color: black;

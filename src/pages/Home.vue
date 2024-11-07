@@ -1,17 +1,9 @@
 <script >
-import Home from '../components/Home.vue';
-import appMain from '../components/AppMain.vue';
-import AppFooter from '../components/AppFooter.vue';
-import AppNav from "../components/AppNav.vue";
 
-// import Bsection from './components/Bsection.vue'
-// import Csection from './components/Csection.vue'
-// import Dsection from './components/Dsection.vue'
+import AppNav from "../components/AppNav.vue";
 export default{
   components: {
-    Home,
-    appMain,
-    AppFooter,
+
     AppNav,
 
 
@@ -19,6 +11,7 @@ export default{
   data() {
     return {
       side: 0,
+      slide_1: [1,2,3],
     };
   },
   methods:{
@@ -51,120 +44,175 @@ export default{
         <ul class="flex" >
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
-          <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pacchetti </a> </li>
+          <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pricing </a> </li>
           <li> <a @click="openmenu" :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
         </ul>
       </div>
-      <Home />
-      <appMain />
-      <AppFooter />
-      
+      <div class="hero">
+        <div class="center_hero">
+          <img src="../../public/img/LOGO (1).png" alt="">
+          <div class="text">
+            <p>La prima web agency dedicata esclusivamente alla ristorazione...</p>
+            <p>Non sei curioso? <br> Prova ora, È GRATIS!</p>
+            <div class="btn-2">Provalo GRATIS</div>
+          </div>
+        </div>
+        <div class="btn-1">Scopri di più</div>
+        <div class="bottom_bar">
+          <div class="piva"></div>
+        </div>
+      </div>
+      <div class="section_tip">
+        <h2>Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
+        <p>
+          <span class="pack">Restaurant +</span> <br> 
+          è il sistema FACILE adatto per essere usato da tutti, è COMODO perchè puoi usarlo subito ed ovunque senza scaricare app, è COMPLETO perchè comprende tutte le tue esigenze
+        </p>
+        <div class="grid">
+          <div class="left">
+            <div class="panel">
+              <div class="top">
+                <h5>Gestisci il tuo menu <span class="strg"> ovunque</span> e <span class="strg"> comodamente</span></h5>
+                <div class="small"></div>
+              </div>
+              <p>Puoi creare un menu, che puoi suddividere in categorie e con foto e detttagli a portata di clic i tuoi clienti saranno attratti come non mai</p>
+            </div>
+            <div class="panel">
+              <div class="top">
+                <h5>Statistiche <span class="strg"> accurate</span> ti mostreranno come muoverti</h5>
+                <div class="small"></div>
+              </div>
+              <p>Saprai i prodotti più ordinati ed i periodi di picco, traccerà la clientela che prenota il tavolo e l andamento dei tuoi ricavi</p>
+            </div>
+            <div class="panel qr">
+              <div class="top">
+                <h5>Genriamo per te il <span class="strg"> QR-CODE </span> per scansionare il menu e ordinare</h5>
+                <div class="small"></div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="slider">
+              <img v-for="s in slide" :src="s" alt="">
+              <div class="points">
+                <div v-for="s in slide" class="point"></div>
+              </div>
+            </div>
+            <div class="panel">Nuove funzionalità sempre in implementazione, prendendo spunto proprio dal tuo modo di lavorare!</div>
+          </div>
+        </div>
+      </div>
+      <div class="section_tip">
+        <h2>Incassa il <span class="c2">100%</span> dalla tua attività e di <span class="c2">ADDIO</span> alle <span class="c2">COMMISSIONI</span> </h2>
+        <p>
+          <span class="pack">Restaurant+ PRO </span> <br> 
+          il nostro softwere nella sua versione piu completa ti permette raccogliere ordini e prenotazioni dal tuo sito così che non dovrai piu pagare commissioni! 
+        </p>
+        <div class="grid">
+          <div class="right">
+            <div class="slider">
+              <img v-for="s in slide" :src="s" alt="">
+              <div class="points">
+                <div v-for="s in slide" class="point"></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="top">
+                <h5>Analizza  costantemente le tue <span class="strg">PERFORMANCE</span></h5>
+                <div class="small"></div>
+              </div>
+              <p>Trova gli orari e in cui sei piu attivo e gestisci al meglio il tuo personale</p>
+            </div>
+          </div>
+          <div class="left">
+            <div class="panel">
+              <div class="top">
+                <h5>Ordini a domicilio o d’asporto <span class="strg">ILLIMITATI</span></h5>
+                <div class="small"></div>
+              </div>
+              <div class="bottom">
+                <p>Risparmia dal 20% al 40% sugli ordini online*</p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="top">
+                <h5>Prenotazioni tavoli <span class="strg">ILLIMITATE</span></h5>
+                <div class="small"></div>
+              </div>
+              <div class="bottom">
+                <p>Risparmia oltre il 20% sulle prenotazioni online*</p>
+              </div>            
+            </div>
+            <div class="panel">
+              <div class="top">
+                <h5>Possibilità di abilitare il pagamento <span class="strg">ONLINE</span></h5>
+                <div class="small"></div>
+              </div>
+              <p>Annulla il rischio di ordini non ritirati e pagati*</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
 </template>
 
+
+
+
 <style lang="scss" scoped >
    @use '../assets/styles/general.scss' as *;
   .container{
-  
-    height: 100vh ;
-  }
-
-
-
-  .mobile-on{
-    display: block;
-    background-color: rgba(2, 4, 47, 0.967);
-    position: fixed;
-    inset: 0;
-    z-index: 1112!important;
-    .flex{
-      @include dfc;
+    background-color: $c3;
+    .hero{
+      color: $c1;
+      height: 100vh;
+      width: 100%;
+      background-image: url('../../public/img/herofplus.png');
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-around;
-      height: 100%;
-      padding: 20% 0 30%;
-      li{
-        a{
-          font-family: 'Roboto Condensed', sans-serif;
-          font-size: 25px;
-          font-weight: bolder;
-          color: rgb(254, 254, 254);
-          text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.623);
-          transition: all .2s ease-in-out ;
+      justify-content: center;
+      .center_hero{
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+        img{
+          width: clamp(180px, 40vw, 280px);
+          //height: auto;
+          object-fit: contain;
         }
-        a:hover{
-          font-family: 'Roboto Condensed', sans-serif;
-          font-size: 30px;
-          font-weight: bolder;
-          color: rgba(254, 252, 255, 0.775);
-          text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.623);
-          user-select: none;
-          transition: all .2s ease-in-out ;
+        .text{
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          gap: 1.4rem;
+          p{
+            font-size: $fs_sm;
+            margin: 0 auto;
+            max-width: 300px;
+
+          }
         }
       }
     }
-  }
-  .mobile-off{
-    display: none;
-    
-  }
-  @media (max-width:600px) {
-    .nav{
-      display: none !important;
-    }
-    .nav-mobile-on{
-      @include dfc;
-      position: fixed;
-      z-index: 1113 !important;
-      flex-direction: column;
-      
-      gap: 6px;
-      top: 30px;
-      right: 30px;
-      
-      .line{
-        height: 3px;
-        width: 27px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 7px black;
+    .section_tip{
+      h2{
+        font-size: $fs_sm;
+        font-weight: 300;
       }
-      .l1, .l2{
-        position: absolute;
-        transform: rotateZ(405deg);
-        transition: all .3s linear;
-      }
-      .l3{
-        position: absolute;
-        transform: rotateZ(-405deg);
-        transition: all .3s linear;
-      }
-      .l2{
-        box-shadow: 0px 0px 0px black;
-      }
-      
-    }
-    .nav-mobile-off{
-      @include dfc;
-      position: fixed;
-      z-index: 1113 !important;
-      flex-direction: column;
-      
-      gap: 6px;
-      top: 30px;
-      right: 30px;
-      
-      .line{
-        height: 3px;
-        width: 27px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 2px 2px 7px black;
-        transition: all .3s linear;
-      }
-      
-      
+      color: $c1;
     }
   }
+
+
+
+
 </style>
