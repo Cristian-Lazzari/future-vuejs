@@ -24,15 +24,29 @@ export default {
 </script>
 
 <template>
-  <nav :class="{ nav_scroll: scroll }">
-    <ul class="flex">
-      <li><a :class="{ black: scroll }" href="#home"> Home </a></li>
+  <nav :class="{ nav_scroll: scroll }" class="nav">
+    <ul :class="{ ul_scroll: scroll }" >
+      <li><a class="" href="#home"> Home </a></li>
       
-      <li><a :class="{ black: scroll }" href="#servizi"> Servizi </a></li>
-      <li><a :class="{ black: scroll }" href="#pacchetti"> Pricing </a></li>
-      <li><a :class="{ black: scroll }" href="#contatti"> Contatti </a></li>
+      <li><a class="" href="#servizi"> Servizi </a></li>
+      <li><a class="" href="#pacchetti"> Pricing </a></li>
+      <li><a class="" href="#contatti"> Contatti </a></li>
     </ul>
   </nav>
+  <div :class="side ? 'nav-mobile-on' : 'nav-mobile-off'" @click="openmenu">
+      <div class="line l1"></div>
+      <div class="line l2"></div> 
+      <div class="line l3"></div>
+  </div>
+  <div :class="side ? 'mobile-on' : 'mobile-off' ">
+    <ul class="flex" >
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pricing </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
+    </ul>
+  </div>
+  
 </template>
 
 <style lang="scss" scoped>
@@ -44,37 +58,63 @@ nav {
   right: 0;
   padding: 15px;
   z-index: 7 !important;
-  
+  backdrop-filter: blur(50px);
+  font-size: $fs_sml;
   font-family: "Inter", sans-serif;
   font-weight: bolder;
   //background-color: rgba(255, 255, 255, 0.283);
-
+  transition: all .2s ease-in;
   @include dfc;
+  //justify-content: flex-end;
   gap: 1rem;
   a {
     position: relative;
-    z-index: 100;
+    z-index: 10;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgba($c1, .8);
     font-weight: bolder;
+    transition: all .5s ease-in;
   }
+  a::after{
+    content: '';
+    position: absolute;
+
+  }
+  
+  background-color: $c3_op;
+  box-shadow: 0 21px 40px -18px rgb(0, 0, 0);
 }
 .nav-mobile {
   display: none;
 }
 
 .nav_scroll {
-  background-color: rgba(255, 255, 255, 0.812);
-  box-shadow: -2px 21px 25px -21px rgb(0, 0, 0);
-}
-.black {
-  color: black;
+  background-color: $c1_op;
+  transition: all .2s ease-in;
 }
 
-.flex {
+ul {
   display: flex;
   align-items: center;
   gap: 2rem;
   list-style: none;
+  justify-content: space-evenly;
+  width: 60%;
+  transition: all .5s ease-in;
+  //justify-content: flex-end;
+  margin: 0;
 }
+.ul_scroll {
+  transition: all .5s ease-in;
+  width: 50%;
+  margin-left: auto;
+  
+  li{
+    a{
+      transition: all .5s ease-in;
+      color: $c3;
+    }
+  }
+}
+
 </style>
