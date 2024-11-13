@@ -73,7 +73,7 @@ nav {
     text-decoration: none;
     color: rgba($c1, .8);
     font-weight: bolder;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
   }
   a::after{
     content: '';
@@ -100,18 +100,18 @@ ul {
   list-style: none;
   justify-content: space-evenly;
   width: 60%;
-  transition: all .5s ease-in;
+  transition: all .3s ease-in;
   //justify-content: flex-end;
   margin: 0;
 }
 .ul_scroll {
-  transition: all .5s ease-in;
+  transition: all .3s ease-in;
   width: 50%;
   margin-left: auto;
   
   li{
     a{
-      transition: all .5s ease-in;
+      transition: all .3s ease-in;
       color: $c3;
     }
   }

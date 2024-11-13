@@ -37,10 +37,10 @@ $fs_xlg: clamp(30px, 4vw, 50px);
 .btn-1{
     background-color: $c1;
     color: $c2;
-    box-shadow: 0px 0px 15px $c1_op;
+    box-shadow: 0px 0px 20px -5px $c1;
   }
   .btn-2{
-    box-shadow: 0 0 10px $c1_op;
+    box-shadow: 0 0 24px -9px $c1;
     background-color: $c2;
     color: $c1;
 }
