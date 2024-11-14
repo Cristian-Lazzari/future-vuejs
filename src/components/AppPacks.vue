@@ -129,9 +129,9 @@ export default {
     }
     .pack:nth-child(odd){
       .desc{
-        margin-left: 0;
-        margin-right: auto;
-        text-align: right;
+        margin-left: auto;
+        margin-right: 0;
+        text-align: start;
       }
     }
     .pack{
@@ -143,20 +143,15 @@ export default {
       font-size: $fs_sm;
       @include dfa;
       justify-content: space-between;
-      gap: 17vw;
+      gap: 15vw;
       .desc{
         width: 35%;
-        margin-left: auto;
+        margin-right: auto;
         line-height: $fs_md;
         padding: 2rem;
+        text-align: end;
       }
-      .schedule:nth-child(odd){
-        border-top-right-radius: $b_r_md;
-        border-bottom-right-radius: $b_r_md;
-        border-bottom-left-radius: 0 ;
-        border-top-left-radius: 0 ;
-        box-shadow: 6px -6px rgba($c1_op, .3),  7px 0px 15px rgba(0, 0, 0, 0.516) ;
-      }
+      
       .schedule{
         background-color: $c1;
         box-shadow: -6px -6px rgba($c1_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
@@ -166,7 +161,7 @@ export default {
         flex-direction: column;
         gap: 2rem;
         color: $c3;
-        padding: 3rem 10vw;
+        padding: 3rem 10vw 3rem 5vw;
         border-top-right-radius: 0 ;
         border-bottom-right-radius: 0 ;
         border-bottom-left-radius: $b_r_md;
@@ -176,18 +171,37 @@ export default {
           text-align: center;
         }
         .feat{
+          flex-direction: row-reverse;
           width: 100%;
           @include dfa;
-          gap: 1.8rem;
+          gap: 2.8rem;
           justify-content: space-between;
           p{
-            max-width: 250px;
+            width: clamp(250px, 30vw, 340px);
+            
+            text-align: start;
           }
           svg{
             flex:  0 0 auto;
             width: 23px;
             height: 23px;
             //aspect-ratio: 1;
+          }
+        }
+      }
+      .schedule:nth-child(odd){
+        border-top-right-radius: $b_r_md;
+        border-bottom-right-radius: $b_r_md;
+        border-bottom-left-radius: 0 ;
+        border-top-left-radius: 0 ;
+        box-shadow: 6px -6px rgba($c1_op, .3),  7px 0px 15px rgba(0, 0, 0, 0.516) ;
+        padding: 3rem 5vw 3rem 10vw  !important;
+        //background-color: red;
+        .feat{
+          flex-direction: row;
+          p{
+            text-align: end;
+            //background-color:red;
           }
         }
       }
