@@ -26,8 +26,8 @@ $fs_sml: clamp(16px, 2.7vw, 22px);
 $fs_md: clamp(17px, 3.1vw, 28px);
 $fs_lg: clamp(22px, 3.5vw, 42px);
 $fs_xlg: clamp(35px, 4vw, 55px);
-$fs_xxlg: clamp(55px, 7vw, 80px);
-$fs_xxxlg: clamp(65px, 8vw, 99px);
+$fs_xxlg: clamp(48px, 7vw, 80px);
+$fs_xxxlg: clamp(55px, 8vw, 99px);
 
 .btn-1, .btn-2{
     padding: .6rem 2.4rem;
@@ -70,7 +70,7 @@ span.strg{
 
 p.text{
   text-align: center;
-  padding: 5svh;
+  padding:  5svh 3rem;
   font-size: $fs_sm;
   font-weight: 300;
 }
@@ -124,13 +124,9 @@ $gap_p_in: 1.8rem;
 @mixin mmw {
   margin: 20vh auto 20vh;
   max-width: $mw;
-  padding: 3rem;
+  padding: 2rem;
 }
-@media (max-width:$bp_md) {
-  @mixin mmw {
-    padding: 1.5rem !important;
-  }
-}
+
 
 .mobile-on{
     display: block;
@@ -177,6 +173,67 @@ $gap_p_in: 1.8rem;
     }
   }
   @media (max-width:600px) {
+    .nav{
+      display: none !important;
+    }
+    .nav-mobile-on{
+      @include dfc;
+      position: fixed;
+      z-index: 1113 !important;
+      flex-direction: column; 
+      gap: 6px;
+      top: 30px;
+      right: 30px;
+      .line{
+        height: 3px;
+        width: 27px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 7px black;
+      }
+      .l1, .l2{
+        position: absolute;
+        transform: rotateZ(405deg);
+        transition: all .3s linear;
+      }
+      .l3{
+        position: absolute;
+        transform: rotateZ(-405deg);
+        transition: all .3s linear;
+      }
+      .l2{
+        box-shadow: 0px 0px 0px black;
+      }
+      
+    }
+    .nav-mobile-off{
+      @include dfc;
+      position: fixed;
+      z-index: 1113 !important;
+      flex-direction: column;
+      
+      gap: 6px;
+      top: 20px;
+      right: 20px;
+      
+      .line{
+        height: 3px;
+        width: 27px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 7px black;
+        transition: all .3s linear;
+      }
+      
+      
+    }
+  }
+  @media (min-height:400px) {
+    .mobile-on{
+      display: none;
+    }
+  }
+  @media (min-height:400px) {
     .nav{
       display: none !important;
     }

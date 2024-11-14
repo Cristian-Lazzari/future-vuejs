@@ -211,7 +211,7 @@ export default {
       width: clamp(220px, 65vw, 500px);
 
       img{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         transition: opacity .5s ease-in-out;
       }
@@ -245,6 +245,33 @@ export default {
         }
       }
     }
+    @media (max-width: $bp_md) {
+      .slider{
+        width: 100% !important;
+      }
+
+      .top{
+        align-items: flex-start !important;
+      }
+      .small{
+        //flex-direction: column !important;
+        flex-wrap: wrap;
+        svg{
+          $w_svg : 22px;
+          height: $w_svg !important;
+          width: $w_svg !important;
+        }
+      }
+      .qr{
+        .small{
+          svg{
+            $w_svg : 100%;
+            height: $w_svg !important;
+            width: $w_svg !important;
+          }
+        }
+      }
+    }
     
     .panel, .small{
       background-color: $c1_op;
@@ -265,7 +292,7 @@ export default {
         font-size: $fs_xxlg;
         font-weight: 600;
       }
-      $gap:1.2rem;
+      $gap:1.9rem;
       $gap_p_in: 1.8rem;
       .grid{
         display: flex;
@@ -289,21 +316,21 @@ export default {
           }
           #box{
             $w_svg : 30px;
-            height: $w_svg !important;
-            width: $w_svg !important;
+            height: $w_svg;
+            width: $w_svg;
           }
           #mail{
             $w_svg : 37px;
-            height: $w_svg !important;
-            width: $w_svg !important;
+            height: $w_svg;
+            width: $w_svg;
           }
         }
         
         .right{
           align-items: center;
           .panel{
-            width: 90%;
-            margin: 0 auto;
+            // width: 90%;
+            // margin: 0 auto;
           }
           //background-color: rgba(0, 110, 255, 0.119);
         }
@@ -342,6 +369,7 @@ export default {
         .bottom{
           width: 100%;
           @include dfa;
+          gap: 1rem;
           text-align: left;
           justify-content: space-between;
           align-items: center;
@@ -367,7 +395,7 @@ export default {
 
             flex-grow: 1;
             .top{
-              flex-direction: column;
+              //flex-direction: column;
               align-items: center;
               .small{
                 //align-self: flex-end;
