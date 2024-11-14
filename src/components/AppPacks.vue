@@ -167,7 +167,8 @@ export default {
         border-bottom-left-radius: $b_r_md;
         border-top-left-radius: $b_r_md;
         h4{
-          font-size: $fs_md;
+          font-size: $fs_lg;
+          font-weight: bolder;
           text-align: center;
         }
         .feat{
@@ -177,7 +178,7 @@ export default {
           gap: 2.8rem;
           justify-content: space-between;
           p{
-            width: clamp(250px, 30vw, 340px);
+            width: clamp(180px, 30vw, 340px);
             
             text-align: start;
           }
