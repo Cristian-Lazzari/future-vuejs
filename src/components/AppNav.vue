@@ -1,7 +1,9 @@
 <script>
+import { store } from "../store.js";
 export default {
   data() {
     return {
+      store,
       scroll: false,
     };
   },
@@ -14,6 +16,10 @@ export default {
       } else if (scroll == 0) {
         this.scroll = false;
       }
+    },
+    openmenu(){
+      this.store.nav_menu = !this.store.nav_menu
+      
     },
   },
   created() {
@@ -33,12 +39,13 @@ export default {
       <li><a class="" href="#contatti"> Contatti </a></li>
     </ul>
   </nav>
-  <div :class="side ? 'nav-mobile-on' : 'nav-mobile-off'" @click="openmenu">
+  <div :class="store.nav_menu ? 'nav-mobile-on' : 'nav-mobile-off'" @click="openmenu">
       <div class="line l1"></div>
       <div class="line l2"></div> 
       <div class="line l3"></div>
   </div>
-  <div :class="side ? 'mobile-on' : 'mobile-off' ">
+  
+  <div :class="store.nav_menu ? 'mobile-on' : 'mobile-off' ">
     <ul class="flex" >
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>

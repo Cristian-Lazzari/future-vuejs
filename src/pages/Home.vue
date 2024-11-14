@@ -1,5 +1,5 @@
 <script >
-
+import { store } from "../store.js";
 import AppNav from "../components/AppNav.vue";
 export default{
   components: {
@@ -10,21 +10,14 @@ export default{
   },
   data() {
     return {
-      side: 0,
+      store,
       slide_1_a : 0,
       slide: ['../../public/img/ip.png', '../../public/img/ip1.png' ,'../../public/img/ip2.png'],
       slide_1: [1,2,3],
     };
   },
   methods:{
-    openmenu(){
-      if(this.side == 1){
-        this.side = 0
-      }else{
-        this.side = 1
-      }
-      
-    },
+
     slide_infinite() {
         setInterval(() => {
           if (this.slide.length > (this.slide_1_a + 1)) {
@@ -33,7 +26,7 @@ export default{
             this.slide_1_a = 0 // Ciclo infinito sugli oggetti
           }
           //console.log(this.slide_1_a)
-        }, 2000); // 10000 millisecondi = 10 secondi
+        }, 4000); // 10000 millisecondi = 10 secondi
       },
   },
   created(){
@@ -375,7 +368,7 @@ export default{
   
     .section_tip{
       padding: 1rem;
-      margin: 5rem auto 5rem;
+      margin: 10vh auto 30vh;
       max-width: $mw;
       text-align: center;
       color: $c1;

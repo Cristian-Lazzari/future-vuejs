@@ -2,6 +2,10 @@ import { reactive } from "vue";
 
 export const store = reactive({
   //baseUrl: "http://127.0.0.1:8000/",
+  nav_menu: 1,
+
+
+
   typepay: 1,
   pUrl:[
     [

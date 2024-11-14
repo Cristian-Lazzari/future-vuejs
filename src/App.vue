@@ -21,7 +21,7 @@
 <style lang="scss">
 @use './assets/styles/general.scss' as *;
 body{
-  background-color: black;
+  background-color: $c3;
 }
 
 
