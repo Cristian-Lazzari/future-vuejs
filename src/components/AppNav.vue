@@ -11,9 +11,9 @@ export default {
     actionScroll(event) {
       const scroll = window.scrollY;
       //   console.log(scroll);
-      if (scroll > 800) {
+      if (scroll > 1000) {
         this.scroll = true;
-      } else if (scroll == 0) {
+      } else if (scroll < 900) {
         this.scroll = false;
       }
     },
@@ -88,7 +88,7 @@ nav {
 
   }
   
-  background-color: $c3_op;
+  background-color: rgba($c3, .8);
   box-shadow: 0 21px 40px -18px rgb(0, 0, 0);
 }
 .nav-mobile {
@@ -98,6 +98,7 @@ nav {
 .nav_scroll {
   background-color: $c1_op;
   transition: all .2s ease-in;
+  z-index: 10 !important;
 }
 
 ul {

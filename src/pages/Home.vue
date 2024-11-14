@@ -133,7 +133,7 @@ export default{
         </div>
       </div>
       <div class="section_tip second">
-        <h2>Incassa il <span class="c2">100%</span> dalla tua attività e di <span class="c2">ADDIO</span> alle <span class="c2">COMMISSIONI</span> </h2>
+        <h2>Incassa il <span class="c2">100%</span> dalla tua attività e di <span class="c2">ADDIO</span> alle <span class="c2">FEE di TERZI</span> </h2>
         <p class="text">
           <span class="pack">Restaurant+ PRO </span> <br> 
           il nostro softwere nella sua versione piu completa ti permette raccogliere ordini e prenotazioni dal tuo sito così che non dovrai piu pagare commissioni! 
@@ -258,9 +258,10 @@ export default{
         align-items: center;
         gap: 1.5rem;
         img{
-          width: clamp(180px, 40vw, 680px);
+          width: clamp(180px, 30vw, 680px);
           //height: auto;
           object-fit: contain;
+          filter: drop-shadow(0 0 10px $c1_op);
         }
         .text{
           text-align: center;
@@ -278,6 +279,10 @@ export default{
 
           }
         }
+      }
+      .btn-2{
+        width: 80%;
+        margin: 0 auto;
       }
       .btn-1{
         position: absolute;
@@ -304,6 +309,10 @@ export default{
           transition: all 1s ease-out;
           font-weight: 400;
         }
+        a{
+          font-weight: 600;
+
+        }
         a:hover, .piva:hover{
           color: $c1;
           text-shadow: 0 0 15px $c2;
@@ -317,8 +326,8 @@ export default{
         justify-content: space-between;
         flex-direction: column;
         img{
-          max-width: 700px;
-          width: 80% !important;
+          max-width: 600px;
+          width: 74% !important;
         }
         .text{
           p{
@@ -327,7 +336,19 @@ export default{
         }
       }
     }
+    @media (max-width: $bp_sm) {
+      .center_hero{
+        
+        .text{
+          p{
+            text-align: center !important;
+          }
+        }
+      }
+    }
+
     .slider{
+      text-align: center;
       flex-grow: 1;
       position: relative;
       //background-color: rgba(0, 255, 8, 0.499);
@@ -371,16 +392,18 @@ export default{
     
     .panel, .small{
       background-color: $c1_op;
+      box-shadow: -3px 3px rgba($c1_op, .3) ;
+      
     }
   
     .section_tip{
-      padding: 1rem;
+      padding: 3rem;
       margin: 10vh auto 30vh;
       max-width: $mw;
-      text-align: center;
       color: $c1;
       p.text{
-        padding: 1.5em;
+        text-align: center;
+        padding: 5svh;
         font-size: $fs_sm;
         font-weight: 300;
       }
@@ -388,8 +411,8 @@ export default{
         font-weight: 300;
       }
       h2{
-        font-size: $fs_lg;
-        font-weight: 300;
+        font-size: $fs_xxlg;
+        font-weight: 600;
       }
       $gap:1.2rem;
       $gap_p_in: 1.8rem;
@@ -425,11 +448,15 @@ export default{
           }
         }
         .panel{
+          $c_op : rgba(165, 175, 196, 0.864);
+          box-shadow: -5px 5px rgba($c1_op, .3) ;
+          //background: linear-gradient( 45deg,  $c1_op 10%, $c_op 22%, $c1_op 50%, $c_op 63%, $c1_op 86%  );
+
           width: 100%;
           text-align: left;
           gap: $gap_p_in;
           justify-content: flex-start;
-          padding: 1.2rem 2.2rem;
+          padding: 1.2rem 1.2rem 1.2rem 2.2rem;
           border-radius: $b_r_md;
           .top{
             width: 100%;
@@ -463,19 +490,15 @@ export default{
     }
     .first{
       .qr{
-        padding: 0 !important;
         gap: .5rem !important;
         
         h5{
-          padding: 1rem 2.2rem;
-          background-color: $c_pan;
           border-radius: $b_r_md;
         }
         .top{
           align-items: center !important;
           .small{
-            margin: 1rem 2.2rem;
-            height: clamp(85px, 20vw, 110px);
+            height:  110px;
             aspect-ratio: 1;
             svg{
               height: 100%;
@@ -510,6 +533,11 @@ export default{
       }
     }
 
+    @media (max-width: $bp_md) {
+      .section_tip{
+        padding: 1rem !important;
+      }
+    }
     @media (max-width: $bp_lg) {
       .section_tip{
         .grid{
