@@ -236,7 +236,7 @@ export default{
     background-color: $c3;
     .hero{
       color: $c1;
-      height: 100vh;
+      height: 100svh;
       width: 100%;
       background-image: url('../../public/img/herofplus.png');
       background-position: center;
