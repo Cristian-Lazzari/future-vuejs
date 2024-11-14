@@ -1,6 +1,9 @@
-$c1: rgb(236, 243, 243);
+$c1: #d8dde8;
+//$c1: rgb(236, 243, 243);
+//
+$c2: #2EB793;
+$c2: #05BAB3;
 $c2: #29c7c2;
-//$c2: #2EB793;
 $c3: #090333;
 $c_pan: #918EA0;
 
@@ -47,7 +50,7 @@ $fs_xxxlg: clamp(65px, 8vw, 99px);
     background-color: $c2;
     color: $c1;
 }
-.br{
+.br{ //button rounded
   border-radius: 200px;
 }
 
@@ -68,23 +71,33 @@ span.strg{
   font-weight: 900;
 }
 
+p.text{
+  text-align: center;
+  padding: 5svh;
+  font-size: $fs_sm;
+  font-weight: 300;
+}
+
 ///**MIXIN**///
 @mixin dfc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin dfa {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @mixin dfj {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
+@mixin mmw {
+  margin: 20vh auto 20vh;
+  max-width: $mw;
+}
 
 .mobile-on{
     display: block;
