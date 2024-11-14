@@ -50,13 +50,14 @@ $fs_xxxlg: clamp(65px, 8vw, 99px);
   border-radius: 200px;
 }
 
+//modificatori testo / parole
 span.c2{
   color: $c2;
   font-weight: 900;
   font-size: $fs_xxxlg;
   text-shadow: 0 0 10px $c2_op;
 }
-.pack{
+span.pack{
   font-size: $fs_lg;
   font-style: italic;
   color: $c2;
@@ -74,6 +75,36 @@ p.text{
   font-weight: 300;
 }
 
+//pannelli
+$gap:1.2rem;
+$gap_p_in: 1.8rem;
+.panel{
+  $c_op : rgba(165, 175, 196, 0.864);
+  box-shadow: -5px 5px rgba($c1_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
+  //background: linear-gradient( 45deg,  $c1_op 10%, $c_op 22%, $c1_op 50%, $c_op 63%, $c1_op 86%  );
+
+  width: 100%;
+  text-align: left;
+  gap: $gap_p_in;
+  justify-content: flex-start;
+  padding: 1.2rem 1.2rem 1.2rem 2.2rem;
+  border-radius: $b_r_md;
+  .top{
+    width: 100%;
+    display: flex;
+    gap: $gap_p_in;
+    justify-content: space-between;
+    align-items: flex-start;
+    h5{
+      font-weight: 400;
+      font-size: $fs_md;
+      
+    }
+  }
+  p{
+    font-size: $fs_sm;
+  }
+}
 ///**MIXIN**///
 @mixin dfc {
   display: flex;
@@ -93,6 +124,12 @@ p.text{
 @mixin mmw {
   margin: 20vh auto 20vh;
   max-width: $mw;
+  padding: 3rem;
+}
+@media (max-width:$bp_md) {
+  @mixin mmw {
+    padding: 1.5rem !important;
+  }
 }
 
 .mobile-on{

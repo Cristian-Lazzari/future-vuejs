@@ -248,12 +248,13 @@ export default {
     
     .panel, .small{
       background-color: $c1_op;
+    }
+    .small{
       box-shadow: -3px 3px rgba($c1_op, .3) ;
       
     }
   
     .section_tip{
-      padding: 3rem;
       @include mmw;
       color: $c1;
       
@@ -297,33 +298,7 @@ export default {
             width: $w_svg !important;
           }
         }
-        .panel{
-          $c_op : rgba(165, 175, 196, 0.864);
-          box-shadow: -5px 5px rgba($c1_op, .3) ;
-          //background: linear-gradient( 45deg,  $c1_op 10%, $c_op 22%, $c1_op 50%, $c_op 63%, $c1_op 86%  );
-
-          width: 100%;
-          text-align: left;
-          gap: $gap_p_in;
-          justify-content: flex-start;
-          padding: 1.2rem 1.2rem 1.2rem 2.2rem;
-          border-radius: $b_r_md;
-          .top{
-            width: 100%;
-            display: flex;
-            gap: $gap_p_in;
-            justify-content: space-between;
-            align-items: flex-start;
-            h5{
-              font-weight: 400;
-              font-size: $fs_md;
-              
-            }
-          }
-          p{
-            font-size: $fs_sm;
-          }
-        }
+        
         .right{
           align-items: center;
           .panel{
@@ -383,11 +358,7 @@ export default {
       }
     }
 
-    @media (max-width: $bp_md) {
-      .section_tip{
-        padding: 1rem !important;
-      }
-    }
+
     @media (max-width: $bp_lg) {
       .section_tip{
         .grid{

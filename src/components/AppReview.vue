@@ -30,7 +30,7 @@ export default {
             parliamo noi, lo dicono i <span class="strg">nostri clienti!</span> 
         </p>
         <div class="reviews">
-            <div v-for="r in reviews" :key="r" class="rev">
+            <div v-for="r in reviews" :key="r" class="panel rev">
                 <p class="content">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex veritatis eos vero enim, illo dolorem expedita placeat atque consequuntur hic quae quibusdam animi dicta non aspernatur quaerat dolore tempora!
                 </p>
@@ -59,11 +59,11 @@ export default {
         .reviews{
             @include dfc;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 3.5rem;
             .rev{
-                font-size: $fs_sm;
-                padding: 1.2rem 3rem;
-                border-radius: $b_r_sm;
+                //padding: 1.2rem 3rem;
+                color: $c1;
+                box-shadow: -5px 5px rgba($c3, .7), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
                 background-color: $c3_op;
                 width: clamp(200px, 80vw, 300px);
 
