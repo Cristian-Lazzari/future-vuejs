@@ -12,7 +12,7 @@ export default{
     return {
       store,
       slide_1_a : 0,
-      slide: ['/public/img/ip.png', '/public/img/ip1.png' ,'/public/img/ip2.png'],
+      slide: [ this.store.domain + '/public/img/ip.png',  this.store.domain + '/public/img/ip1.png' , this.store.domain + '/public/img/ip2.png'],
       slide_1: [1,2,3],
     };
   },
