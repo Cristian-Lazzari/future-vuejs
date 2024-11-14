@@ -64,8 +64,10 @@ export default {
           text-align: center;
           display: flex;
           flex-direction: column;
-          gap: 2rem;
+          gap: 1.3rem;
           p{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
             width: 100%;
             line-height: $fs_md;
             text-align: right;
@@ -79,7 +81,9 @@ export default {
       }
       .btn-2{
         width: 80%;
-        margin: 0 auto;
+        margin-left: auto;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
       }
       .btn-1{
         position: absolute;
@@ -117,9 +121,9 @@ export default {
         }
       }
     }
-    @media (max-width: 1440px) {
+    @media (max-width: 1350px) {
       .center_hero{
-        gap: 8vh !important;
+        gap: 5svh !important;
         justify-content: space-between;
         flex-direction: column;
         img{
