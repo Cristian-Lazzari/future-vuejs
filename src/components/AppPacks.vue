@@ -47,9 +47,7 @@ export default {
   <div class="container">
     <!-- < -->
     <h2>I nostri pacchetti pensati <span class="c2">PER TE</span> </h2>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sint enim rerum iusto error laborum id facere esse, consequuntur est suscipit quae animi voluptatum corporis tempore veritatis eum asperiores vitae!
-    </p>
+
     <div class="pack">
       <div class="schedule">
         <h4>Pacchetto Essentials</h4>
@@ -123,7 +121,9 @@ export default {
     background-color: $c3;
     h2{
       @include mmw;
-      
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 5vh;
       font-size: $fs_xxlg;
       font-weight: 600;
     }
@@ -135,6 +135,7 @@ export default {
       }
     }
     .pack{
+      padding-bottom: 15vh;
       span.pack{
         display: inline;
         font-size: $fs_md;
@@ -142,7 +143,6 @@ export default {
       font-size: $fs_sm;
       @include dfa;
       justify-content: space-between;
-      //flex-wrap: wrap;
       gap: 17vw;
       .desc{
         width: 35%;
@@ -192,6 +192,29 @@ export default {
         }
       }
       
+    }
+    @media (max-width:$bp_md) {
+      .pack{
+        
+        gap: 1rem;
+        flex-direction: column;
+        .desc{
+          width: 80% !important;
+          text-align: center !important;
+          padding: 1rem !important;
+          margin: 0 !important;
+          align-self: center;
+        }
+        .schedule{
+          align-self: flex-end;
+        }
+      }
+      .pack:nth-child(even){
+        .schedule{
+          align-self: flex-start;
+        }
+        flex-direction: column-reverse;
+      }
     }
   }
 
