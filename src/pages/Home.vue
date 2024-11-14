@@ -53,9 +53,11 @@ export default{
         </div>
         <div class="btn-1 br">Scopri di più</div>
         <div class="bottom_bar">
-          <a href="">Cookie Policy</a>
           <div class="piva">P. IVA 02974730422</div>
+          <div>
+            <a href="">Cookie Policy</a>
           <a href="">Privacy Policy</a>
+          </div>
         </div>
       </div>
       <div class="section_tip first">
@@ -288,14 +290,19 @@ export default{
         bottom: 0;
         width: 100%;
         text-align: center;
-        padding: 1.2rem;
+        padding: 1rem;
         background-color: $c1_op;
+        div{
+          display: flex;
+          gap: .5rem;
+        }
         a, .piva{
+          font-size: $fs_xsm;
           color: $c1_op;
           font-family: 'Courier New', Courier, monospace;
           text-decoration: none;
           transition: all 1s ease-out;
-          font-weight: 600;
+          font-weight: 400;
         }
         a:hover, .piva:hover{
           color: $c1;
