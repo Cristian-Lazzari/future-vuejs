@@ -64,28 +64,29 @@ export default {
    .container{
     @include mmw;
     max-width: none;
+    background-color: $c1;
+    color: $c3;
     h2{
       font-size: $fs_xxlg;
       font-weight: 600;
       margin-bottom: 5vh;
-      color: $c1;
     }
     .prices{
       width: 100%;
       @include dfc;
       justify-content: space-evenly;
-      gap: 1rem;
+      gap: 3rem;
       flex-wrap: wrap;
       .schedule{
         max-width: 330px;
-        background-color: $c1;
-        box-shadow: -6px -6px rgba($c1_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
+        background-color: $c3;
+        box-shadow: -6px -6px rgba($c3_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
 
         //width: 900px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        color: $c3;
+        color: $c1;
         padding: 3rem 1rem;
         border-radius: $b_r_md;
         h4{
