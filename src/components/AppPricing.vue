@@ -127,7 +127,7 @@ export default {
       background-color: $c3;
       color: $c1;
       padding: .5rem;
-      border-radius: $b_r_md;
+      border-radius: $br;
       margin: 0 auto 3rem; 
       font-size: $fs_sml;
       @include dfc;
