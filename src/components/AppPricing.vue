@@ -20,10 +20,10 @@ export default {
 
 <template>
   <div class="container">
-    <h2>Prenota una chiamata con in nostri <span class="c2">ESPERTI</span> </h2>
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget mycl" data-url="https://calendly.com/futureplus-commerciale/30min?hide_event_type_details=1&hide_gdpr_banner=1"></div>
-<!-- Calendly inline widget end -->
+    <h2>
+        La nostra offerta esclusiva
+    </h2>
+    
   </div>
 </template>
 
@@ -45,7 +45,7 @@ export default {
   }
   @media (max-width: $bp_sm) {
     .mycl{
-      height: 80svh !important;
+      height: 80svh;
     }
     
    }
