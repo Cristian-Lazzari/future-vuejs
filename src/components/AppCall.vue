@@ -34,6 +34,8 @@ export default {
 
      height: 100svh;
     .mycl{
+      width: 60vw;
+      margin: 0 auto;
       height: 50svh;
     }
     h2{
@@ -43,9 +45,13 @@ export default {
       color: $c1;
     }
   }
-  @media (max-width: $bp_sm) {
+  @media (max-width: $bp_md) {
     .mycl{
-      height: 80svh !important;
+      width: 90vw !important;
+      height: 90svh !important;
+      border-radius: $b_r_md !important;
+      overflow: hidden;
+      background-color: aqua;
     }
     
    }
