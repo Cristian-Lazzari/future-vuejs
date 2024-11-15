@@ -134,7 +134,7 @@ export default {
       gap: 2rem;
       width: fit-content;
       position: sticky;
-      top: 12vh;
+      top: 12svh;
       z-index: 9;
       div{
         border-radius: 100px;
