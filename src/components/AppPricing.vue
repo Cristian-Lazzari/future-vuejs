@@ -122,8 +122,8 @@ export default {
       font-size: $fs_sm;
     }
     .scelta{
-      border: 4px solid $c1;
-      box-shadow: -3px 3px rgba($c3, .3),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
+      border: 4px solid $c1_op;
+      box-shadow: -3px 3px rgba($c1, .3),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
       background-color: $c3;
       color: $c1;
       padding: .5rem;
@@ -139,17 +139,31 @@ export default {
       div{
         border-radius: 100px;
       }
+      .mm{
+        background-color: $c2;
+        //color: $c3;
+        color: $c1;
+        text-shadow: 0 0 10px $c3;
+        box-shadow: -3px 0 5px $c2;
+      }
+      .aa{
+        text-shadow: 0 0 8px $c3_op;
+        background-color: $c1;
+        color: $c3;
+        box-shadow: 3px 0 5px $c1;
+      }
       .on{
         transition: all .4s ease-in-out;
         position: relative;
         z-index: 4;
         padding: .8rem 1.2rem;
-        background-color: $c1_op;
+        font-weight: 900;
+        
       }
-      .on.mm{
-        background-color: $c2_op;
+      // .on.mm{
+      //   background-color: $c2_op;
 
-      }
+      // }
       .off{
         transition: all .4s ease-in;
         position: relative;
