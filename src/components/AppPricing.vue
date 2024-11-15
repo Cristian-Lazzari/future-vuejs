@@ -134,7 +134,7 @@ export default {
       gap: 2rem;
       width: fit-content;
       position: sticky;
-      top: 20vh;
+      top: 12vh;
       z-index: 9;
       div{
         border-radius: 100px;
@@ -187,13 +187,13 @@ export default {
       flex-wrap: wrap;
       .schedule{
         background-color: $c3;
-        max-width: 330px;
+        max-width: 320px;
         box-shadow:  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         color: $c1;
-        padding: 3rem 1.4rem;
+        padding: 3rem 2rem;
         border-radius: $b_r_md;
         .price-c{
           .price{
@@ -219,8 +219,7 @@ export default {
           gap: 1.4rem;
           justify-content: space-between;
           p{
-            width: clamp(180px, 30vw, 340px);
-            
+            width: clamp(200px, 70vw, 340px);   
             text-align: start;
           }
           svg{
@@ -239,9 +238,11 @@ export default {
   }
 @media (max-width: $bp_sm) {
   .schedule{
-    gap: 1.2rem !important;
+    gap: 1rem !important;
+    max-width: 92%;
+    width: 92%;
     .feat{
-      gap: .5rem !important;
+      gap: .32rem !important;
     }
   }
 
