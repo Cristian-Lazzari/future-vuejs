@@ -99,6 +99,7 @@ export default {
         @include dfj;
         flex-direction: row;
         justify-content: space-evenly;
+        gap: 3rem;
         div{
           h5{
             font-size: $fs_sm;
@@ -112,7 +113,7 @@ export default {
         @include dfa;
         img{
           opacity: .3;
-          width: clamp(100px, 25vw, 200px);
+          width: clamp(100px, 40vw, 240px);
         }
       }
       .social{
@@ -133,6 +134,16 @@ export default {
    width: 100%;
    text-align: center;
    background-color: rgb(1, 1, 11);
+  }
+  @media (max-width: $bp_md) {
+
+    .top, .bottom, .wrap{
+      text-align: center;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    
   }
 
 </style>
