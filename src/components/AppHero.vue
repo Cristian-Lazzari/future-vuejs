@@ -52,8 +52,9 @@ export default {
       justify-content: center;
 
       position: relative;
+      overflow: hidden;
       .center_hero{
-        
+        padding: 0 5vw;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -65,24 +66,14 @@ export default {
           //height: auto;
           object-fit: contain;
           filter: drop-shadow(0 0 10px $c1_op);
+          animation: logobig .3s ease-out .3s ;
         }
         .text{
           text-align: center;
           display: flex;
           flex-direction: column;
           gap: 1.3rem;
-          p{
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 800;
-            width: 100%;
-            line-height: $fs_md;
-            text-align: right;
-            font-size: $fs_sml;
-            margin: 0 auto;
-            max-width: 300px;
-            font-weight: lighter;
-
-          }
+          width: 40%;
         }
       }
       .btn-2{
@@ -131,7 +122,7 @@ export default {
     @media (max-width: $bp_xlg) {
       .center_hero{
         
-        gap: 2svh !important;
+        gap: 6svh !important;
         justify-content: space-between;
         flex-direction: column;
         img{
@@ -142,18 +133,33 @@ export default {
           margin: 1.5rem auto 0!important;
         }
         .text{
-          width: 80%;
+          width: 60%!important;
           gap: 1.6rem !important;
         }
       }
     }
-    @media (max-width: $bp_xlg) {
+    @media (max-width: $bp_md) {
       .center_hero{  
         gap: 2svh !important;
         .text{
-          max-width: none!important;
+          width: 90% !important;
           gap: 1.2rem !important;
         }
+      }
+    }
+    @keyframes logobig {
+      0%{
+        transform: scale(500%);
+        opacity: 0;
+        
+      }
+      1%{
+        transform: scale(500%);
+      }
+      100%{
+        opacity: 1;
+        transform: scale(0%);
+
       }
     }
 
