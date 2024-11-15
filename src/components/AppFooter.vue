@@ -54,8 +54,8 @@ export default {
           </ul>
         </div>
       </div>
-      <p class="last">Future Plus ® All Rights Reseverd.</p>
     </div>
+    <p class="last">Future Plus ® All Rights Reseverd.</p>
     
 
   </footer>
@@ -126,11 +126,13 @@ export default {
         }
       }
     }
-    .last{
-     width: 100%;
-     text-align: center;
-     background-color: rgb(1, 1, 11);
-    }
-   }
+  }
+  .last{
+    color: $c1;
+    padding: 3rem;
+   width: 100%;
+   text-align: center;
+   background-color: rgb(1, 1, 11);
+  }
 
 </style>
