@@ -48,11 +48,12 @@ export default {
   }
   @media (max-width: $bp_md) {
     .mycl{
+      margin: 0 auto !important;
       width: 90vw !important;
       height: 90svh !important;
       border-radius: $b_r_md !important;
       overflow: hidden;
-      background-color: aqua;
+      //background-color: aqua;
     }
     
    }
