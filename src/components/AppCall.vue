@@ -32,17 +32,17 @@ export default {
    @use '../assets/styles/general.scss' as *;
    .container{
     color: $c1;
+    @include mmw;
 
      height: 100svh;
     .mycl{
       width: 60vw;
       padding-inline: auto;
       margin: 0 auto;
-      height: 50svh;
+      height: 1400px;
       overflow: hidden !important;
     }
     h2{
-      @include mmw;
       font-size: $fs_xxlg;
       font-weight: 600;
 

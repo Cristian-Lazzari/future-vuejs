@@ -6,6 +6,19 @@ export default {
   data() {
     return {
       store,
+      pay_time : 0,
+      price : [
+        [
+          '49,90' , '399,90'
+        ],
+        [
+          '99,90' , '999,90'
+        ],
+        [
+          '129,90' , '1199,90'
+        ],
+      ]
+
     };
   },
   methods:{
@@ -23,6 +36,12 @@ export default {
     <h2>
         La nostra offerta esclusiva
     </h2>
+    <p>Scegli il tipo di abbonamento</p>
+    <div class="scelta">
+      <div :class="pay_time == 1 ? 'right ball' : 'left ball' "></div>
+      <div @click="pay_time = 1" :class="pay_time == 1 ? 'on aa' : 'off'">Mensile</div>
+      <div @click="pay_time = 0" :class="pay_time == 0 ? 'on mm' : 'off'">Annuale</div>
+    </div>
     <div class="prices">
       <div class="schedule">
         <h4>Pacchetto <br> Essentials</h4>
@@ -32,7 +51,7 @@ export default {
           </svg>
           <p v-html="f.f"></p>
         </div>
-        <div class="price">€399</div>
+        <div class="price">{{price[0][pay_time]}}</div>
       </div>
       <div class="schedule">
         <h4>Pacchetto <br> Work On</h4>
@@ -42,7 +61,7 @@ export default {
           </svg>
           <p v-html="f.f"></p>
         </div>
-        <div class="price">€399</div>
+        <div class="price">{{price[1][pay_time]}}</div>
       </div>
       <div class="schedule">
         <h4>Pacchetto <br> Boost Up</h4>
@@ -52,7 +71,7 @@ export default {
           </svg>
           <p v-html="f.f"></p>
         </div>
-        <div class="price">€399</div>
+        <div class="price">{{price[2][pay_time]}}</div>
       </div>
     </div>
     
@@ -62,32 +81,95 @@ export default {
 <style lang="scss" scoped>
    @use '../assets/styles/general.scss' as *;
    .container{
-    @include mmw;
-    max-width: none;
-    background-color: $c1;
-    color: $c3;
-    h2{
+     //max-width: none;
+     background-color: $c1;
+     color: $c3;
+     padding: 5vh 0;
+     h2{
+      @include mmw;
+      margin-top:0;
       font-size: $fs_xxlg;
       font-weight: 600;
       margin-bottom: 5vh;
+    }
+    p{
+      text-align: center;
+      margin: 1rem;
+      font-size: $fs_sm;
+    }
+    .scelta{
+      border: 4px solid $c1;
+      box-shadow: -3px 3px rgba($c3, .3),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
+      background-color: $c3;
+      color: $c1;
+      padding: .5rem;
+      border-radius: $b_r_md;
+      margin: 0 auto 3rem; 
+      font-size: $fs_sml;
+      @include dfc;
+      gap: 2rem;
+      width: fit-content;
+      position: sticky;
+      top: 20vh;
+      z-index: 9;
+      div{
+        border-radius: 100px;
+      }
+      .on{
+        transition: all .4s ease-in-out;
+        position: relative;
+        z-index: 4;
+        padding: .8rem 1.2rem;
+        background-color: $c1_op;
+      }
+      .on.mm{
+        background-color: $c2_op;
+
+      }
+      .off{
+        transition: all .4s ease-in;
+        position: relative;
+        z-index: 4;
+        padding: .8rem 1.2rem;
+        opacity: .4;
+      }
+
+      .ball{
+        transition: all .5s cubic-bezier(0.455, 2, 0.3, 1.2);
+        z-index: 2;
+        background-color:$c2;
+        height: 2.3rem;
+        width: 3rem;
+        position: absolute;
+        filter: blur(16px);
+        animation: ball 5s linear infinite;
+      }
+      
+      .right{
+        margin-left: -50%;
+        background-color:$c1;
+      }
+      .left{   
+        margin-right: -50%;
+      }
+      
     }
     .prices{
       width: 100%;
       @include dfc;
       justify-content: space-evenly;
+      justify-content: center;
       gap: 3rem;
       flex-wrap: wrap;
       .schedule{
-        max-width: 330px;
         background-color: $c3;
-        box-shadow: -6px -6px rgba($c3_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
-
-        //width: 900px;
+        max-width: 330px;
+        box-shadow:  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         color: $c1;
-        padding: 3rem 1rem;
+        padding: 3rem 1.4rem;
         border-radius: $b_r_md;
         h4{
           font-size: $fs_lg;
@@ -125,5 +207,24 @@ export default {
     }
     
    }
+   @keyframes ball {
+        0%{
+          transform: scale(100%);
+        }
+        25%{
+          
+          transform: scale(90%);
+          filter: blur(10px);
+        }
+        75%{
+          
+          filter: blur(9px);
+          transform: scale(130%);
+        }
+        100%{
+          transform: scale(100%);
+
+        }
+      }
 
 </style>
