@@ -6,7 +6,11 @@ export default {
   data() {
     return {
       store,
-      reviews: 3
+      reviews: [
+        'Ammetto di avere delle esigenze complicate, ma non avrei mai pensato di trovare tutto quello che mi serviva così facilmente. Grazie mille!',
+        'Molto facile ed intuitivo, personalizzabile e soprattutto posso finalmente gestire tutto da un\'unica app!',
+        'Non sapevo neanche di averne bisogno, ma ammetto che la loro professionalità e il loro supporto sono impeccabili. Consigliatissimi!' 
+      ]
     };
   },
   methods:{
@@ -31,8 +35,13 @@ export default {
         </p>
         <div class="reviews">
             <div v-for="r in reviews" :key="r" class="panel rev">
+                <div class="star">
+                  <svg v-for="r in 5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </div>
                 <p class="content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex veritatis eos vero enim, illo dolorem expedita placeat atque consequuntur hic quae quibusdam animi dicta non aspernatur quaerat dolore tempora!
+                  {{ r }}
                 </p>
             </div>
         </div>
@@ -53,18 +62,31 @@ export default {
        gap: 3rem;
        background-color: $c1;
        h2{
-           font-size: $fs_xxlg;
-           font-weight: 600;
+         text-shadow: 0 0 11px rgba($c3, .3);
+         font-size: $fs_xxlg;
+         font-weight: 600;
+        }
+        p{
+         text-shadow: 0 0 9px rgba($c3, .3);
+
        }
         .reviews{
-            @include dfc;
+            @include dfj;
             flex-wrap: wrap;
             gap: 3.5rem;
             .rev{
+                @include dfc;
+                flex-direction: column;
+                gap: 2.7rem;
+                .star{
+                  @include dfc;
+                  gap: .7rem;
+
+                }
                 //padding: 1.2rem 3rem;
                 color: $c1;
-                box-shadow: -5px 5px rgba($c3, .7), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
-                background-color: $c3_op;
+                box-shadow: -5px 5px rgba($c3, .5), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
+                background-color: $c3;
                 width: clamp(200px, 80vw, 300px);
 
             }

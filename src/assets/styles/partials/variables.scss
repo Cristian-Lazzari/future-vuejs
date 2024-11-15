@@ -31,17 +31,19 @@ $fs_xxlg: clamp(48px, 7vw, 80px);
 $fs_xxxlg: clamp(55px, 8vw, 99px);
 
 .btn-1, .btn-2{
-    padding: .6rem 2.4rem;
+    padding: 1rem 2.6rem;
     font-size: $fs_sm;
     border-radius: 6px;
     width: auto;
     text-align: center;
     font-weight: 500;
-}
-.btn-1{
+  }
+  .btn-1{
     background-color: $c1;
-    color: $c2;
-    box-shadow: 0px 0px 20px -5px $c1;
+    color: $c3;
+    
+    font-weight: 600;
+    box-shadow: 0px -4px 20px -3px rgb(12, 0, 29);
   }
   .btn-2{
     box-shadow: 0 0 24px -9px $c1;

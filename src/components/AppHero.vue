@@ -66,7 +66,7 @@ export default {
           //height: auto;
           object-fit: contain;
           filter: drop-shadow(0 0 10px $c1_op);
-          animation: logobig .3s ease-out .3s ;
+          animation: logobig .6s ease-out;
         }
         .text{
           text-align: center;
@@ -158,7 +158,7 @@ export default {
       }
       100%{
         opacity: 1;
-        transform: scale(0%);
+        transform: scale(1);
 
       }
     }
