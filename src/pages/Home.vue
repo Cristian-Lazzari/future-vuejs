@@ -37,7 +37,7 @@ export default{
 </script>
 
 <template>
-    <div class="container">
+    <div class="c">
 
       <AppNav />
 
@@ -64,7 +64,10 @@ export default{
 
 <style lang="scss" scoped >
    @use '../assets/styles/general.scss' as *;
-  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
 
 
 
