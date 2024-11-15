@@ -7,6 +7,7 @@ import AppReview from "../components/AppReview.vue";
 import AppPacks from "../components/AppPacks.vue";
 import AppCall from "../components/AppCall.vue";
 import AppFooter from "../components/AppFooter.vue";
+import AppPricing from "../components/AppPricing.vue";
 export default{
   components: {
 
@@ -16,6 +17,7 @@ export default{
     AppReview,
     AppPacks,
     AppCall,
+    AppPricing,
     AppFooter,
 
 
@@ -47,6 +49,8 @@ export default{
 
       <AppPacks />
 
+      <AppPricing />
+      
       <AppCall />
 
       <AppFooter />

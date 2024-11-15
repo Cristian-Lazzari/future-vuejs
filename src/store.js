@@ -6,7 +6,39 @@ export const store = reactive({
   //domain: "http://localhost:5173/",
   nav_menu: 0,
 
-
+  feats_1: [ 
+    {s: 1, f: 'Sito vetrina su dominio personalizzato'},
+    {s: 1, f: 'Menu online con prezzi foto ed allergieni'},
+    {s: 1, f: 'Dashboard con Software <span class="strg">Restaurant+ </span>'},
+    {s: 0, f: 'Post per arricchire il tuo sito e mostrare i tuoi eventi '},
+    {s: 0, f: 'Prenotazioni per cene e pranzi senza commisioni'},
+    {s: 0, f: 'Ordini d’asporto senza commisioni'},
+    {s: 0, f: 'Ordini a domicilio senza commisioni'},
+    {s: 0, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
+    {s: 0, f: 'Statistiche e report su ordini e prenotazioni'},
+  ],
+  feats_2: [ 
+    {s: 1, f: 'Sito vetrina su dominio personalizzato'},
+    {s: 1, f: 'Menu online con prezzi foto ed allergieni'},
+    {s: 1, f: 'Dashboard con Software <span class="strg">Restaurant+ </span>'},
+    {s: 1, f: 'Post per arricchire il tuo sito e mostrare i tuoi eventi '},
+    {s: 1, f: 'Prenotazioni per cene e pranzi senza commisioni'},
+    {s: 1, f: 'Ordini d’asporto senza commisioni'},
+    {s: 1, f: 'Ordini a domicilio senza commisioni'},
+    {s: 0, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
+    {s: 0, f: 'Statistiche e report su ordini e prenotazioni'},
+  ],
+  feats_3: [ 
+    {s: 1, f: 'Sito vetrina su dominio personalizzato'},
+    {s: 1, f: 'Menu online con prezzi foto ed allergieni'},
+    {s: 1, f: 'Dashboard con Software <span class="strg">Restaurant+ PRO</span>'},
+    {s: 1, f: 'Post per arricchire il tuo sito e mostrare i tuoi eventi '},
+    {s: 1, f: 'Prenotazioni per cene e pranzi senza commisioni'},
+    {s: 1, f: 'Ordini d’asporto senza commisioni'},
+    {s: 1, f: 'Ordini a domicilio senza commisioni'},
+    {s: 1, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
+    {s: 1, f: 'Statistiche e report su ordini e prenotazioni'},
+  ],
 
   typepay: 1,
   pUrl:[

@@ -6,31 +6,7 @@ export default {
   data() {
     return {
       store,
-      feats_1: [ 
-        'Sito vetrina su dominio personalizzato',
-        'Menu online con prezzi foto ed allergieni',
-        'Dashboard con Software <span class="strg">Restaurant+</span>',
-      ],
-      feats_2: [ 
-        'Sito vetrina su dominio personalizzato',
-        'Menu online con prezzi foto ed allergieni',
-        'Dashboard con Software <span class="strg">Restaurant+ PRO</span>',
-        'Post per arricchire il tuo sito e mostrare i tuoi eventi ',
-        'Prenotazioni per cene e pranzi senza commisioni',
-        'Ordini d’asporto senza commisioni',
-        'Ordini a domicilio senza commisioni',
-      ],
-      feats_3: [ 
-        'Sito vetrina su dominio personalizzato',
-        'Menu online con prezzi foto ed allergieni',
-        'Dashboard con Software <span class="strg">Restaurant+ PRO</span>',
-        'Post per arricchire il tuo sito e mostrare i tuoi eventi ',
-        'Prenotazioni per cene e pranzi senza commisioni',
-        'Ordini d’asporto senza commisioni',
-        'Ordini a domicilio senza commisioni',
-        'Pagamento online con fee Stripe (dal 1.5% al 2.5%)',
-        'Statistiche e report su ordini e prenotazioni'
-      ]
+      
     };
   },
   methods:{
@@ -50,12 +26,12 @@ export default {
 
     <div class="pack">
       <div class="schedule">
-        <h4>Pacchetto Essentials</h4>
-        <div v-for=" f in feats_1" :key="f" class="feat">
+        <h4>Pacchetto <br> Essentials</h4>
+        <div v-for=" f in store.feats_1" :key="f" :class="f.s ? 'feat' : 'off'">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
           </svg>
-          <p v-html="f" ></p>
+          <p v-html="f.f"></p>
         </div>
       </div>
       <p class="desc">Ideale per i ristoranti che cercano una soluzione 
@@ -76,23 +52,23 @@ export default {
         per ristoranti che puntano a crescere e a fidelizzare 
         la clientela, risparmiando sui costi di intermediazione.</p>
       <div class="schedule">
-        <h4>Pacchetto Work On</h4>
-        <div v-for=" f in feats_2" :key="f" class="feat">
+        <h4>Pacchetto <br> Work On</h4>
+        <div v-for=" f in store.feats_2" :key="f" :class="f.s ? 'feat' : 'off'">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
           </svg>
-          <p v-html="f" ></p>
+          <p v-html="f.f"></p>
         </div>
       </div>    
     </div>
     <div class="pack">
       <div class="schedule">
-        <h4>Pacchetto Boost Up</h4>
-        <div v-for=" f in feats_3" :key="f" class="feat">
+        <h4>Pacchetto <br> Boost Up</h4>
+        <div v-for=" f in store.feats_3" :key="f" class="feat">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
           </svg>
-          <p v-html="f" ></p>
+          <p v-html="f.f"></p>
         </div>
       </div>
       <p class="desc">La soluzione <span class="pack">COMPLETA </span> per la gestione digitale del tuo ristorante.
@@ -189,6 +165,11 @@ export default {
             height: 23px;
             //aspect-ratio: 1;
           }
+        }
+        .off{
+          height: 0;
+          padding: 0;
+          display: none;
         }
       }
       .schedule:nth-child(odd){
