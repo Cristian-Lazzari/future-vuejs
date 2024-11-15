@@ -138,16 +138,17 @@ export default {
       padding-bottom: 15vh;
       span.pack{
         display: inline;
-        font-size: $fs_md;
+        font-size: $fs_lg;
       }
       font-size: $fs_sm;
       @include dfa;
       justify-content: space-between;
       gap: 15vw;
       .desc{
+        font-size: $fs_sml;
         width: 35%;
         margin-right: auto;
-        line-height: $fs_md;
+        line-height: $fs_lg;
         padding: 2rem;
         text-align: end;
       }
@@ -209,9 +210,12 @@ export default {
       
     }
     @media (max-width:$bp_md) {
+      .container{
+        gap: 0rem !important;
+      }
       .pack{
-        
-        gap: 1rem;
+        padding-bottom: 5vh !important;
+        gap: 2rem;
         flex-direction: column;
         .desc{
           width: 80% !important;
