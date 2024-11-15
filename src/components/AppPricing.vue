@@ -162,8 +162,8 @@ export default {
         transition: all .5s cubic-bezier(0.455, 2, 0.3, 1.2);
         z-index: 2;
         background-color:$c2;
-        height: 2.3rem;
-        width: 3rem;
+        height: 1rem;
+        width: 2rem;
         position: absolute;
         filter: blur(16px);
         animation: ball 5s linear infinite;
@@ -238,9 +238,12 @@ export default {
     }
   }
 @media (max-width: $bp_sm) {
-.mycl{
-height: 80svh;
-}
+  .schedule{
+    gap: 1.2rem !important;
+    .feat{
+      gap: .5rem !important;
+    }
+  }
 
 }
 @keyframes ball {

@@ -50,9 +50,17 @@ export default {
     }
   }
   @media (max-width: $bp_md) {
+    .container{
+      padding-inline: 1rem;
+    }
+    h2{
+      padding-inline: 1rem;  
+    }
     .mycl{
+      padding: 0 !important;
       margin: 0 auto !important;
-      width: 90vw !important;
+      width: 85vw !important;
+      max-width: 270px !important;
       height: 90svh !important;
       border-radius: $b_r_md !important;
      
