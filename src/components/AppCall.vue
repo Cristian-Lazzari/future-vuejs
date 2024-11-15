@@ -59,8 +59,8 @@ export default {
     .mycl{
       padding: 0 !important;
       margin: 0 auto !important;
-      width: 85vw !important;
-      max-width: 270px !important;
+      width: 100% !important;
+      max-width: 310px !important;
       height: 90svh !important;
       border-radius: $b_r_md !important;
      
