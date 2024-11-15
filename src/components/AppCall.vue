@@ -21,7 +21,7 @@ export default {
 <template>
   <div class="container">
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/futureplus-commerciale/30min?hide_event_type_details=1&hide_gdpr_banner=1"></div>
+    <div class="calendly-inline-widget mycl" data-url="https://calendly.com/futureplus-commerciale/30min?hide_event_type_details=1&hide_gdpr_banner=1"></div>
 <!-- Calendly inline widget end -->
   </div>
 </template>
@@ -31,7 +31,9 @@ export default {
    .container{
     padding: 1rem;
     height: 100svh;
-
+    .mycl{
+      height: 50svh;
+    }
    }
 
 </style>
