@@ -9,13 +9,13 @@ export default {
       pay_time : 0,
       price : [
         [
-          '49,90' , '399,90'
+          '49' , '399'
         ],
         [
-          '99,90' , '999,90'
+          '99' , '999'
         ],
         [
-          '129,90' , '1199,90'
+          '129' , '1199'
         ],
       ]
 
@@ -51,7 +51,15 @@ export default {
           </svg>
           <p v-html="f.f"></p>
         </div>
-        <div class="price">{{price[0][pay_time]}}</div>
+        <div class="price-c">
+          <p class="price">
+            €
+            {{price[0][pay_time]}}<span>,90</span>
+          </p>
+          <p> 
+            {{ pay_time == 1 ? 'al mese' : 'all\' anno' }}
+          </p>
+        </div>
       </div>
       <div class="schedule">
         <h4>Pacchetto <br> Work On</h4>
@@ -61,7 +69,15 @@ export default {
           </svg>
           <p v-html="f.f"></p>
         </div>
-        <div class="price">{{price[1][pay_time]}}</div>
+        <div class="price-c">
+          <p class="price">
+            €
+            {{price[1][pay_time]}}<span>,90</span>
+          </p>
+          <p> 
+            {{ pay_time == 1 ? 'al mese' : 'all\' anno' }}
+          </p>
+        </div>
       </div>
       <div class="schedule">
         <h4>Pacchetto <br> Boost Up</h4>
@@ -71,7 +87,15 @@ export default {
           </svg>
           <p v-html="f.f"></p>
         </div>
-        <div class="price">{{price[2][pay_time]}}</div>
+        <div class="price-c">
+          <p class="price">
+            €
+            {{price[2][pay_time]}}<span>,90</span>
+          </p>
+          <p> 
+            {{ pay_time == 1 ? 'al mese' : 'all\' anno' }}
+          </p>
+        </div>
       </div>
     </div>
     
@@ -156,7 +180,7 @@ export default {
     }
     .prices{
       width: 100%;
-      @include dfc;
+      @include dfj;
       justify-content: space-evenly;
       justify-content: center;
       gap: 3rem;
@@ -171,6 +195,18 @@ export default {
         color: $c1;
         padding: 3rem 1.4rem;
         border-radius: $b_r_md;
+        .price-c{
+          .price{
+
+            font-size: $fs_xlg;
+            font-weight: 900;
+            span{
+              font-weight: 100;
+              font-size: $fs_md !important;
+
+            }
+          }
+        }
         h4{
           font-size: $fs_lg;
           font-weight: bolder;
@@ -201,30 +237,30 @@ export default {
       }
     }
   }
-  @media (max-width: $bp_sm) {
-    .mycl{
-      height: 80svh;
-    }
-    
-   }
-   @keyframes ball {
-        0%{
-          transform: scale(100%);
-        }
-        25%{
-          
-          transform: scale(90%);
-          filter: blur(10px);
-        }
-        75%{
-          
-          filter: blur(9px);
-          transform: scale(130%);
-        }
-        100%{
-          transform: scale(100%);
+@media (max-width: $bp_sm) {
+.mycl{
+height: 80svh;
+}
 
-        }
-      }
+}
+@keyframes ball {
+  0%{
+    transform: scale(100%);
+  }
+  25%{
+    
+    transform: scale(90%);
+    filter: blur(10px);
+  }
+  75%{
+    
+    filter: blur(9px);
+    transform: scale(130%);
+  }
+  100%{
+    transform: scale(100%);
+
+  }
+}
 
 </style>
