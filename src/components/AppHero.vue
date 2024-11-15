@@ -1,5 +1,10 @@
 <script>
+import TypewriterText from "/src/components/TypewriterText.vue";
+
 export default {
+  components:{
+    TypewriterText
+  },
   props: {
   },
   data(){
@@ -15,9 +20,10 @@ export default {
         <div class="center_hero">
             <img src="../../public/img/LOGO (1).png" alt="">
             <div class="text">
-                <p>La prima web agency dedicata esclusivamente alla ristorazione...</p>
-                <p>Non sei curioso? <br> Prova ora, È GRATIS!</p>
-                <div class="btn-2">Provalo GRATIS</div>
+              <TypewriterText text="La prima web agency dedicata esclusivamente alla ristorazione..." :speed="30" />
+              <TypewriterText text="Non sei curioso?" :speed="80" />
+              <TypewriterText text="Prova ora, È GRATIS!" :speed="80" />
+              <div class="btn-2">Provalo GRATIS</div>
             </div>
         </div>
         <div class="btn-1 br">Scopri di più</div>
@@ -80,10 +86,11 @@ export default {
         }
       }
       .btn-2{
-        width: 80%;
+        //width: 80%;
         margin-left: auto;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 900;
+        font-size: $fs_sml;
       }
       .btn-1{
         position: absolute;
@@ -121,30 +128,34 @@ export default {
         }
       }
     }
-    @media (max-width: 1350px) {
+    @media (max-width: $bp_xlg) {
       .center_hero{
-        gap: 5svh !important;
+        
+        gap: 2svh !important;
         justify-content: space-between;
         flex-direction: column;
         img{
           max-width: 600px;
           width: 74% !important;
         }
+        .btn-2{
+          margin: 1.5rem auto 0!important;
+        }
         .text{
-          p{
-            text-align: center !important;
-          }
+          width: 80%;
+          gap: 1.6rem !important;
         }
       }
     }
-    @media (max-width: $bp_sm) {
-      .center_hero{
-        
+    @media (max-width: $bp_xlg) {
+      .center_hero{  
+        gap: 2svh !important;
         .text{
-          p{
-            text-align: center !important;
-          }
+          max-width: none!important;
+          gap: 1.2rem !important;
         }
       }
     }
+
+    
 </style>
