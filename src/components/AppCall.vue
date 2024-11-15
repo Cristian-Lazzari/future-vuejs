@@ -43,6 +43,7 @@ export default {
       font-size: $fs_xxlg;
       font-weight: 600;
       color: $c1;
+      margin-bottom: 10svh;
     }
   }
   @media (max-width: $bp_md) {
