@@ -28,6 +28,7 @@ export default{
     };
   },
   methods:{
+   
   },
   created(){
    
@@ -54,6 +55,7 @@ export default{
       <AppCall />
 
       <AppFooter />
+      
 
     </div>
 

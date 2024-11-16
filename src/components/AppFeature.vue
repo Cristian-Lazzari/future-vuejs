@@ -33,7 +33,7 @@ export default {
 <template>
   <div class="container">
     <div class="section_tip first">
-      <h2>Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
+      <h2 id="services" >Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
       <p class="text">
         <span class="pack">Restaurant +</span> <br> 
         è il sistema FACILE adatto per essere usato da tutti, è COMODO perchè puoi usarlo subito ed ovunque senza scaricare app, è COMPLETO perchè comprende tutte le tue esigenze
@@ -200,7 +200,7 @@ export default {
 <style lang="scss" scoped>
    @use '../assets/styles/general.scss' as *;
    .container{
-    background-color: $c3;
+    background-color: var(--c3);
     .slider{
       text-align: center;
       flex-grow: 1;
@@ -225,13 +225,13 @@ export default {
         .point{
           height: 10px;
           width: 10px;
-          background-color: $c1_op;
+          background-color: var(--c1_op);
           border-radius: 20px;
           transition: all .3s ease-in-out;
         }
         .point:hover{
           transform: scale(150%);
-          background-color: $c1;
+          background-color: var(--c1);
           transition: all .3s ease-in-out;
 
         }
@@ -239,7 +239,7 @@ export default {
           transition: all .3s ease-in-out;
           transform: scale(210%);
           margin-inline: 20px;
-          background-color: $c1;
+          background-color: var(--c1);
         }
       }
     }
@@ -250,13 +250,13 @@ export default {
     }
     
     .panel, .small{
-      background-color: $c1_op;
+      background-color: var(--c1_op);
     }
 
   
     .section_tip{
       @include mmw;
-      color: $c1;
+      color: var(--c1);
       
       p{
         font-weight: 300;
@@ -278,7 +278,7 @@ export default {
           justify-content: space-between;
         }
         .small{
-          box-shadow: -3px 3px rgba($c1_op, .3) ;   
+          box-shadow: -3px 3px var(--c1) ;   
           @include dfc;
           padding: 8px 12px;
           border-radius: $b_r_sm;

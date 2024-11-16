@@ -58,20 +58,20 @@ export default {
         }
        @include dfc;
        flex-direction: column;
-       color: $c3;
+       color: var(--c3);
        gap: 3rem;
-       background-color: $c1;
+       background-color: var(--c1);
        h2{
-         text-shadow: 0 0 11px rgba($c3, .3);
+         text-shadow: 0 0 11px rgba(var(--c3-rgb), .3);
          font-size: $fs_xxlg;
          font-weight: 600;
          span.c2{
-           text-shadow: 0 0 17px rgba($c3, .7);
+           text-shadow: 0 0 17px rgba(var(--c3-rgb), .7);
            
          }
         }
         p{
-         text-shadow: 0 0 9px rgba($c3, .3);
+         text-shadow: 0 0 9px rgba(var(--c3-rgb), .3);
 
        }
         .reviews{
@@ -88,9 +88,9 @@ export default {
 
                 }
                 //padding: 1.2rem 3rem;
-                color: $c1;
-                box-shadow: -5px 5px rgba($c3, .5), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
-                background-color: $c3;
+                color: var(--c1);
+                box-shadow: -5px 5px rgba(var(--c3-rgb), .5), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
+                background-color: var(--c3);
                 width: clamp(200px, 80vw, 300px);
 
             }

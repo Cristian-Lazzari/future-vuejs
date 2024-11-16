@@ -69,6 +69,15 @@ export const store = reactive({
     {s: 1, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
     {s: 1, f: 'Statistiche e report su ordini e prenotazioni'},
   ],
+  scrollToSection(id) {
+    const target = document.getElementById(id);
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  },
 
 
  

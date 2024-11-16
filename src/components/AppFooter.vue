@@ -72,7 +72,7 @@ export default {
       margin: auto;
       max-width: 1200px;
       padding: 8svh 2rem 5svh;
-      color: $c1;
+      color: var(--c1);
       width: 99%;
       background-color: $c4_op;
       justify-content: space-between;
@@ -87,7 +87,7 @@ export default {
         font-size: $fs_xsm;
         a{
           text-decoration: none;
-          color: $c1;
+          color: var(--c1);
         }
         li{
           list-style: none;

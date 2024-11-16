@@ -92,9 +92,9 @@ export default {
     padding-inline: 0;
     @include dfc;
     flex-direction: column;
-    color: $c1;
+    color: var(--c1);
     gap: 3rem;
-    background-color: $c3;
+    background-color: var(--c3);
     h2{
       @include mmw;
       margin: 0;
@@ -130,14 +130,14 @@ export default {
       }
       
       .schedule{
-        background-color: $c1;
-        box-shadow: -6px -6px rgba($c1_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
+        background-color: var(--c1);
+        box-shadow: -6px -6px rgba(var(--c1_op-rgb), .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
 
         //width: 900px;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        color: $c3;
+        color: var(--c3);
         padding: 3rem 10vw 3rem 5vw;
         border-top-right-radius: 0 ;
         border-bottom-right-radius: 0 ;
@@ -177,7 +177,7 @@ export default {
         border-bottom-right-radius: $b_r_md;
         border-bottom-left-radius: 0 ;
         border-top-left-radius: 0 ;
-        box-shadow: 6px -6px rgba($c1_op, .3),  7px 0px 15px rgba(0, 0, 0, 0.516) ;
+        box-shadow: 6px -6px rgba(var(--c1_op-rgb), .3),  7px 0px 15px rgba(0, 0, 0, 0.516) ;
         padding: 3rem 5vw 3rem 10vw  !important;
         //background-color: red;
         .feat{

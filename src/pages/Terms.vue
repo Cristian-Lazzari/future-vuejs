@@ -97,7 +97,7 @@
   .terms-page {
     height: 100svh;
     overflow: auto;
-    background-color: $c1;
+    background-color: var(--c1);
     padding: 3rem 1rem 10svh;
     // @include dfc;
     // flex-direction: column;
@@ -106,7 +106,7 @@
     position: relative;
     .terms {
       
-      background-color: $c3_op;
+      background-color: var(--c3_op);
       border-radius: $b_r_md;
       padding: 2rem 1.6rem;
       h3, h2{
@@ -150,7 +150,7 @@
     bottom: 10px;
     right: 10px;
     background-color: $c4_op;
-    color: $c1_op;
+    color: var(--c1_op);
     font-size: $fs_xsm;
     text-decoration: none;
     border-radius: 50px;

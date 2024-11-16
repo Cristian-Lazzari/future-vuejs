@@ -1,23 +1,37 @@
 
-$c4: rgb(1, 1, 22);
+$c1: #d8dde8;
 $c2: #29c7c2;
-:root {
-  --c1: #d8dde8;
-  --c3: #090333;
-  --c1_op: rgba(var(--c1), 0.5);
-  --c3_op: rgba(var(--c3), 0.3);
-}
-
-[data-theme="dark"] {
-  --c1: #090333;
-  --c3: #d8dde8;
-  --c1_op: rgba(var(--c1), 0.5);
-  --c3_op: rgba(var(--c3), 0.3);
-}
+$c3: #090333;
+$c1_op: #d8dde88d;
+$c3_op: #09033366;
+$c4: rgb(1, 1, 22);
 
 $c2_op: rgba($c2, 0.5);
 
 $c4_op: rgba($c4, 0.5);
+
+:root {
+  --c3: #090333;
+  --c3_op: #09033366;
+  --c1: #d8dde8;
+  --c1_op: #d8dde88d;
+  --c1_op8: #d8dde8b8;
+  --c1_op3: #d8dde849;
+  --c4: rgb(1, 1, 22);
+}
+
+[data-theme="dark"] {
+  --c3: #d8dde8;
+  --c3_op: #d8dde88d;
+  --c1: #090333;
+  --c1_op: #09033366;
+  --c1_op8: #090333cf;
+  --c1_op3: #0903334d;
+  --c4: rgb(228, 228, 239);
+
+}
+
+
 
 $bp_xxlg : 1350px;
 $bp_xlg : 1110px;
@@ -52,22 +66,22 @@ $fs_xxxlg: clamp(55px, 8vw, 99px);
     font-weight: 500;
   }
   .btn-1{
-    background-color: $c1;
-    color: $c3;
+    background-color: var(--c1);
+    color: var(--c3);
     font-weight: 600;
-    box-shadow: 0px -4px 20px -3px rgb(12, 0, 29);
+    box-shadow: 0px -4px 20px -3px var(--c4);
   }
   .btn-2{
-    text-shadow: -1px 2px 7px rgba($c3, .8);
-    box-shadow: 0 0 24px -4px $c3;
+    text-shadow: -1px 2px 7px var(--c3_op);
+    box-shadow: 0 0 24px -4px var(--c3);
     background-color: $c2;
-    color: $c1;
+    color: var(--c1);
   }
   .btn-3{
-    text-shadow: -1px 2px 7px rgba($c3, .3);
-    box-shadow: 0 -4px 18px -4px $c3;
-    background-color: $c3;
-    color: $c1;
+    text-shadow: -1px 2px 7px var(--c3_op);
+    box-shadow: 0 -4px 18px -4px var(--c3);
+    background-color: var(--c3);
+    color: var(--c1);
   }
 .br{ //button rounded
   border-radius: 200px;
@@ -103,8 +117,8 @@ $gap:1.2rem;
 $gap_p_in: 1.8rem;
 .panel{
   $c_op : rgba(165, 175, 196, 0.864);
-  box-shadow: -5px 5px rgba($c1_op, .3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
-  //background: linear-gradient( 45deg,  $c1_op 10%, $c_op 22%, $c1_op 50%, $c_op 63%, $c1_op 86%  );
+  box-shadow: -5px 5px var(--c1_op3),  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
+  //background: linear-gradient( 45deg,  var(--c1_op) 10%, $c_op 22%, var(--c1_op) 50%, $c_op 63%, var(--c1_op) 86%  );
 
   width: 100%;
   text-align: left;
@@ -167,7 +181,7 @@ overflow: visible;
 
 .path {
 fill: none;
-stroke: $c3;
+stroke: var(--c3);
 stroke-width: 6;
 stroke-linecap: round;
 stroke-linejoin: round;
@@ -181,3 +195,101 @@ stroke-dasharray: 70.5096664428711 9999999;
 stroke-dashoffset: -262.2723388671875;
 }///---
 
+
+/* From Uiverse.io by aymenthedeveloper */ 
+.toggle-btn {
+  --bg: var(--c3);
+  --fg: var(--c1);
+  --dimensions: 35px;
+  background-color: var(--bg);
+  border-radius: 10px;
+  width: var(--dimensions);
+  height: var(--dimensions);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 2px solid var(--c1_op);
+}
+
+.toggle-btn .main-circle {
+  --dimensions: 13px;
+  width: var(--dimensions);
+  height: var(--dimensions);
+  background-color: var(--fg);
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.4s ease 0.2s;
+}
+
+.toggle-btn .main-circle::after {
+  content: "";
+  --dimensions: 10px;
+  background-color: var(--bg);
+  border-radius: 50%;
+  width: var(--dimensions);
+  height: var(--dimensions);
+  position: absolute;
+  top: 1px;
+  right: -1px;
+  transform-origin: right top;
+  transform: scale(0);
+  transition: transform 0.4s ease 0.2s;
+}
+
+.toggle-btn .sun-rays {
+  display: grid;
+  place-items: center;
+  transition: transform 0.4s ease 0.2s;
+  
+}
+
+.toggle-btn .sun-rays,
+.toggle-btn .sun-rays::after,
+.toggle-btn .sun-rays::before {
+  --width: 3px;
+  --height: 4px;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--bg);
+  position: absolute;
+  border-radius: 2px;
+  box-shadow: 0 10px 0 var(--fg), 0 -10px 0 var(--fg);
+}
+
+.toggle-btn .sun-rays::after {
+  content: "";
+  transform: rotate(120deg);
+}
+
+.toggle-btn .sun-rays::before {
+  content: "";
+  transform: rotate(240deg);
+}
+
+.light .main-circle {
+  transform: scale(1.2);
+}
+
+.light .main-circle::after {
+  transform: scale(1);
+}
+
+.light .sun-rays {
+  
+  transition: transform 0.4s;
+  transform: scale(0);
+}
+.dark{
+  border: 2px solid var(--c1_op);
+}
+
+@media (prefers-color-scheme: dark) {
+  .toggle-btn {
+    --bg: var(--c3);
+    --fg: var(--c1);
+  }
+}

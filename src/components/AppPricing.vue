@@ -111,8 +111,8 @@ export default {
    @use '../assets/styles/general.scss' as *;
    .container{
      //max-width: none;
-     background-color: $c1;
-     color: $c3;
+     background-color: var(--c1);
+     color: var(--c3);
      padding: 5vh 0;
      h2{
       @include mmw;
@@ -127,10 +127,10 @@ export default {
       font-size: $fs_sm;
     }
     .scelta{
-      border: 4px solid $c1_op;
-      box-shadow: -3px 3px rgba($c1, .3),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
-      background-color: rgba($c3, .8);
-      color: $c1;
+      border: 4px solid var(--c1_op);
+      box-shadow: -3px 3px var(--c1),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
+      background-color: var(--c3);
+      color: var(--c1);
       padding: .5rem;
       border-radius: $br;
       margin: 0 auto 3rem; 
@@ -146,16 +146,16 @@ export default {
       }
       .mm{
         background-color: $c2;
-        //color: $c3;
-        color: $c1;
-        text-shadow: 0 0 10px $c3;
+        //color: var(--c3);
+        color: var(--c1);
+        text-shadow: 0 0 10px var(--c3);
         box-shadow: -3px 0 5px $c2;
       }
       .aa{
-        text-shadow: 0 0 8px $c3_op;
-        background-color: $c1;
-        color: $c3;
-        box-shadow: 3px 0 5px $c1;
+        text-shadow: 0 0 8px var(--c3_op);
+        background-color: var(--c1);
+        color: var(--c3);
+        box-shadow: 3px 0 5px var(--c1);
       }
       .on{
         transition: all .4s ease-in-out;
@@ -190,7 +190,7 @@ export default {
       
       .right{
         margin-left: -50%;
-        background-color:$c1;
+        background-color:var(--c1);
       }
       .left{   
         margin-right: -50%;
@@ -205,13 +205,13 @@ export default {
       gap: 3rem;
       flex-wrap: wrap;
       .schedule{
-        background-color: $c3;
+        background-color: var(--c3);
         max-width: 320px;
         box-shadow:  -7px 0px 15px rgba(0, 0, 0, 0.516) ;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        color: $c1;
+        color: var(--c1);
         padding: 3rem 2rem;
         border-radius: $b_r_md;
         .price-c{
@@ -251,6 +251,9 @@ export default {
         .off{
           opacity: .3;
           text-decoration: line-through ;
+        }
+        .btn-1{
+          margin-top: 2rem;
         }
       }
     }

@@ -1,6 +1,6 @@
 <script>
 import TypewriterText from "/src/components/TypewriterText.vue";
-
+import { store } from "../store.js";
 export default {
   components:{
     TypewriterText
@@ -9,7 +9,7 @@ export default {
   },
   data(){
     return {
-
+      store,
     }
   }
 };
@@ -23,15 +23,15 @@ export default {
               <TypewriterText text="La prima web agency dedicata esclusivamente alla ristorazione..." :speed="30" />
               <TypewriterText text="Non sei curioso?" :speed="80" />
               <TypewriterText text="Prova ora, È GRATIS!" :speed="80" />
-              <div class="btn-2">Provalo GRATIS</div>
+              <div @click="store.scrollToSection('call')" class="btn-2">Provalo GRATIS</div>
             </div>
         </div>
-        <div class="btn-1 br">Scopri di più</div>
+        <div class="btn-1 br" @click="store.scrollToSection('services')" >Scopri di più</div>
         <div class="bottom_bar">
             <div class="piva">P. IVA 02974730422</div>
             <div>
                 <a href="">Cookie Policy</a>
-            <a href="">Privacy Policy</a>
+              <a href="">Privacy Policy</a>
             </div>
         </div>
     </div>
@@ -39,6 +39,15 @@ export default {
 
 <style lang="scss" scoped>
    @use '../assets/styles/general.scss' as *;
+   [data-theme="dark"] {
+    .hero{
+      backdrop-filter: brightness(100%) ;
+
+      filter:grayscale(-10%);
+      filter:contrast(2);
+    }
+
+   }
     .hero{
       color: $c1;
       height: 100svh;
@@ -95,7 +104,7 @@ export default {
         width: 100%;
         text-align: center;
         padding: 1rem;
-        background-color: $c1_op;
+        background-color: var(--c1_op);
         div{
           display: flex;
           gap: .5rem;
@@ -113,7 +122,7 @@ export default {
 
         }
         a:hover, .piva:hover{
-          color: $c1;
+          color: var(--c1);
           text-shadow: 0 0 15px $c2;
           transition: all .3s ease-out;
         }

@@ -5,6 +5,7 @@ export default {
     return {
       store,
       scroll: false,
+      theme : localStorage.getItem("theme") || 'light',
     };
   },
   methods: {
@@ -21,6 +22,13 @@ export default {
       this.store.nav_menu = !this.store.nav_menu
       
     },
+    toggleTheme() {
+      this.theme = this.theme === "light" ? "dark" : "light";
+      localStorage.setItem("theme", this.theme);
+      document.documentElement.setAttribute("data-theme", this.theme);
+      console.log(this.theme)
+    },
+
   },
   created() {
     window.addEventListener("scroll", this.actionScroll);
@@ -37,6 +45,13 @@ export default {
       <li><a class="" href="#servizi"> Servizi </a></li>
       <li><a class="" href="#pacchetti"> Pricing </a></li>
       <li><a class="" href="#contatti"> Contatti </a></li>
+      <li>
+        <div @click="toggleTheme" :class=" theme === 'light' ? 'toggle-btn light' : 'toggle-btn dark'">
+          <div class="sun-rays"></div>
+          <div class="main-circle"></div>
+        </div>
+        <!-- <p  @click="toggleTheme" for="">Tema: {{ theme === 'light' ? 'chiaro' : 'scuro' }}</p> -->
+      </li>
     </ul>
   </nav>
   <div :class="store.nav_menu ? 'nav-mobile-on' : 'nav-mobile-off'" @click="openmenu">
@@ -51,6 +66,12 @@ export default {
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pricing </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
+      <li>
+        <div @click="toggleTheme" :class=" theme === 'light' ? 'toggle-btn light' : 'toggle-btn dark'">
+          <div class="sun-rays"></div>
+          <div class="main-circle"></div>
+        </div>
+      </li>
     </ul>
   </div>
   
@@ -78,7 +99,7 @@ nav {
     position: relative;
     z-index: 10;
     text-decoration: none;
-    color: rgba($c1, .8);
+    color: $c1;
     font-weight: bolder;
     transition: all .3s ease-in;
   }
@@ -88,15 +109,15 @@ nav {
 
   }
   
-  background-color: rgba($c3, .8);
-  box-shadow: 0 21px 40px -18px rgb(0, 0, 0);
+  background-color: rgba(var(--c3-rgb), .8);
+  box-shadow: 0 10px 17px -2px rgba(0, 0, 0, 0.279);
 }
 .nav-mobile {
   display: none;
 }
 
 .nav_scroll {
-  background-color: $c1_op;
+  background-color: var(--c1_op);
   transition: all .2s ease-in;
   z-index: 10 !important;
 }
@@ -120,13 +141,13 @@ ul {
   li{
     a{
       transition: all .3s ease-in;
-      color: $c3;
+      color: var(--c3);
     }
   }
 }
 .mobile-on{
     display: block;
-    background-color: rgba(2, 4, 47, 0.967);
+    background-color: var(--c3);
     position: fixed;
     inset: 0;
     z-index: 1112!important;
@@ -143,7 +164,7 @@ ul {
           font-family: 'Roboto Condensed', sans-serif;
           font-size: 25px;
           font-weight: bolder;
-          color: rgb(254, 254, 254);
+          color: var(--c1);
           text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.623);
           transition: all .2s ease-in-out ;
         }
