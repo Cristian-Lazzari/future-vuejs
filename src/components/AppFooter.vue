@@ -130,10 +130,10 @@ export default {
   }
   .last{
     color: $c1;
-    padding: 3rem;
-   width: 100%;
-   text-align: center;
-   background-color: rgb(1, 1, 11);
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(1, 1, 11);
   }
   @media (max-width: $bp_md) {
 
