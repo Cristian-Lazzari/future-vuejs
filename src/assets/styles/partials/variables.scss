@@ -1,13 +1,23 @@
-$c1: #d8dde8;
-$c2: #29c7c2;
-//$c2: #2ff1d4;
-$c3: #090333;
-$c4: rgb(1, 1, 22);
-$c_pan: #918EA0;
 
-$c1_op: rgba($c1, 0.5);
+$c4: rgb(1, 1, 22);
+$c2: #29c7c2;
+:root {
+  --c1: #d8dde8;
+  --c3: #090333;
+  --c1_op: rgba(var(--c1), 0.5);
+  --c3_op: rgba(var(--c3), 0.3);
+}
+
+[data-theme="dark"] {
+  --c1: #090333;
+  --c3: #d8dde8;
+  --c1_op: rgba(var(--c1), 0.5);
+  --c3_op: rgba(var(--c3), 0.3);
+}
+
 $c2_op: rgba($c2, 0.5);
-$c3_op: rgba($c3, 0.3);
+
+$c4_op: rgba($c4, 0.5);
 
 $bp_xxlg : 1350px;
 $bp_xlg : 1110px;
@@ -33,10 +43,10 @@ $fs_xlg: clamp(35px, 4vw, 55px);
 $fs_xxlg: clamp(48px, 7vw, 80px);
 $fs_xxxlg: clamp(55px, 8vw, 99px);
 
-.btn-1, .btn-2{
+.btn-1, .btn-2, .btn-3{
     padding: .8rem 2.6rem;
     font-size: $fs_sm;
-    border-radius: 6px;
+    border-radius: 12px;
     width: auto;
     text-align: center;
     font-weight: 500;
@@ -44,7 +54,6 @@ $fs_xxxlg: clamp(55px, 8vw, 99px);
   .btn-1{
     background-color: $c1;
     color: $c3;
-    
     font-weight: 600;
     box-shadow: 0px -4px 20px -3px rgb(12, 0, 29);
   }
@@ -53,7 +62,13 @@ $fs_xxxlg: clamp(55px, 8vw, 99px);
     box-shadow: 0 0 24px -4px $c3;
     background-color: $c2;
     color: $c1;
-}
+  }
+  .btn-3{
+    text-shadow: -1px 2px 7px rgba($c3, .3);
+    box-shadow: 0 -4px 18px -4px $c3;
+    background-color: $c3;
+    color: $c1;
+  }
 .br{ //button rounded
   border-radius: 200px;
 }
@@ -135,4 +150,34 @@ $gap_p_in: 1.8rem;
   padding: 2rem;
 }
 
+
+//uiverse checkbox
+.ui-check {
+  cursor: pointer;
+  scale: .6;
+}
+
+.ui-check input {
+display: none;
+}
+
+.ui-check svg {
+overflow: visible;
+}
+
+.path {
+fill: none;
+stroke: $c3;
+stroke-width: 6;
+stroke-linecap: round;
+stroke-linejoin: round;
+transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+stroke-dasharray: 241 9999999;
+stroke-dashoffset: 0;
+}
+
+.ui-check input:checked ~ svg .path {
+stroke-dasharray: 70.5096664428711 9999999;
+stroke-dashoffset: -262.2723388671875;
+}///---
 

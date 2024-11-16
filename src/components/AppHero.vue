@@ -130,7 +130,7 @@ export default {
           width: 74% !important;
         }
         .btn-2{
-          margin: 1.5rem auto 0!important;
+          margin: 1.5rem auto 0;
         }
         .text{
           width: 60%!important;
@@ -146,6 +146,11 @@ export default {
           gap: 1.2rem !important;
         }
       }
+    }
+    @media (max-width: $bp_sm) {
+      .btn-2{
+          margin: .2rem auto 0!important;
+        }
     }
     @keyframes logobig {
       0%{

@@ -6,23 +6,16 @@ export default {
   data() {
     return {
       store,
-      pay_time : 0,
-      price : [
-        [
-          '49' , '399'
-        ],
-        [
-          '99' , '999'
-        ],
-        [
-          '129' , '1199'
-        ],
-      ]
 
     };
   },
   methods:{
-
+    send(pack){
+      this.store.package = pack;
+      this.$router.replace("/terms")
+      localStorage.setItem('pack', pack)
+      localStorage.setItem('typepay', this.store.typepay)
+    }
    
   },
   created(){
@@ -36,11 +29,14 @@ export default {
     <h2>
         La nostra offerta esclusiva
     </h2>
+    <p class="text">
+      Vedere soddisfatti al <span class="strg">100%</span> i nostri clienti rimane sempre la nostra prima missione, pertanto su ogni pacchetto <br> <span class="strg">OFFRIAMO  30 giorni di prova completamente GRATUITA </span>  <br>  per dare a tutti la possibilita di toccare con mano il futuro!
+    </p>
     <p>Scegli il tipo di abbonamento</p>
     <div class="scelta">
-      <div :class="pay_time == 1 ? 'right ball' : 'left ball' "></div>
-      <div @click="pay_time = 1" :class="pay_time == 1 ? 'on aa' : 'off'">Mensile</div>
-      <div @click="pay_time = 0" :class="pay_time == 0 ? 'on mm' : 'off'">Annuale</div>
+      <div :class="store.typepay == 0 ? 'right ball' : 'left ball' "></div>
+      <div @click="store.typepay = 0" :class="store.typepay == 0 ? 'on aa' : 'off'">Mensile</div>
+      <div @click="store.typepay = 1" :class="store.typepay == 1 ? 'on mm' : 'off'">Annuale</div>
     </div>
     <div class="prices">
       <div class="schedule">
@@ -54,11 +50,14 @@ export default {
         <div class="price-c">
           <p class="price">
             €
-            {{price[0][pay_time]}}<span>,90</span>
+            {{store.price[0][store.typepay]}}<span>,90</span>
           </p>
           <p> 
-            {{ pay_time == 1 ? 'al mese' : 'all\' anno' }}
+            {{ store.typepay == 0 ? 'al mese' : 'all\' anno' }}
+             
           </p>
+          <span>* iva inclusa.</span>
+          <div @click="send(1)" class="btn-1">Provalo GRATIS</div>
         </div>
       </div>
       <div class="schedule">
@@ -72,11 +71,14 @@ export default {
         <div class="price-c">
           <p class="price">
             €
-            {{price[1][pay_time]}}<span>,90</span>
+            {{store.price[1][store.typepay]}}<span>,90</span>
           </p>
           <p> 
-            {{ pay_time == 1 ? 'al mese' : 'all\' anno' }}
+            {{ store.typepay == 0 ? 'al mese' : 'all\' anno' }}
+             
           </p>
+          <span>* iva inclusa.</span>
+          <div @click="send(2)" class="btn-1">Provalo GRATIS</div>
         </div>
       </div>
       <div class="schedule">
@@ -90,11 +92,14 @@ export default {
         <div class="price-c">
           <p class="price">
             €
-            {{price[2][pay_time]}}<span>,90</span>
+            {{store.price[2][store.typepay]}}<span>,90</span>
           </p>
           <p> 
-            {{ pay_time == 1 ? 'al mese' : 'all\' anno' }}
+            {{ store.typepay == 0 ? 'al mese' : 'all\' anno' }}
+             
           </p>
+          <span>* iva inclusa.</span>
+          <div @click="send(3)" class="btn-1">Provalo GRATIS</div>
         </div>
       </div>
     </div>
@@ -124,12 +129,12 @@ export default {
     .scelta{
       border: 4px solid $c1_op;
       box-shadow: -3px 3px rgba($c1, .3),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
-      background-color: $c3;
+      background-color: rgba($c3, .8);
       color: $c1;
       padding: .5rem;
       border-radius: $br;
       margin: 0 auto 3rem; 
-      font-size: $fs_sml;
+      font-size: $fs_sm;
       @include dfc;
       gap: 2rem;
       width: fit-content;

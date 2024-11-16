@@ -65,14 +65,16 @@ export default {
    @use '../assets/styles/general.scss' as *;
    footer{
      .wrap{
+      border-top-left-radius: $b_r_md;
+      border-top-right-radius: $b_r_md;
       @include dfc;
       align-items: flex-start;
-      margin: 0 auto;
+      margin: auto;
       max-width: 1200px;
       padding: 8svh 2rem 5svh;
       color: $c1;
-      width: 100%;
-      background-color: $c4;
+      width: 99%;
+      background-color: $c4_op;
       justify-content: space-between;
       gap: 2rem;
       flex-wrap: wrap;
