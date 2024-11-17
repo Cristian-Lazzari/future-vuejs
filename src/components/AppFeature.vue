@@ -14,18 +14,26 @@ export default {
   },
   methods:{
 
-    // slide_infinite() {
-    //   setInterval(() => {
-    //     if (this.slide.length > (this.slide_c + 1)) {
-    //       this.slide_c ++; // Ciclo infinito sugli oggetti
-    //     }else{
-    //       this.slide_c = 0 // Ciclo infinito sugli oggetti
-    //     }
-    //     //console.log(this.slide_c)
-    //   }, 4000); // 10000 millisecondi = 10 secondi
-    // },
+    slide_infinite() {
+      setInterval(() => {
+        
+        //console.log(this.slide_c)
+      }, 4000); // 10000 millisecondi = 10 secondi
+    },
     nextSlide(slides, c) {
-      c = (c + 1) % slides.length;
+      if(c==1){
+        if (slides.length > (this.slide_c + 1)) {
+          this.slide_c ++
+        }else{
+          this.slide_c = 0
+        }
+      }else{
+        if (slides.length > (this.slide_1_c + 1)) {
+          this.slide_1_c ++
+        }else{
+          this.slide_1_c = 0 
+        }
+      }
     },
   },
   mounted(){
@@ -96,19 +104,19 @@ export default {
         <div class="right">
   
           <div class="slider">
-            <video
-              :src="s"
-              ref="video"
-              :class="slide_c == i ? 'on' : 'off'"
-              autoplay
-              muted
-              playsinline
-              @ended="nextSlide(slide, slide_c)"
-              v-for="(s, i) in slide"
-              :key="s"
-            ></video>
+            <div v-for="(s, i) in slide" :key="s" class="wrap-v" :class="slide_c == i ? 'on' : 'off'">
+                <video
+                :src="s"
+                ref="video"
+                v-if="slide_c == i"
+                autoplay
+                muted
+                @ended="nextSlide(slide, 1)"
+              ></video>
+            </div>
+            
             <div class="points">
-              <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide" @click="slide_c = i; console.log('diocane1232')" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
           <div class="panel">
@@ -225,11 +233,20 @@ export default {
       //background-color: rgba(0, 255, 8, 0.499);
       width: clamp(220px, 65vw, 500px);
 
-      video{
-        height: 70%;
+      .wrap-v{
+        
         width: 100%;
         margin: 0 auto;
         transition: opacity .5s ease-in-out;
+        border-radius: $b_r_sm;
+        overflow: hidden;
+        video{
+          border-radius: $b_r_sm;
+          max-height: 600px;
+          //width: 100%;
+          position: relative;
+          z-index: 2;
+        }
       }
       .off{
         opacity: 0;
@@ -237,10 +254,13 @@ export default {
         transition: opacity .5s ease-in-out;
       }
       .points{
+        
         @include dfc;
         gap: .5rem;
         height: 22px;
         .point{
+          position: relative;
+          z-index: 20;
           height: 10px;
           width: 10px;
           background-color: var(--c1_op);
