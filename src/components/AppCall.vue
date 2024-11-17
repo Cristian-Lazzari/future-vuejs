@@ -54,7 +54,7 @@ export default {
       padding-inline: .5rem !important;
     }
     h2{
-      padding-inline: 1rem;  
+      padding-inline: 1.5rem;  
     }
     .mycl{
       overflow: auto;
