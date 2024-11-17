@@ -56,7 +56,7 @@ export default {
       <div class="grid">
         <div class="left">
           <div class="panel">
-            <div class="top">
+            <div :class="slide_c == 0 ? 'up top' : 'top'" >
               <h5>Gestisci il tuo menu <span class="strg"> ovunque</span> e con <span class="strg"> comodità</span></h5>
               <div class="small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
@@ -71,7 +71,7 @@ export default {
             <p>Puoi creare un menu, che puoi suddividere in categorie e con foto e dettagli a portata di clic i tuoi clienti saranno attratti come non mai</p>
           </div>
           <div class="panel">
-            <div class="top">
+            <div :class="slide_c == 1 ? 'up top' : 'top'">
               <h5>Statistiche <span class="strg"> accurate</span> ti mostreranno come muoverti</h5>
               <div class="small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
@@ -87,7 +87,7 @@ export default {
             <p>Saprai i prodotti più ordinati ed i periodi di picco, traccerà la clientela che prenota il tavolo e l andamento dei tuoi ricavi</p>
           </div>
           <div class="panel qr">
-            <div class="top">
+            <div :class="slide_c == 2 ? 'up top' : 'top'">
               <h5>Genriamo per te il <span class="strg"> QR-CODE </span> per scansionare il menu e ordinare</h5>
               <div class="small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
@@ -104,7 +104,7 @@ export default {
         <div class="right">
   
           <div class="slider">
-            <div v-for="(s, i) in slide" :key="s" class="wrap-v" :class="slide_c == i ? 'on' : 'off'">
+            <div v-for="(s, i) in slide" :key="s" :class="slide_c == i ? 'wrap-v on' : 'wrap-v off'">
                 <video
                 :src="s"
                 ref="video"
@@ -116,7 +116,7 @@ export default {
             </div>
             
             <div class="points">
-              <div v-for="(s, i) in slide" @click="slide_c = i; console.log('diocane1232')" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
           <div class="panel">
@@ -234,23 +234,26 @@ export default {
       width: clamp(220px, 65vw, 500px);
 
       .wrap-v{
-        
+        height: 600px;
         width: 100%;
         margin: 0 auto;
         transition: opacity .5s ease-in-out;
-        border-radius: $b_r_sm;
-        overflow: hidden;
+        margin-bottom: 1rem;
+
         video{
+          box-shadow: 0 10px 30px -10px $c4;
           border-radius: $b_r_sm;
           max-height: 600px;
           //width: 100%;
           position: relative;
           z-index: 2;
+          
         }
       }
       .off{
         opacity: 0;
         width: 0;
+        height: 0;
         transition: opacity .5s ease-in-out;
       }
       .points{
@@ -291,6 +294,28 @@ export default {
       background-color: var(--c1_op);
     }
 
+    .up{
+      .small{
+        scale: 1.01;
+        box-shadow: -7px 7px var(--c3) !important;
+        transition: all .2s ease-in;
+        background-color: var(--c1);
+        svg{
+          color: var(--c3);
+          transition: all .2s ease-in;
+          filter: drop-shadow(0 0 3px var(--c3));
+          
+          text-shadow: 0 0 10px var(--c3) !important;
+        }
+      }
+      h5{
+        text-shadow: 0 0 5px var(--c3_op) !important;
+        color: var(--c3);
+        transition: all .2s ease-in;
+        font-size: $fs_mdl !important;
+      }
+      transition: all .2s ease-in;
+    }
   
     .section_tip{
       @include mmw;
@@ -398,7 +423,16 @@ export default {
       }
     }
 
+    @media (max-width: $bp_sm) {
+      .wrap-v{
+        height: auto !important;
 
+      }
+      video{
+        height: auto !important;
+        width: 100%;
+      }
+    }
     @media (max-width: $bp_lg) {
       .section_tip{
         .grid{

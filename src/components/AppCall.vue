@@ -23,7 +23,7 @@ export default {
     <h2 id="call" >Prenota una chiamata con i nostri <span class="c2">ESPERTI</span> </h2>
     <p class="text" >Dopo questa call <span class="pack">GRATUITA  </span> sarai in grado di capire a pieno le potenzialità e le agevolazioni che la nostra azienda è in grado di portarti, e soprattutto noi saremo in grado di sapere se e come possiamo aiutarti al massimo, prenota ora la tua chiamata!</p>
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget mycl" data-url="https://calendly.com/futureplus-commerciale/scopri-come-restaurant-puo-svoltare-il-tuo-lavoro?hide_gdpr_banner=1" style="min-width:300px;height:700px;"></div>
+    <div class="calendly-inline-widget mycl" data-url="https://calendly.com/futureplus-commerciale/scopri-come-restaurant-puo-svoltare-il-tuo-lavoro?hide_gdpr_banner=1" style="min-width:250px;height:700px;"></div>
 <!-- Calendly inline widget end -->
   </div>
 </template>
