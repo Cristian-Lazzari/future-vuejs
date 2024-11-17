@@ -440,7 +440,7 @@ export default {
 
     @media (max-width: $bp_sm) {
       .wrap-v{
-        height: auto !important;
+        height: 600px !important;
 
       }
       video{
