@@ -6,26 +6,33 @@ export default {
   data() {
     return {
       store,
-      slide_1_a : 0,
-      slide: [store.domain + '/img/ip.png', store.domain + '/img/ip1.png' ,store.domain + '/img/ip2.png'],
-      slide_1: [1,2,3],
+      slide_c : 0,
+      slide_1_c : 0,
+      slide: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4'],
+      slide_1: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4'],
     };
   },
   methods:{
 
-    slide_infinite() {
-        setInterval(() => {
-          if (this.slide.length > (this.slide_1_a + 1)) {
-            this.slide_1_a ++; // Ciclo infinito sugli oggetti
-          }else{
-            this.slide_1_a = 0 // Ciclo infinito sugli oggetti
-          }
-          //console.log(this.slide_1_a)
-        }, 4000); // 10000 millisecondi = 10 secondi
-      },
+    // slide_infinite() {
+    //   setInterval(() => {
+    //     if (this.slide.length > (this.slide_c + 1)) {
+    //       this.slide_c ++; // Ciclo infinito sugli oggetti
+    //     }else{
+    //       this.slide_c = 0 // Ciclo infinito sugli oggetti
+    //     }
+    //     //console.log(this.slide_c)
+    //   }, 4000); // 10000 millisecondi = 10 secondi
+    // },
+    nextSlide(slides, c) {
+      c = (c + 1) % slides.length;
+    },
+  },
+  mounted(){
+
   },
   created(){
-    this.slide_infinite() 
+    //this.slide_infinite() 
   }
 };
 </script>
@@ -89,9 +96,19 @@ export default {
         <div class="right">
   
           <div class="slider">
-            <img v-for="(s, i) in slide" :src="s" :class="slide_1_a == i ? 'on' : 'off'" :key="s" alt="">
+            <video
+              :src="s"
+              ref="video"
+              :class="slide_c == i ? 'on' : 'off'"
+              autoplay
+              muted
+              playsinline
+              @ended="nextSlide(slide, slide_c)"
+              v-for="(s, i) in slide"
+              :key="s"
+            ></video>
             <div class="points">
-              <div v-for="(s, i) in slide" @click="slide_1_a = i" :class="slide_1_a == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
           <div class="panel">
@@ -113,9 +130,9 @@ export default {
       <div class="grid">
         <div class="right">
           <div class="slider">
-            <img v-for="(s, i) in slide" :src="s" :class="slide_1_a == i ? 'on' : 'off'" :key="s" alt="">
+            <img v-for="(s, i) in slide" :src="s" :class="slide_c == i ? 'on' : 'off'" :key="s" alt="">
             <div class="points">
-              <div v-for="(s, i) in slide" @click="slide_1_a = i" :class="slide_1_a == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
           <div class="panel">
@@ -208,7 +225,8 @@ export default {
       //background-color: rgba(0, 255, 8, 0.499);
       width: clamp(220px, 65vw, 500px);
 
-      img{
+      video{
+        height: 70%;
         width: 100%;
         margin: 0 auto;
         transition: opacity .5s ease-in-out;
