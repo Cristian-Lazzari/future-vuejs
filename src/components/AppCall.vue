@@ -34,18 +34,18 @@ export default {
     color: var(--c1);
     @include mmw;
 
-     height: 100svh;
+     //height: 100svh;
     .mycl{
       width: 60vw;
       padding-inline: auto;
       margin: 0 auto;
       height: 1400px;
-      overflow: hidden !important;
+      overflow: hidden;
     }
     h2{
       font-size: $fs_xxlg;
       font-weight: 600;
-
+      
       margin-bottom: 10svh;
     }
   }
@@ -57,14 +57,15 @@ export default {
       padding-inline: 1rem;  
     }
     .mycl{
+      overflow: auto;
       padding: 0 !important;
       margin: 0 auto !important;
       width: clamp(250px, 95vw, 320px) !important;
       max-width: 310px !important;
-      height: 90svh !important;
+      height: 90vh !important;
       border-radius: $b_r_md !important;
      
-      //background-color: aqua;
+      background-color: aqua;
     }
     
    }
