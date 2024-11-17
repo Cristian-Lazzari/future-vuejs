@@ -250,7 +250,12 @@ ul {
   }
   @media (max-height:400px) {
     .mobile-on{
-      display: none;
+      display: flex;
+      .flex{
+        padding: 0 !important;
+
+        flex-direction: row !important;
+      }
     }
   }
   @media (max-height:400px) {
