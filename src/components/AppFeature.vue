@@ -16,9 +16,18 @@ export default {
 
     slide_infinite() {
       setInterval(() => {
-        
+        if (this.slide.length > (this.slide_c + 1)) {
+          this.slide_c ++
+        }else{
+          this.slide_c = 0
+        }
+        if (this.slide_1.length > (this.slide_1_c + 1)) {
+          this.slide_1_c ++
+        }else{
+          this.slide_1_c = 0 
+        }     
         //console.log(this.slide_c)
-      }, 4000); // 10000 millisecondi = 10 secondi
+      }, 5000); // 10000 millisecondi = 10 secondi
     },
     nextSlide(slides, c) {
       if(c==1){
@@ -40,7 +49,7 @@ export default {
 
   },
   created(){
-    //this.slide_infinite() 
+    this.slide_infinite() 
   }
 };
 </script>
@@ -108,10 +117,10 @@ export default {
                 <video
                 :src="s"
                 playsinline
-                controls="false"
+                loop
                 ref="video"
-                v-if="slide_c == i"
                 autoplay
+                :class="slide_c == i ? 'on' : 'off'"
                 muted
                 @ended="nextSlide(slide, 1)"
               ></video>
@@ -144,10 +153,10 @@ export default {
                 <video
                 :src="s"
                 playsinline
-                controls="false"
-                ref="video"
-                v-if="slide_c == i"
+                loop
+                ref="video"  
                 autoplay
+                :class="slide_c == i ? 'on' : 'off'"
                 muted
                 @ended="nextSlide(slide, 1)"
               ></video>
@@ -247,7 +256,8 @@ export default {
       width: clamp(220px, 65vw, 500px);
 
       .wrap-v{
-        height: 600px;
+        position: relative;
+        //height: 600px;
         width: 100%;
         margin: 0 auto;
         transition: opacity .5s ease-in-out;
@@ -265,11 +275,18 @@ export default {
           
         }
       }
+      .on{
+        z-index: 3;
+        opacity: 1;
+        transition: position 0 ease-in-out 0, opacity 3.5s ease-in .5s;
+      }
       .off{
-        opacity: 0;
-        width: 0;
-        height: 0;
-        transition: opacity .5s ease-in-out;
+        position: absolute;
+         z-index: 0;
+         opacity: 0;
+        // width: 0;
+        // height: 0;
+        transition: position 0 ease-in-out 0, opacity 3.5s ease-in .5s;
       }
       .points{
         
@@ -438,12 +455,13 @@ export default {
       }
     }
 
-    @media (max-width: $bp_sm) {
-      .wrap-v{
-        height: 600px !important;
+    @media (max-width: $bp_md) {
+      .wrap-v.on{
+        //height: 520px !important;
 
       }
       video{
+        max-height: none !important;
         height: auto !important;
         width: 100%;
       }
@@ -453,6 +471,7 @@ export default {
         .grid{
           flex-wrap: wrap;
           .top{
+            flex-wrap: wrap;
             align-items: flex-start !important;
           }
           .small{
