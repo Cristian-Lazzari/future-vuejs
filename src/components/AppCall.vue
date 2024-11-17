@@ -60,7 +60,7 @@ export default {
       padding: 0 !important;
       margin: 0 auto !important;
       width: clamp(250px, 90%, 600px) !important;
-      height: 140vh !important;
+      height: 180vh !important;
       border-radius: $b_r_md !important;
     }
     
