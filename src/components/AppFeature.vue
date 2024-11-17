@@ -138,7 +138,16 @@ export default {
       <div class="grid">
         <div class="right">
           <div class="slider">
-            <img v-for="(s, i) in slide" :src="s" :class="slide_c == i ? 'on' : 'off'" :key="s" alt="">
+            <div v-for="(s, i) in slide" :key="s" :class="slide_c == i ? 'wrap-v on' : 'wrap-v off'">
+                <video
+                :src="s"
+                ref="video"
+                v-if="slide_c == i"
+                autoplay
+                muted
+                @ended="nextSlide(slide, 1)"
+              ></video>
+            </div>
             <div class="points">
               <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
