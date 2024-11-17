@@ -107,6 +107,8 @@ export default {
             <div v-for="(s, i) in slide" :key="s" :class="slide_c == i ? 'wrap-v on' : 'wrap-v off'">
                 <video
                 :src="s"
+                playsinline
+                controls="false"
                 ref="video"
                 v-if="slide_c == i"
                 autoplay
@@ -141,6 +143,8 @@ export default {
             <div v-for="(s, i) in slide" :key="s" :class="slide_c == i ? 'wrap-v on' : 'wrap-v off'">
                 <video
                 :src="s"
+                playsinline
+                controls="false"
                 ref="video"
                 v-if="slide_c == i"
                 autoplay
