@@ -92,6 +92,7 @@ nav {
   font-weight: bolder;
   //background-color: rgba(255, 255, 255, 0.283);
   transition: all .2s ease-in;
+
   @include dfc;
   //justify-content: flex-end;
   gap: 1rem;
@@ -99,7 +100,7 @@ nav {
     position: relative;
     z-index: 10;
     text-decoration: none;
-    color: $c1;
+    color: var(--c1);
     font-weight: bolder;
     transition: all .3s ease-in;
   }
@@ -109,7 +110,8 @@ nav {
 
   }
   
-  background-color: rgba(var(--c3-rgb), .8);
+  background-color: var(--c3_op8);
+  //background-color: var(--c3);
   box-shadow: 0 10px 17px -2px rgba(0, 0, 0, 0.279);
 }
 .nav-mobile {
@@ -135,8 +137,9 @@ ul {
 }
 .ul_scroll {
   transition: all .3s ease-in;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
+  justify-content: flex-end;
   
   li{
     a{

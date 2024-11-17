@@ -13,6 +13,7 @@ $c4_op: rgba($c4, 0.5);
 :root {
   --c3: #090333;
   --c3_op: #09033366;
+  --c3_op8: #090333ca;
   --c1: #d8dde8;
   --c1_op: #d8dde88d;
   --c1_op8: #d8dde8b8;
@@ -23,6 +24,7 @@ $c4_op: rgba($c4, 0.5);
 [data-theme="dark"] {
   --c3: #d8dde8;
   --c3_op: #d8dde88d;
+  --c3_op8: #d8dde8cb;
   --c1: #090333;
   --c1_op: #09033366;
   --c1_op8: #090333cf;

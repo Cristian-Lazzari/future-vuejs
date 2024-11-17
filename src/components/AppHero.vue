@@ -41,14 +41,12 @@ export default {
    @use '../assets/styles/general.scss' as *;
    [data-theme="dark"] {
     .hero{
-      backdrop-filter: brightness(100%) ;
-
-      filter:grayscale(-10%);
-      filter:contrast(2);
+      filter:contrast(1.3);
     }
-
-   }
-    .hero{
+    
+  }
+  .hero{
+    filter:contrast(2);
       color: $c1;
       height: 100svh;
       width: 100%;
@@ -91,8 +89,10 @@ export default {
         font-family: 'Courier New', Courier, monospace;
         font-weight: 900;
         font-size: $fs_sml;
+        box-shadow: 0 -8px 27px -9px var(--c1);
       }
       .btn-1{
+        box-shadow: 0 -8px 27px -9px var(--c1);
         position: absolute;
         bottom: 10%
       }
