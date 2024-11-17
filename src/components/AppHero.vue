@@ -161,6 +161,11 @@ export default {
           margin: .2rem auto 0!important;
         }
     }
+    @media (max-height: $bp_sm) {
+      .hero{
+        height: 200vh;
+      }
+    }
     @keyframes logobig {
       0%{
         transform: scale(500%);
