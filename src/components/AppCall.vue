@@ -33,6 +33,7 @@ export default {
    .container{
     color: var(--c1);
     @include mmw;
+  
     .mycl{
       @include dfc;
       width: 100%;
@@ -50,7 +51,7 @@ export default {
   }
   @media (max-width: $bp_md) {
     .container{
-      padding-inline: 1rem;
+      padding-inline: .5rem !important;
     }
     h2{
       padding-inline: 1rem;  
