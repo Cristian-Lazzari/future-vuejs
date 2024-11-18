@@ -38,7 +38,7 @@ export default {
       <div @click="store.typepay = 0" :class="store.typepay == 0 ? 'on aa' : 'off'">Mensile</div>
       <div @click="store.typepay = 1" :class="store.typepay == 1 ? 'on mm' : 'off'">Annuale</div>
     </div>
-    <div class="prices">
+    <div class="prices" id="pacchetti">
       <div class="schedule">
         <h4>Pacchetto <br> Essentials</h4>
         <div v-for=" f in store.feats_1" :key="f" :class="f.s ? 'feat' : 'feat off'">

@@ -97,19 +97,20 @@
   .terms-page {
     height: 100svh;
     overflow: auto;
-    background-color: var(--c1);
+    background-color: var(--c3);
     padding: 3rem 1rem 10svh;
     // @include dfc;
     // flex-direction: column;
     font-size: $fs_sm;
     position: relative;
     h1{
+      color: var(--c1);
       padding: .5rem;
       font-size: $fs_xxlg;
     }
     .terms {
       
-      background-color: var(--c3_op);
+      background-color: var(--c1_op);
       border-radius: $b_r_md;
       padding: 2rem 1.6rem;
       margin: 2rem .4rem;
@@ -126,12 +127,15 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    color: var(--c1);
     .cond{
+      color: var(--c1);
       @include dfc;
       gap: 1rem;
     }
   }
   .btn-3 {
+    background-color: var(--c1_op);
     border: none;
     cursor: pointer;
     margin: 1rem;

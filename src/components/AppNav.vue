@@ -42,9 +42,10 @@ export default {
     <ul :class="{ ul_scroll: scroll }" >
       <li><a class="" href="#home"> Home </a></li>
       
-      <li><a class="" href="#servizi"> Servizi </a></li>
-      <li><a class="" href="#pacchetti"> Pricing </a></li>
-      <li><a class="" href="#contatti"> Contatti </a></li>
+      <li><a class="" href="#feature"> Servizi </a></li>
+      <li><a class="" href="#servizi"> Pacchetti </a></li>
+      <li><a class="" href="#pacchetti"> Tariffe </a></li>
+      <li><a class="" href="#call"> Contattaci </a></li>
       <li>
         <div @click="toggleTheme" :class=" theme === 'light' ? 'toggle-btn light' : 'toggle-btn dark'">
           <div class="sun-rays"></div>
@@ -63,9 +64,10 @@ export default {
   <div :class="store.nav_menu ? 'mobile-on' : 'mobile-off' ">
     <ul class="flex" >
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
-      <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Servizi </a> </li>
-      <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Pricing </a> </li>
-      <li> <a @click="openmenu" :class="{ black: scroll }" href="#contatti"> Contatti </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#feature"> Servizi </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Pacchetti </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Tariffe </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#call"> Contattaci </a> </li>
       <li>
         <div @click="toggleTheme" :class=" theme === 'light' ? 'toggle-btn light' : 'toggle-btn dark'">
           <div class="sun-rays"></div>

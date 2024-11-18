@@ -24,7 +24,7 @@ export default {
     <!-- < -->
     <h2>I nostri pacchetti pensati <span class="c2">PER TE</span> </h2>
 
-    <div class="pack">
+    <div id="servizi" class="pack">
       <div class="schedule">
         <h4>Pacchetto <br> Essentials</h4>
         <div v-for=" f in store.feats_1" :key="f" :class="f.s ? 'feat' : 'off'">

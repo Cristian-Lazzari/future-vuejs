@@ -42,7 +42,7 @@ export default {
 <template>
   <div class="container">
     <div class="section_tip first">
-      <h2 id="services" >Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
+      <h2 id="feature" >Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
       <p class="text">
         <span class="pack">Restaurant +</span> <br> 
         è il sistema <span class="strg">FACILE</span> adatto per essere usato da tutti, è <span class="strg">COMODO</span> perchè puoi usarlo subito ed ovunque senza scaricare app, è <span class="strg">COMPLETO</span> perchè comprende tutte le tue esigenze

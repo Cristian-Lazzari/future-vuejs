@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="center_hero">
             <img src="../../public/img/LOGO (1).png" alt="">
             <div class="text">
