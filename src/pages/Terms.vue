@@ -101,14 +101,18 @@
     padding: 3rem 1rem 10svh;
     // @include dfc;
     // flex-direction: column;
-    gap: 3rem;
     font-size: $fs_sm;
     position: relative;
+    h1{
+      padding: .5rem;
+      font-size: $fs_xxlg;
+    }
     .terms {
       
       background-color: var(--c3_op);
       border-radius: $b_r_md;
       padding: 2rem 1.6rem;
+      margin: 2rem .4rem;
       h3, h2{
         margin: 2rem 0 1rem;
       }
@@ -139,6 +143,7 @@
     opacity: .3;
   }
   .error{
+    text-align: center;
     padding: 2rem;
     color: rgb(105, 25, 25);
     text-shadow: 0 0 20px rgba(255, 0, 0, 0.447);
@@ -147,8 +152,8 @@
     @include dfc;
     gap: 10px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0px;
+    right: 0px;
     background-color: $c4_op;
     color: var(--c1_op);
     font-size: $fs_xsm;

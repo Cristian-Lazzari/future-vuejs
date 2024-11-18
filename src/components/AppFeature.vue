@@ -9,7 +9,7 @@ export default {
       slide_c : 0,
       slide_1_c : 0,
       slide: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4'],
-      slide_1: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4'],
+      slide_1: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4'],
     };
   },
   methods:{
@@ -29,21 +29,6 @@ export default {
         //console.log(this.slide_c)
       }, 5000); // 10000 millisecondi = 10 secondi
     },
-    nextSlide(slides, c) {
-      if(c==1){
-        if (slides.length > (this.slide_c + 1)) {
-          this.slide_c ++
-        }else{
-          this.slide_c = 0
-        }
-      }else{
-        if (slides.length > (this.slide_1_c + 1)) {
-          this.slide_1_c ++
-        }else{
-          this.slide_1_c = 0 
-        }
-      }
-    },
   },
   mounted(){
 
@@ -60,7 +45,7 @@ export default {
       <h2 id="services" >Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
       <p class="text">
         <span class="pack">Restaurant +</span> <br> 
-        è il sistema FACILE adatto per essere usato da tutti, è COMODO perchè puoi usarlo subito ed ovunque senza scaricare app, è COMPLETO perchè comprende tutte le tue esigenze
+        è il sistema <span class="strg">FACILE</span> adatto per essere usato da tutti, è <span class="strg">COMODO</span> perchè puoi usarlo subito ed ovunque senza scaricare app, è <span class="strg">COMPLETO</span> perchè comprende tutte le tue esigenze
       </p>
       <div class="grid">
         <div class="left">
@@ -122,7 +107,6 @@ export default {
                 autoplay
                 :class="slide_c == i ? 'on' : 'off'"
                 muted
-                @ended="nextSlide(slide, 1)"
               ></video>
             </div>
             
@@ -149,24 +133,23 @@ export default {
       <div class="grid">
         <div class="right">
           <div class="slider">
-            <div v-for="(s, i) in slide" :key="s" :class="slide_c == i ? 'wrap-v on' : 'wrap-v off'">
+            <div v-for="(s, i) in slide_1" :key="s" :class="slide_1_c == i ? 'wrap-v on' : 'wrap-v off'">
                 <video
                 :src="s"
                 playsinline
                 loop
                 ref="video"  
                 autoplay
-                :class="slide_c == i ? 'on' : 'off'"
+                :class="slide_1_c == i ? 'on' : 'off'"
                 muted
-                @ended="nextSlide(slide, 1)"
               ></video>
             </div>
             <div class="points">
-              <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide_1" @click="slide_1_c = i" :class="slide_1_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
           <div class="panel">
-            <div class="top">
+            <div :class="slide_1_c == 0 ? 'up top' : 'top'">
               <h5>Analizza  costantemente le tue <span class="strg">PERFORMANCE</span></h5>
               <div class="small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
@@ -184,7 +167,7 @@ export default {
         </div>
         <div class="left">
           <div class="panel">
-            <div class="top">
+            <div :class="slide_1_c == 1 ? 'up top' : 'top'">
               <h5>Ordini a domicilio o d’asporto <span class="strg">ILLIMITATI</span></h5>
               <div class="small">
                 <svg id="mail" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
@@ -204,7 +187,7 @@ export default {
             </div>
           </div>
           <div class="panel">
-            <div class="top">
+            <div :class="slide_1_c == 2 ? 'up top' : 'top'">
               <h5>Prenotazioni tavoli <span class="strg">ILLIMITATE</span></h5>
               <div class="small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
@@ -224,7 +207,7 @@ export default {
             </div>            
           </div>
           <div class="panel">
-            <div class="top">
+            <div :class="slide_1_c == 3 ? 'up top' : 'top'">
               <h5>Possibilità di abilitare il pagamento <span class="strg">ONLINE</span></h5>
               <div class="small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
@@ -332,11 +315,11 @@ export default {
         box-shadow: -7px 7px var(--c3) !important;
         transition: all .2s ease-in;
         background-color: var(--c1);
+        transform: translate( 5px, -5px);
         svg{
           color: var(--c3);
           transition: all .2s ease-in;
           filter: drop-shadow(0 0 3px var(--c3));
-          
           text-shadow: 0 0 10px var(--c3) !important;
         }
       }
@@ -344,7 +327,7 @@ export default {
         text-shadow: 0 0 5px var(--c3_op) !important;
         color: var(--c3);
         transition: all .2s ease-in;
-        font-size: $fs_mdl !important;
+        //font-size: $fs_mdl !important;
       }
       transition: all .2s ease-in;
     }
@@ -477,6 +460,7 @@ export default {
           .small{
             //flex-direction: column !important;
             //flex-wrap: wrap;
+            margin: 0 auto;
             svg{
               $w_svg : 22px;
               height: $w_svg !important;

@@ -85,11 +85,16 @@ export default {
                 .star{
                   @include dfc;
                   gap: .7rem;
+                  svg{
+
+                    color: $c2;
+                    filter: drop-shadow( -1px 1.4px 0 var(--c1));
+                  }
 
                 }
                 //padding: 1.2rem 3rem;
                 color: var(--c1);
-                box-shadow: -5px 5px rgba(var(--c3-rgb), .5), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
+                box-shadow: -5px 5px var(--c3_op), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
                 background-color: var(--c3);
                 width: clamp(200px, 80vw, 300px);
 
