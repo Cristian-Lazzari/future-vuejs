@@ -38,8 +38,8 @@ export default {
           <h5>Info legali</h5>
           <ul>
             <li><a href="">Termini e condizioni</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Cookie Policy</a></li>
+            <li><a href="https://www.iubenda.com/privacy-policy/16412600/legal">Privacy Policy</a></li>
+            <li><a href="https://www.iubenda.com/privacy-policy/16412600/cookie-policy" >Cookie Policy</a></li>
           </ul>
         </div>
         <div class="social">

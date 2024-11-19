@@ -13,14 +13,15 @@
       proceedToCheckout() {
         this.error = false
         if (this.accepted) {
+          console.log()
           // Reindirizza alla pagina Stripe
-          window.location.href = this.store.pUrl[this.store.package][this.store.typepay];
+          window.location.href = this.store.pUrl[this.store.typepay][this.store.package - 1];
         } else {
           this.error = true
         }
       },
     },
-    mounted(){
+    created(){
       this.store.package = localStorage.getItem('pack');
       this.store.typepay = localStorage.getItem('typepay');
     }
@@ -37,8 +38,8 @@
       <!-- Inserisci i tuoi termini e condizioni -->
       <h2>Benvenuti in Future Plus!</h2>
       <p>
-         Il nostro servizio consente la creazione di siti personalizzati per la ristorazione, 
-        con funzionalità come gestione menu, ordini online e prenotazioni.
+         Il nostro servizio consiste nella creazione di siti personalizzati per la ristorazione che sfruttano il software <span class="strg">Restaurant +</span>, 
+        con funzionalità come gestione menu, ordini d'asporto o a domicilio e prenotazioni tavoli online.
       </p>
       <h3>1. Periodo di prova gratuita:</h3>
       <p>

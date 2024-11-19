@@ -10,18 +10,14 @@ export const store = reactive({
   typepay: 1,
   pUrl:[
     [
-      '',
-      'https://buy.stripe.com/3cs4jOgT7gU80JafZ3',
-      'https://buy.stripe.com/00g6rW46l7jy9fG8wC',
-      'https://buy.stripe.com/8wMg2w0U95bq63ueV1',
-      'https://buy.stripe.com/3cs7w0cCR47meA09AI'
+      'https://buy.stripe.com/00g8A40U933i4Zq3co',
+      'https://buy.stripe.com/28o6rWcCR7jyeA028m',
+      'https://buy.stripe.com/28o4jO32h0VaajK14k',
     ],
     [
-      '',
-      'https://buy.stripe.com/bIY8A47ix1Ze1Ne8wA',
-      'https://buy.stripe.com/4gw9E86eteM02Ri9AD',
-      'https://buy.stripe.com/cN27w046lavKdvW4gi',
-      'https://buy.stripe.com/4gwcQkgT79rG2Ri9AB'
+      'https://buy.stripe.com/6oE3fK9qF0Va0Ja3cn',
+      'https://buy.stripe.com/3cs4jO5ap33i1Ne6oB',
+      'https://buy.stripe.com/7sIbMgfP3avKgI89AP',
     ],
   ],
   price : [

@@ -30,8 +30,8 @@ export default {
         <div class="bottom_bar">
             <div class="piva">P. IVA 02974730422</div>
             <div>
-                <a href="">Cookie Policy</a>
-              <a href="">Privacy Policy</a>
+              <a href="https://www.iubenda.com/privacy-policy/16412600/cookie-policy" >Cookie Policy</a>
+              <a href="https://www.iubenda.com/privacy-policy/16412600" >Privacy Policy</a>
             </div>
         </div>
     </div>
