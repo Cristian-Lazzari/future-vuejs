@@ -1,10 +1,3 @@
-
-
-
-
-
----
-
   
 <script>
 import { store } from "../store.js";
@@ -27,7 +20,7 @@ export default {
 
 <template>
 <div class="terms-page">
-<span>Ultimo aggiornamento: 22/11/2024</span>
+<h3 class="btn-1">Ultimo aggiornamento: 22/11/2024</h3>
   <h1>Privacy Policy di Future Plus</h1>
 
   <div class="terms">

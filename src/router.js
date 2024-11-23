@@ -23,7 +23,7 @@ const router = createRouter({
     {
       path: "/privacy-policy",
       name: "privacy-policy",
-      component: ConsumersRegistration,
+      component: PrivacyPolicy,
     },
 
   ],
