@@ -2,8 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 
 
 import Home from "./pages/Home.vue";
-import ConsumersRegistration from "./pages/ConsumersRegistration.vue";
+// import ConsumersRegistration from "./pages/ConsumersRegistration.vue";
 import Terms from "./pages/Terms.vue";
+import PrivacyPolicy from "./pages/PrivacyPolicy.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -20,8 +21,8 @@ const router = createRouter({
       component: Terms,
     },
     {
-      path: "/",
-      name: "ConsumersRegistration",
+      path: "/privacy-policy",
+      name: "privacy-policy",
       component: ConsumersRegistration,
     },
 
