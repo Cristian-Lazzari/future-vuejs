@@ -20,6 +20,7 @@ export default {
 
 <template>
   <footer class="container">
+
     <div class="wrap">
       <div class="top">
       <img src="/public/img/LOGO (1).png" alt="">
@@ -73,6 +74,7 @@ export default {
 
 <style lang="scss" scoped>
    @use '../assets/styles/general.scss' as *;
+
    [data-theme="dark"] {
       img{
         filter: invert(1); 
