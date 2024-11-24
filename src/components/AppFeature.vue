@@ -8,8 +8,8 @@ export default {
       store,
       slide_c : 0,
       slide_1_c : 0,
-      slide: [store.domain + 'img/v1.mov', store.domain + 'img/v1.mov' ,store.domain + 'img/v1.mov'],
-      slide_1: [store.domain + 'img/v1.mov', store.domain + 'img/v1.mov' ,store.domain + 'img/v1.mov', store.domain + 'img/v1.mov'],
+      slide: [store.domain + 'img/v1.webm', store.domain + 'img/v2.webm' ,store.domain + 'img/v3.webm'],
+      slide_1: [store.domain + 'img/v7.webm', store.domain + 'img/v4.webm' ,store.domain + 'img/v5.webm', store.domain + 'img/v6.webm'],
     };
   },
   methods:{
@@ -27,7 +27,7 @@ export default {
           this.slide_1_c = 0 
         }     
         //console.log(this.slide_c)
-      }, 5000); // 10000 millisecondi = 10 secondi
+      }, 4100); // 10 000 millisecondi = 10 secondi
     },
   },
   mounted(){
@@ -40,6 +40,7 @@ export default {
 </script>
 
 <template>
+
   <div class="container">
     <div class="section_tip first">
       <h2 id="feature" >Diventa finalmente il <span class="c2">PADRONE</span> della tua attività</h2>
