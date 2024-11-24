@@ -248,9 +248,10 @@ export default {
         margin-bottom: 1rem;
 
         video{
+          background-color: none;
           pointer-events: none; /* Disabilita il clic o il tocco */
           user-select: none;    /* Impedisce la selezione del video */
-          box-shadow: 0 10px 30px -10px $c4;
+          //box-shadow: 0 10px 30px -10px $c4;
           border-radius: $b_r_sm;
           max-height: 600px;
           //width: 100%;
