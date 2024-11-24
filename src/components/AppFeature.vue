@@ -8,8 +8,8 @@ export default {
       store,
       slide_c : 0,
       slide_1_c : 0,
-      slide: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4'],
-      slide_1: [store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4' ,store.domain + 'img/v1.mp4', store.domain + 'img/v1.mp4'],
+      slide: [store.domain + 'img/v1.mov', store.domain + 'img/v1.mov' ,store.domain + 'img/v1.mov'],
+      slide_1: [store.domain + 'img/v1.mov', store.domain + 'img/v1.mov' ,store.domain + 'img/v1.mov', store.domain + 'img/v1.mov'],
     };
   },
   methods:{
