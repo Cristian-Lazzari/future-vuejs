@@ -27,7 +27,7 @@ export default {
           this.slide_1_c = 0 
         }     
         //console.log(this.slide_c)
-      }, 4100); // 10 000 millisecondi = 10 secondi
+      }, 4000); // 10 000 millisecondi = 10 secondi
     },
   },
   mounted(){
@@ -248,7 +248,7 @@ export default {
         margin-bottom: 1rem;
 
         video{
-          background-color: none;
+          background: transparent;
           pointer-events: none; /* Disabilita il clic o il tocco */
           user-select: none;    /* Impedisce la selezione del video */
           //box-shadow: 0 10px 30px -10px $c4;
