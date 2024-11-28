@@ -27,14 +27,27 @@ export default {
           this.slide_1_c = 0 
         }     
         //console.log(this.slide_c)
-      }, 4000); // 10 000 millisecondi = 10 secondi
+      }, 4010); // 10 000 millisecondi = 10 secondi
     },
+    nexts(set){ // come parametro inserire il set di video
+      //this.slide_c == 
+      if (this.slide.length > (this.slide_c + 1) && set == 1 ) {
+          this.slide_c ++
+        }else if(set == 1){
+          this.slide_c = 0
+        }
+        if (this.slide_1.length > (this.slide_1_c + 1)&& set == 2) {
+          this.slide_1_c ++
+        }else if(set == 2){
+          this.slide_1_c = 0 
+        } 
+    }
   },
   mounted(){
 
   },
   created(){
-    this.slide_infinite() 
+    //this.slide_infinite() 
   }
 };
 </script>
@@ -103,11 +116,12 @@ export default {
                 <video
                 :src="s"
                 playsinline
-                loop
+                v-if="slide_c == i"
                 ref="video"
                 autoplay
                 :class="slide_c == i ? 'on' : 'off'"
                 muted
+                @ended="nexts(1)"
               ></video>
             </div>
             
@@ -138,11 +152,12 @@ export default {
                 <video
                 :src="s"
                 playsinline
-                loop
+                v-if="slide_1_c == i"
                 ref="video"  
                 autoplay
                 :class="slide_1_c == i ? 'on' : 'off'"
                 muted
+                @ended="nexts(2)"
               ></video>
             </div>
             <div class="points">
@@ -241,7 +256,7 @@ export default {
 
       .wrap-v{
         position: relative;
-        //height: 600px;
+        min-height: 600px;
         width: 100%;
         margin: 0 auto;
         transition: opacity .5s ease-in-out;
@@ -269,8 +284,8 @@ export default {
         position: absolute;
          z-index: 0;
          opacity: 0;
-        // width: 0;
-        // height: 0;
+        width: 0;
+        height: 0;
         transition: position 0 ease-in-out 0, opacity 3.5s ease-in .5s;
       }
       .points{
@@ -441,8 +456,8 @@ export default {
     }
 
     @media (max-width: $bp_md) {
-      .wrap-v.on{
-        //height: 520px !important;
+      .wrap-v{
+        min-height: 75svh !important;
 
       }
       video{
@@ -456,6 +471,8 @@ export default {
         .grid{
           flex-wrap: wrap;
           .top{
+            width: 100%;
+            justify-content: space-between !important;
             flex-wrap: wrap;
             align-items: flex-start !important;
           }
