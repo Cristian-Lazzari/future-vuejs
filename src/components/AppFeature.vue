@@ -14,33 +14,46 @@ export default {
   },
   methods:{
 
-    slide_infinite() {
-      setInterval(() => {
-        if (this.slide.length > (this.slide_c + 1)) {
-          this.slide_c ++
-        }else{
-          this.slide_c = 0
-        }
-        if (this.slide_1.length > (this.slide_1_c + 1)) {
-          this.slide_1_c ++
-        }else{
-          this.slide_1_c = 0 
-        }     
-        //console.log(this.slide_c)
-      }, 4010); // 10 000 millisecondi = 10 secondi
+
+    playAndStopVideo(old, ref, new_ ){
+      let videoOff = this.$refs[ref][old];
+      let video = this.$refs[ref][new_];
+      if(videoOff){
+        videoOff.currentTime = 0; // Riavvia il video
+        videoOff.pause(); // Fai partire il video
+      }
+      if(video){
+        video.currentTime = 0; // Riavvia il video
+        video.play(); // Fai partire il video
+      }
     },
-    nexts(set){ // come parametro inserire il set di video
-      //this.slide_c == 
-      if (this.slide.length > (this.slide_c + 1) && set == 1 ) {
-          this.slide_c ++
-        }else if(set == 1){
-          this.slide_c = 0
+    nexts(set, i){ // come parametro inserire il set di video
+      if(i !== 'none'){
+        if(set == 1){
+          this.playAndStopVideo(this.slide_c, 'video', i )
+          this.slide_c = i
+        }else{
+          this.playAndStopVideo(this.slide_1_c, 'videoa', i )
+          this.slide_1_c = i
         }
-        if (this.slide_1.length > (this.slide_1_c + 1)&& set == 2) {
-          this.slide_1_c ++
-        }else if(set == 2){
-          this.slide_1_c = 0 
-        } 
+        return
+      }
+
+      if (this.slide.length > (this.slide_c + 1) && set == 1 ) {
+        this.playAndStopVideo(this.slide_c, 'video', (this.slide_c + 1) )
+        this.slide_c ++
+      }else if(set == 1){
+        this.playAndStopVideo(set, 'video', 0 )
+        this.slide_c = 0
+      }
+      if (this.slide_1.length > (this.slide_1_c + 1)&& set == 2) {
+        this.playAndStopVideo(this.slide_1_c, 'videoa', (this.slide_1_c + 1) )
+        this.slide_1_c ++
+      }else if(set == 2){
+        this.playAndStopVideo(set, 'videoa', 0 )
+        this.slide_1_c = 0
+      }
+      
     }
   },
   mounted(){
@@ -63,7 +76,7 @@ export default {
       </p>
       <div class="grid">
         <div class="left">
-          <div class="panel">
+          <div @click="nexts(1, 0)" class="panel">
             <div :class="slide_c == 0 ? 'up top' : 'top'" >
               <h5>Gestisci il tuo menu <span class="strg"> ovunque</span> e con <span class="strg"> comodità</span></h5>
               <div class="small">
@@ -78,7 +91,7 @@ export default {
             </div>
             <p>Puoi creare un menu, che puoi suddividere in categorie e con foto e dettagli a portata di clic i tuoi clienti saranno attratti come non mai</p>
           </div>
-          <div class="panel">
+          <div @click="nexts(1, 1)" class="panel">
             <div :class="slide_c == 1 ? 'up top' : 'top'">
               <h5>Statistiche <span class="strg"> accurate</span> ti mostreranno come muoverti</h5>
               <div class="small">
@@ -94,7 +107,7 @@ export default {
             </div>
             <p>Saprai i prodotti più ordinati ed i periodi di picco, traccerà la clientela che prenota il tavolo e l andamento dei tuoi ricavi</p>
           </div>
-          <div class="panel qr">
+          <div @click="nexts(1, 2)" class="panel qr">
             <div :class="slide_c == 2 ? 'up top' : 'top'">
               <h5>Genriamo per te il <span class="strg"> QR-CODE </span> per scansionare il menu e ordinare</h5>
               <div class="small">
@@ -116,17 +129,17 @@ export default {
                 <video
                 :src="s"
                 playsinline
-                v-if="slide_c == i"
+                v-show="slide_c == i"
                 ref="video"
                 autoplay
                 :class="slide_c == i ? 'on' : 'off'"
                 muted
-                @ended="nexts(1)"
+                @ended="nexts(1,'none')"
               ></video>
             </div>
             
             <div class="points">
-              <div v-for="(s, i) in slide" @click="slide_c = i" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide" @click="nexts(1, i)" :class="slide_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
           <div class="panel">
@@ -152,19 +165,19 @@ export default {
                 <video
                 :src="s"
                 playsinline
-                v-if="slide_1_c == i"
-                ref="video"  
+                v-show="slide_1_c == i"
+                ref="videoa"  
                 autoplay
                 :class="slide_1_c == i ? 'on' : 'off'"
                 muted
-                @ended="nexts(2)"
+                @ended="nexts(2,'none')"
               ></video>
             </div>
             <div class="points">
-              <div v-for="(s, i) in slide_1" @click="slide_1_c = i" :class="slide_1_c == i ? 'on point' : 'point'" :key="s"></div>
+              <div v-for="(s, i) in slide_1" @click="nexts(2, i)" :class="slide_1_c == i ? 'on point' : 'point'" :key="s"></div>
             </div>
           </div>
-          <div class="panel">
+          <div @click="nexts(2, 0)" class="panel">
             <div :class="slide_1_c == 0 ? 'up top' : 'top'">
               <h5>Analizza  costantemente le tue <span class="strg">PERFORMANCE</span></h5>
               <div class="small">
@@ -182,7 +195,7 @@ export default {
           </div>
         </div>
         <div class="left">
-          <div class="panel">
+          <div @click="nexts(2, 1)" class="panel">
             <div :class="slide_1_c == 1 ? 'up top' : 'top'">
               <h5>Ordini a domicilio o d’asporto <span class="strg">ILLIMITATI</span></h5>
               <div class="small">
@@ -202,7 +215,7 @@ export default {
               </svg>
             </div>
           </div>
-          <div class="panel">
+          <div @click="nexts(2, 2)" class="panel">
             <div :class="slide_1_c == 2 ? 'up top' : 'top'">
               <h5>Prenotazioni tavoli <span class="strg">ILLIMITATE</span></h5>
               <div class="small">
@@ -222,7 +235,7 @@ export default {
               </svg>
             </div>            
           </div>
-          <div class="panel">
+          <div @click="nexts(2, 3)" class="panel">
             <div :class="slide_1_c == 3 ? 'up top' : 'top'">
               <h5>Possibilità di abilitare il pagamento <span class="strg">ONLINE</span></h5>
               <div class="small">
@@ -282,10 +295,11 @@ export default {
       }
       .off{
         position: absolute;
-         z-index: 0;
-         opacity: 0;
-        width: 0;
-        height: 0;
+        top: 0;
+        z-index: 0;
+        opacity: 0;
+        // width: 0;
+        // height: 0;
         transition: position 0 ease-in-out 0, opacity 3.5s ease-in .5s;
       }
       .points{
@@ -303,7 +317,7 @@ export default {
           transition: all .3s ease-in-out;
         }
         .point:hover{
-          transform: scale(150%);
+          transform: scale(110%);
           background-color: var(--c1);
           transition: all .3s ease-in-out;
 
@@ -457,7 +471,7 @@ export default {
 
     @media (max-width: $bp_md) {
       .wrap-v{
-        min-height: 75svh !important;
+        //min-height: 75svh !important;
 
       }
       video{
