@@ -487,7 +487,7 @@ export default {
         max-height: none !important;
         height: auto !important;
         width: 100%;
-        background: red !important;
+        
       }
     }
     @media (max-width: $bp_lg) {
