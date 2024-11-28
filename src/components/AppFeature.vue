@@ -473,8 +473,8 @@ export default {
       .section_tip{
         padding: 0 !important;
       }
-      .panel{
-        width: 95%;
+      .panel, h2{
+        width: 90%;
         margin: 0 auto;
       }
       .slider{
