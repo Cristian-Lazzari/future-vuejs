@@ -3,7 +3,7 @@ import { reactive } from "vue";
 export const store = reactive({
   //baseUrl: "http://127.0.0.1:8000/",
   baseUrl: "https://dashboard.future-plus.it/",
-  domain: "https://future-plus-demo.netlify.app/",
+  domain: "https://future-plus.it/",
   //domain: "http://localhost:5173/",
   nav_menu: 0,
   package : 0,
