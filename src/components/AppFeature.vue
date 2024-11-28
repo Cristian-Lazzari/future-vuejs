@@ -312,13 +312,13 @@ export default {
           z-index: 20;
           height: 10px;
           width: 10px;
-          background-color: var(--c1_op);
+          background-color: $c1_op;
           border-radius: 20px;
           transition: all .3s ease-in-out;
         }
         .point:hover{
           transform: scale(110%);
-          background-color: var(--c1);
+          background-color: $c1;
           transition: all .3s ease-in-out;
 
         }
@@ -326,7 +326,7 @@ export default {
           transition: all .3s ease-in-out;
           transform: scale(210%);
           margin-inline: 20px;
-          background-color: var(--c1);
+          background-color: $c1;
         }
       }
     }
