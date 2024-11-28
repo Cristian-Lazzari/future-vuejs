@@ -470,10 +470,19 @@ export default {
     }
 
     @media (max-width: $bp_md) {
-      .wrap-v{
-        //min-height: 75svh !important;
-
+      .section_tip{
+        padding: 0 !important;
       }
+      .panel{
+        width: 95%;
+        margin: 0 auto;
+      }
+      .slider{
+        background-color: black;
+        padding: 1rem 0;
+        gap: .2rem !important;
+      }
+
       video{
         max-height: none !important;
         height: auto !important;
