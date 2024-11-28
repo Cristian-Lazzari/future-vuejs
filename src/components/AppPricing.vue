@@ -131,7 +131,7 @@ export default {
       box-shadow: -3px 3px var(--c1),  -7px 5px 12px -3px rgba(0, 0, 0, 0.316) ;
       background-color: var(--c3);
       color: var(--c1);
-      padding: .5rem;
+      padding: .1rem;
       border-radius: $br;
       margin: 0 auto 3rem; 
       font-size: $fs_sm;
@@ -143,6 +143,7 @@ export default {
       z-index: 9;
       div{
         border-radius: 100px;
+        padding: .5rem 2rem;
       }
       .mm{
         background-color: $c2;
@@ -161,7 +162,6 @@ export default {
         transition: all .4s ease-in-out;
         position: relative;
         z-index: 4;
-        padding: .8rem 1.2rem;
         font-weight: 900;
         
       }
@@ -173,7 +173,6 @@ export default {
         transition: all .4s ease-in;
         position: relative;
         z-index: 4;
-        padding: .8rem 1.2rem;
         opacity: .4;
       }
 
