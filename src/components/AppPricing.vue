@@ -49,12 +49,16 @@ export default {
         </div>
         <div class="price-c">
           <p class="price">
-            €
-            {{store.price[0][store.typepay]}}<span>,90</span>
+            € {{store.price[0][store.typepay][0]}}<span>{{ store.typepay ? ',32': ',90' }}</span>
           </p>
           <p> 
-            {{ store.typepay == 0 ? 'al mese' : 'all\' anno' }}
-             
+            al mese
+          </p>
+          <p class="price-y">
+            € {{store.price[0][store.typepay][1]}}<span>{{ store.typepay ? ',90': ',80' }}</span>
+          </p>
+          <p>
+            all'anno
           </p>
           <span>* iva inclusa.</span>
           <div @click="send(1)" class="btn-1">Provalo GRATIS</div>
@@ -70,12 +74,16 @@ export default {
         </div>
         <div class="price-c">
           <p class="price">
-            €
-            {{store.price[1][store.typepay]}}<span>,90</span>
+            € {{store.price[1][store.typepay][0]}}<span>{{ store.typepay ? ',32': ',90' }}</span>
           </p>
           <p> 
-            {{ store.typepay == 0 ? 'al mese' : 'all\' anno' }}
-             
+            al mese
+          </p>
+          <p class="price-y">
+            € {{store.price[1][store.typepay][1]}}<span>{{ store.typepay ? ',90': ',80' }}</span>
+          </p>
+          <p>
+            all'anno
           </p>
           <span>* iva inclusa.</span>
           <div @click="send(2)" class="btn-1">Provalo GRATIS</div>
@@ -91,12 +99,16 @@ export default {
         </div>
         <div class="price-c">
           <p class="price">
-            €
-            {{store.price[2][store.typepay]}}<span>,90</span>
+            € {{store.price[2][store.typepay][0]}}<span>{{ store.typepay ? ',99': ',90' }}</span>
           </p>
           <p> 
-            {{ store.typepay == 0 ? 'al mese' : 'all\' anno' }}
-             
+            al mese
+          </p>
+          <p class="price-y">
+            € {{store.price[2][store.typepay][1]}}<span>{{ store.typepay ? ',90': ',80' }}</span>
+          </p>
+          <p>
+            all'anno
           </p>
           <span>* iva inclusa.</span>
           <div @click="send(3)" class="btn-1">Provalo GRATIS</div>
@@ -215,14 +227,29 @@ export default {
         border-radius: $b_r_md;
         .price-c{
           .price{
-
+            font-style: normal;
             font-size: $fs_xlg;
             font-weight: 900;
             span{
               font-weight: 100;
               font-size: $fs_md !important;
-
+              
             }
+          }
+          .price-y{
+            font-style: normal;
+            margin-top: 1.8rem !important;
+            //margin: .5rem !important;
+            font-size: $fs_sm;
+            font-weight: 600;
+            span{
+              font-weight: 100;
+            }
+          }
+          p{
+            font-style: italic;
+            font-size: $fs_xsm;
+            margin: .5rem !important;
           }
         }
         h4{

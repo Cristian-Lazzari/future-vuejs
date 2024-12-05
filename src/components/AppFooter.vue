@@ -28,14 +28,14 @@ export default {
         <h5>Pagine</h5>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#services">Servizi</a></li>
+          <li><a href="#servizi">Servizi</a></li>
           <li><a href="#call">Contattaci</a></li>
-          <li><a href="#home">Chi Siamo?</a></li>
+          <li><a href="#review">Recensioni</a></li>
         </ul>
       </div>
       </div>
       <div class="bottom">
-        <div>
+        <div class="center">
           <h5>Info legali</h5>
           <ul>
             <li><a href="">Termini e condizioni</a></li>
@@ -65,8 +65,17 @@ export default {
           </ul>
         </div>
       </div>
+      <div  class="trustpilot-widget" data-locale="it-IT" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="67507f9d2e6a9f29c6758788" data-style-height="52px" data-style-width="100%">
+        <a href ="https://it.trustpilot.com/review/future-plus.it" >
+          <span>Lascia una recensione su</span>
+          <div class="trust">   
+            <svg viewBox="0 0 32 32" fill="none" class="tp-star" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_183_19869)"><path d="M31.9765 11.3415H19.9567L16.244 0L12.5198 11.3415L0.5 11.33L10.2342 18.3465L6.50989 29.6765L16.244 22.6715L25.9666 29.6765L22.2539 18.3465L31.9765 11.3415Z" fill="#04DA8D"></path><path d="M23.0894 20.9115L22.254 18.3464L16.2441 22.6714L23.0894 20.9115Z" fill="#1C1C1C"></path></g><defs><clipPath id="clip0_183_19869"><rect width="31" height="32" fill="white" transform="translate(0.5)"></rect></clipPath></defs></svg>
+            <span>Trustpilot</span>
+          </div>
+        </a>
+      </div>
     </div>
-    <p class="last">Future Plus ® All Rights Reseverd.</p>
+    <p class="last">Future Plus ® Tutti i diritti riservati.</p>
     
 
   </footer>
@@ -74,6 +83,41 @@ export default {
 
 <style lang="scss" scoped>
    @use '../assets/styles/general.scss' as *;
+    .trustpilot-widget{
+      width: 100%;
+      @include dfc;
+      a:hover{
+        background-color: var(--c1);
+        transition: all .5s ease-in;
+      }
+      a{
+        transition: all .3s ease-out;
+        @include dfc;
+        flex-wrap: wrap;
+        gap: .5rem;
+        background-color: #ffffff5c;
+        border: 3px solid #00b67a;
+        border-radius: $b_r_md;
+        font-size: $fs_sm;
+        text-decoration: none;
+        color: var(--c3);
+        height: 46px;
+        padding: 0 1.2rem;
+        .trust{
+          text-shadow: 0 0 9px $c1_op;
+          @include dfc;
+          gap: .1rem;
+          font-weight: bolder;
+          svg{
+            filter: drop-shadow(0 1px 2px $c1);
+            //box-shadow: 0 0 10px $c1;
+            display: inline-block;
+            height: 22px;
+            width: 22px;
+          }
+        }
+      }
+   }
 
    [data-theme="dark"] {
       img{
@@ -114,6 +158,9 @@ export default {
         }
       }
       .top, .bottom{
+        .center{
+          text-align: center;
+        }
         opacity: .8;
         flex: 1 1 auto;
         @include dfj;
@@ -162,8 +209,11 @@ export default {
   }
   @media (max-width: $bp_md) {
 
-    .top, .bottom, .wrap{
-      text-align: center;
+    .top, .bottom, .wrap, .social{
+      h5{
+        text-align: center !important;
+      }
+      text-align: center !important;
       flex-direction: column !important;
       align-items: center !important;
       justify-content: center !important;

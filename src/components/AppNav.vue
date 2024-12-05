@@ -43,7 +43,7 @@ export default {
       <li><a class="" href="#home"> Home </a></li>
       
       <li><a class="" href="#feature"> Servizi </a></li>
-      <li><a class="" href="#servizi"> Pacchetti </a></li>
+      <li><a class="" href="#review"> Recensioni </a></li>
       <li><a class="" href="#pacchetti"> Tariffe </a></li>
       <li><a class="" href="#call"> Contattaci </a></li>
       <li>
@@ -65,7 +65,7 @@ export default {
     <ul class="flex" >
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#home"> Home </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#feature"> Servizi </a> </li>
-      <li> <a @click="openmenu" :class="{ black: scroll }" href="#servizi"> Pacchetti </a> </li>
+      <li> <a @click="openmenu" :class="{ black: scroll }" href="#review"> Recensioni </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Tariffe </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#call"> Contattaci </a> </li>
       <li>

@@ -26,7 +26,7 @@ export default {
 <template>
   <div class="container">
     <div class="wrap">
-        <h2>Le recensioni dei <span class="c2">nostri</span> clienti</h2>
+        <h2 id="review" >Le recensioni dei <span class="c2">nostri</span> clienti</h2>
         <p class="text">
             Noi, <span class="strg">come te</span>, ce la <span class="strg">mettiamo tutta ogni giorno</span>
             per rendere ogni persona la <span class="strg">nostra priorità</span> .
