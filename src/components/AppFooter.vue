@@ -89,6 +89,7 @@ export default {
       a:hover{
         background-color: var(--c1);
         transition: all .5s ease-in;
+        border: 3px solid #00b67a;
       }
       a{
         transition: all .3s ease-out;
@@ -96,13 +97,13 @@ export default {
         flex-wrap: wrap;
         gap: .5rem;
         background-color: #ffffff5c;
-        border: 3px solid #00b67a;
+        border: 3px solid #00b67946;
         border-radius: $b_r_md;
         font-size: $fs_sm;
         text-decoration: none;
         color: var(--c3);
-        height: 46px;
-        padding: 0 1.2rem;
+        //height: 46px;
+        padding: .7rem 1.2rem;
         .trust{
           text-shadow: 0 0 9px $c1_op;
           @include dfc;
