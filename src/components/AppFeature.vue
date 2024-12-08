@@ -478,7 +478,7 @@ export default {
         margin: 0 auto;
       }
       .slider{
-        background-color: black;
+        background-color: $c3;
         padding: 1rem 0;
         gap: .2rem !important;
       }
