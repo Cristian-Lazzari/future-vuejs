@@ -26,7 +26,7 @@ export default {
               <div @click="store.scrollToSection('call')" class="btn-2">Provalo GRATIS</div>
             </div>
         </div>
-        <div class="btn-1 br" @click="store.scrollToSection('featurep')" >Scopri di più</div>
+        <div class="btn-1 br" @click="store.scrollToSection('feature')" >Scopri di più</div>
         <div class="bottom_bar">
             <div class="piva">P. IVA 02974730422</div>
             <div>
