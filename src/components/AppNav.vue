@@ -69,7 +69,7 @@ export default {
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#pacchetti"> Tariffe </a> </li>
       <li> <a @click="openmenu" :class="{ black: scroll }" href="#call"> Contattaci </a> </li>
       <li>
-        <div @click="toggleTheme" :class=" theme === 'light' ? 'toggle-btn light' : 'toggle-btn dark'">
+        <div @click="toggleTheme" :class=" theme === 'dark' ? 'toggle-btn light' : 'toggle-btn dark'">
           <div class="sun-rays"></div>
           <div class="main-circle"></div>
         </div>

@@ -72,8 +72,8 @@ export default {
           width: clamp(180px, 30vw, 680px);
           //height: auto;
           object-fit: contain;
-          filter: drop-shadow(0 0 10px $c1_op);
-          animation: logobig .6s ease-out;
+          //filter: drop-shadow(0 0 10px $c1_op);
+          animation: logobig .6s ease-out, logopulse 10s cubic-bezier(0.075, 2, 0.5, 2) infinite ;
         }
         .text{
           text-align: center;
@@ -177,6 +177,22 @@ export default {
       }
       100%{
         opacity: 1;
+        transform: scale(1);
+
+      }
+    }
+    @keyframes logopulse {
+      0%{
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px $c1_op);
+        
+      }
+      50%{
+        transform: scale(1.04);
+        filter: drop-shadow(0 0 30px $c3 , 0 0 30px $c2);
+      }
+      100%{
+        filter: drop-shadow(0 0 10px $c1_op);
         transform: scale(1);
 
       }
