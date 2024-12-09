@@ -264,7 +264,9 @@ export default {
       text-align: center;
       flex-grow: 1;
       position: relative;
-      //background-color: rgba(0, 255, 8, 0.499);
+      background-color: $c3;
+      border-radius: $b_r_md;
+      padding: 1rem 0 1.5rem;
       width: clamp(220px, 65vw, 500px);
 
       .wrap-v{
@@ -410,6 +412,7 @@ export default {
         }
         
         .right{
+          gap: 1.2rem !important;
           align-items: center;
           .panel{
             // width: 90%;
