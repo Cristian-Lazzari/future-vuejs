@@ -39,8 +39,8 @@ export default {
           <h5>Info legali</h5>
           <ul>
             <li><a href="">Termini e condizioni</a></li>
-            <li><a href="https://www.iubenda.com/privacy-policy/16412600/legal">Privacy Policy</a></li>
-            <li><a href="https://www.iubenda.com/privacy-policy/16412600/cookie-policy" >Cookie Policy</a></li>
+            <li><a href="https://www.iubenda.com/privacy-policy/43973603" title="Privacy Policy">Privacy Policy</a></li>
+            <li><a href="https://www.iubenda.com/privacy-policy/43973603/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a></li>
           </ul>
         </div>
         <div class="social">
