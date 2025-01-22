@@ -9,9 +9,9 @@ export default {
     };
   },
   methods: {
-    actionScroll(event) {
+    actionScroll() {
       const scroll = window.scrollY;
-      //   console.log(scroll);
+         console.log(scroll);
       if (scroll > 1000) {
         this.scroll = true;
       } else if (scroll < 900) {
