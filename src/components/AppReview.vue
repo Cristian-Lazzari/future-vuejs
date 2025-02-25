@@ -7,9 +7,20 @@ export default {
     return {
       store,
       reviews: [
-        'Ammetto di avere delle esigenze complicate, ma non avrei mai pensato di trovare tutto quello che mi serviva così facilmente. Grazie mille!',
-        'Molto facile ed intuitivo, personalizzabile e soprattutto posso finalmente gestire tutto da un\'unica app!',
-        'Non sapevo neanche di averne bisogno, ma ammetto che la loro professionalità e il loro supporto sono impeccabili. Consigliatissimi!' 
+        {
+          'text' : 'Consiglio vivamente a chi ha un’attività di affidarsi a Futureplus per quattro semplici motivi: rispetto verso il cliente e le sue richieste, trasparenza, utilità e velocità. Il sito creato è molto semplice da utilizzare sia da cliente che da proprietario e questo ne facilita il lavoro. Inoltre, per qualsiasi problematica Cristian risponde tempestivamente e risolve il problema in poco tempo. Lo stile e la creatività che mette nel proprio lavoro, rendono il tutto molto credibile e accattivante.',
+          'link' : 'https://www.trustpilot.com/reviews/676442470492b858bb8b9070',
+          'autore' : 'Letizia - Il Capriccio di Leo'
+        },
+        {
+          'text' : 'Voglio ringraziare Cristian per il lavoro eccellente che ha fatto nel creare il sito con il menù per il mio pub. È stato davvero un professionista: sempre disponibile a chiarire ogni mio dubbio, con risposte chiare e precise, e una velocità sorprendente nel gestire tutto. Il risultato è andato oltre le mie aspettative! Un ringraziamento speciale va anche ad Anita, che me lo ha fatto conoscere e mi ha spiegato in ogni dettaglio come Cristian avrebbe lavorato per realizzare il progetto. È stato un team perfetto! Se cercate qualcuno di competente, disponibile e affidabile, Cristian è la persona giusta.',
+          'link' : 'https://www.trustpilot.com/reviews/675756f2e57b6b7b4efa542b',
+          'autore' : 'Stefano - La Zona pub'
+        },
+
+        
+        
+        // 'Non sapevo neanche di averne bisogno, ma ammetto che la loro professionalità e il loro supporto sono impeccabili. Consigliatissimi!' 
       ]
     };
   },
@@ -41,8 +52,12 @@ export default {
                   </svg>
                 </div>
                 <p class="content">
-                  {{ r }}
+                  {{ r.text }}
                 </p>
+                <span>
+                 Di "{{ r.autore }}""
+                </span>
+                <a :href="r.link">Leggi su Trust Pilot</a>
             </div>
         </div>
     </div>
@@ -76,10 +91,11 @@ export default {
        }
         .reviews{
             @include dfj;
+            align-items: flex-start;
             flex-wrap: wrap;
             gap: 3.5rem;
             .rev{
-                @include dfc;
+                display: flex;
                 flex-direction: column;
                 gap: 2.7rem;
                 .star{
@@ -97,7 +113,18 @@ export default {
                 box-shadow: -5px 5px var(--c3_op), -7px 6px 18px -5px rgba(0, 0, 0, 0.616) ;
                 background-color: var(--c3);
                 width: clamp(200px, 80vw, 300px);
-
+                span{
+                  font-size: $fs_xsm;
+                  opacity: .8;
+                }
+                a{
+                  font-size: 14px;
+                  color: $c2;
+                  font-family: monospace;
+                  margin-top: auto;
+                  width: 100%;
+                  text-align: center;
+                }
             }
         }
    }
