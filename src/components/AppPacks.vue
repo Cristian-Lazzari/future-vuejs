@@ -42,7 +42,7 @@ export default {
         costruire la tua presenza online senza rinunciare alla qualità.</p>
     </div>
     <div class="pack">
-      <p class="desc" >Il pacchetto <span class="pack">Medium</span> di Future Plus ti permette di ricevere
+      <p class="desc" >Il pacchetto <span class="pack">Work on</span> di Future Plus ti permette di ricevere
         prenotazioni e ordini d’asporto direttamente dal tuo sito 
         con <span class="pack">ZERO commissioni</span>. Con questa soluzione, puoi offrire ai
         tuoi clienti la comodità di prenotare e ordinare online, 
@@ -72,11 +72,10 @@ export default {
         </div>
       </div>
       <p class="desc">La soluzione <span class="pack">COMPLETA </span> per la gestione digitale del tuo ristorante.
-        Con <span class="pack">Premium</span> , hai accesso a tutte le funzionalità: menu interattivo, 
+        Con <span class="pack">Boost Up</span> , hai accesso a tutte le funzionalità: menu interattivo, 
         dashboard completa, gestione dei post, prenotazioni tavoli,
         ordini d’asporto, delivery, statistiche avanzate e pagamenti online.
-        Ottimizza ogni aspetto della tua attività con un unico strumento
-        potente e facile da usare. Perfetto per ristoranti che vogliono
+        Completa il tutto la gestione semplificata di ordini e prenotazioni tramite WhatsApp con ZERO stress. Perfetto per ristoranti che vogliono lavorare sempre al top e 
         distinguersi offrendo un’esperienza utente impeccabile.</p>
     </div>
 
