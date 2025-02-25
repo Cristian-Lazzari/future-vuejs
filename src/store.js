@@ -43,6 +43,11 @@ export const store = reactive({
     {s: 0, f: 'Prenotazioni per cene e pranzi senza commisioni'},
     {s: 0, f: 'Ordini d’asporto senza commisioni'},
     {s: 0, f: 'Ordini a domicilio senza commisioni'},
+
+    {s: 0, f: 'Notifiche tramite Email'},
+    {s: 0, f: 'Gestione ordini/prenotazioni WhatsApp'},
+    {s: 0, f: 'Email Marketing pronto all\'uso'},
+
     {s: 0, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
     {s: 0, f: 'Statistiche e report su ordini e prenotazioni'},
   ],
@@ -54,6 +59,11 @@ export const store = reactive({
     {s: 1, f: 'Prenotazioni per cene e pranzi senza commisioni'},
     {s: 1, f: 'Ordini d’asporto senza commisioni'},
     {s: 1, f: 'Ordini a domicilio senza commisioni'},
+
+    {s: 1, f: 'Notifiche tramite Email'},
+    {s: 0, f: 'Gestione ordini/prenotazioni WhatsApp'},
+    {s: 0, f: 'Email Marketing pronto all\'uso'},
+
     {s: 0, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
     {s: 0, f: 'Statistiche e report su ordini e prenotazioni'},
   ],
@@ -65,6 +75,12 @@ export const store = reactive({
     {s: 1, f: 'Prenotazioni per cene e pranzi senza commisioni'},
     {s: 1, f: 'Ordini d’asporto senza commisioni'},
     {s: 1, f: 'Ordini a domicilio senza commisioni'},
+
+    {s: 1, f: 'Notifiche tramite Email'},
+    {s: 1, f: 'Gestione ordini/prenotazioni WhatsApp'},
+    {s: 1, f: 'Email Marketing pronto all\'uso'},
+
+
     {s: 1, f: 'Pagamento online con fee Stripe (dal 1.5% al 2.5%)'},
     {s: 1, f: 'Statistiche e report su ordini e prenotazioni'},
   ],
